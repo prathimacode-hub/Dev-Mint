@@ -174,10 +174,10 @@ This project follows the [GNU General Public License 3.0](https://github.com/pra
 
 ![Visitor Count](https://profile-counter.glitch.me/{prathimacode-hub}/count.svg)
 
-
+<!-- 
 ## 🌟 Stargazers Over Time 🌟
 
-[![Stargazers Over Time](https://starchart.cc/prathimacode-hub/Dev-Mint.svg)](https://starchart.cc/prathimacode-hub/Dev-Mint)
+[![Stargazers Over Time](https://starchart.cc/prathimacode-hub/Dev-Mint.svg)](https://starchart.cc/prathimacode-hub/Dev-Mint) -->
 
 
 ## ⭐ Give this Project a Star
