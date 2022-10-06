@@ -33,7 +33,7 @@ Dev Mint has a exclusive collection of layouts, animations, effects, code snippe
 
 ## 🙌 Join Here
 
-Warm Welcome to the Web Enthusiasts and Professionals into Dev-Mint. Start contributing Geeks!!
+Warm welcome to the Web Enthusiasts and Professionals into Dev-Mint. Start contributing Geeks!!
 
 **Programming Lanaguages - HTML, CSS, JS | Domain Knowledge - Web Development**
 
@@ -46,7 +46,6 @@ Warm Welcome to the Web Enthusiasts and Professionals into Dev-Mint. Start contr
 - [HTML+CSS+JS Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps)
 - [MERN Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/MERN%20Apps)
 - [Chrome Extensions](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Chrome%20Extensions)
-
 
 <!--
 Videos, Blogs, Programming, Tutorials, IDE, Self Guided Projects, Courses
@@ -61,7 +60,6 @@ Subsequently, also go through the GitHub documentation on [creating a pull reque
 <!-- 
 Content
  -->
- 
 
 ## 🛠 Templates to Follow
 
