@@ -9,7 +9,7 @@ Assignee: ''
 
 Define You:
 
-- [ ] SWOC Participant 
+- [ ] Social Winter Of Code Participant 
 - [ ] Contributor
 
 
