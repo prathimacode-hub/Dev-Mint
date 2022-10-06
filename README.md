@@ -136,19 +136,19 @@ Create an issue with your idea, approach, your expected outcome and why it's use
 </table>
 -->
 
-
+<!--
 ## ✨ Hall Of Fame   
 
-Thanks go to these Wonderful People. Contributions of any kind are welcome!🚀 
+Thanks go to these Wonderful People. Contributions of any kind are welcome!🚀 -->
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
-
+<!--
 <a href="https://github.com/prathimacode-hub/Dev-Mint/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=prathimacode-hub/Dev-Mint" />
 </a>
-
+-->
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
@@ -177,7 +177,7 @@ This project follows the [GNU General Public License 3.0](https://github.com/pra
 
 ## 🌟 Stargazers Over Time 🌟
 
-[![Stargazers over time](https://starchart.cc/prathimacode-hub/Dev-Mint.svg)](https://starchart.cc/prathimacode-hub/Dev-Mint)
+[![Stargazers Over Time](https://starchart.cc/prathimacode-hub/Dev-Mint.svg)](https://starchart.cc/prathimacode-hub/Dev-Mint)
 
 
 ## ⭐ Give this Project a Star
