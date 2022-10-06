@@ -161,7 +161,7 @@ You can find our Code of Conduct [here](https://github.com/prathimacode-hub/Dev-
 
 ## 📝 License
 
-This project follows the [Mozilla Public License 2.0](https://github.com/prathimacode-hub/Dev-Mint/blob/main/LICENSE).
+This project follows the [GNU General Public License 3.0](https://github.com/prathimacode-hub/Dev-Mint/blob/main/LICENSE).
 
 
 ## 😎 Project Admin
