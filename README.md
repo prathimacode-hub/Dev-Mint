@@ -39,12 +39,12 @@ Warm Welcome to the Web Enthusiasts and Professionals into Dev-Mint. Start contr
 
 ## ✔Table Of Contents
 
-- Frontend Layouts 
-- CSS Animations & Effects
-- HTML+CSS Apps
-- HTML+CSS+JS Apps
-- MERN Apps
-- Chrome Extensions
+- [Frontend Layouts](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Frontend%20Layouts) 
+- [CSS Animations & Effects](https://github.com/prathimacode-hub/Dev-Mint/tree/main/CSS%20Animations%20%26%20Effects)
+- [HTML+CSS Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%20Apps)
+- [HTML+CSS+JS Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps)
+- [MERN Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/MERN%20Apps)
+- [Chrome Extensions](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Chrome%20Extensions)
 
 
 <!--
@@ -73,6 +73,7 @@ Content
 
 
 ## 📝 Project Structure for Issues :
+
 
 
 ## 📝 Project Structure for All Kind of Issues and PR's
@@ -117,6 +118,7 @@ Create an issue with your idea, approach, your expected outcome and why it's use
  </td>
 </tr>
 </table>
+
 
 <!-- 
 ## 🏆 Achievements of this Project Repo 🎉
