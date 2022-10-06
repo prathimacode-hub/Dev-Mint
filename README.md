@@ -6,6 +6,7 @@
 <p align="center">
 <img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Cover%20Photos/Dev-Mint.png"></a>
 </p>
+
 <p align="center">
 <a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github"></a> 
 <a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green"></a> 
@@ -27,7 +28,7 @@
 
 ## 📌 Repository
 
-
+Dev Mint has a exclusive collection of layouts, animations, effects, code snippets, extensions, projects, resources etc. to fulfill and satiate your developer needs.
 
 
 ## 🙌 Join Here
