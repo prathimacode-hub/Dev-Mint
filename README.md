@@ -28,7 +28,7 @@
 
 ## 📌 Repository
 
-Dev Mint has a exclusive collection of layouts, animations, effects, code snippets, extensions, projects, resources etc. to fulfill and satiate your developer needs.
+Dev Mint has an exclusive collection of layouts, animations, effects, code snippets, extensions, projects, resources etc. to fulfill and satiate your developer needs.
 
 
 ## 🙌 Join Here
