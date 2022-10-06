@@ -1,7 +1,5 @@
-# Dev Mint 
-
 <div align="center">
-  <h1>Welcome to Dev Mint👋🎲</h1>
+  <h1>Welcome to Dev Mint👋🏆</h1>
   <h3>Website for Dev Mint Project Repo: <a href="https://prathimacode-hub.github.io/Dev-Mint/">Click Here!</a></h3>
 </div>
 
