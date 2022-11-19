@@ -35,7 +35,7 @@ Dev Mint has an exclusive collection of layouts, animations, effects, code snipp
 
 Warm welcome to the Web Enthusiasts and Professionals into Dev-Mint. Start contributing Geeks!!
 
-**Programming Lanaguages - HTML, CSS, JS | Domain Knowledge - Web Development**
+**Programming Lanaguages - HTML, CSS, JS, MERN | Domain Knowledge - Web Development**
 
 
 ## ✔Table Of Contents
