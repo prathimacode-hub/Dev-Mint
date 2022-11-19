@@ -10,6 +10,7 @@ Assignee: ''
 Define You:
 
 - [ ] Social Winter Of Code Participant  
+- [ ] Code Peak Participant 
 - [ ] Contributor
 
 
