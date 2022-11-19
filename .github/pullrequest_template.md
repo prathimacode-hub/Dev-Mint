@@ -3,6 +3,7 @@
 - Info about the related issue 
 
 - [ ] Social Winter Of Code Participant  
+- [ ] Code Peak Participant 
 - [ ] Contributor
 
 Closes: #issue number that will be closed through this PR
