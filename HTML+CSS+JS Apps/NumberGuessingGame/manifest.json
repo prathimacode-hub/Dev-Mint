@@ -1,0 +1,14 @@
+{
+    "name": "Number Guessing Game",
+    "description" : "Guess the right number and win the game",
+    "version": "0.0.1",
+    "manifest_version":2,
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon":"bg.png"
+    },
+    "icons":{
+        "128":"bg.png"
+    },
+    "permissions": ["activeTab"]
+} 
