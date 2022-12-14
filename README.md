@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Welcome to Dev Mint👋🏆</h1>
-  <h3>Website for Dev Mint Project Repo: <a href="https://prathimacode-hub.github.io/Dev-Mint/">Click Here!</a></h3>
+  <h3>Website for Dev Mint Project Application : <a href="https://prathimacode-hub.github.io/Dev-Mint/">Click Here!</a></h3>
 </div>
 
 <p align="center">
@@ -107,14 +107,16 @@ Create an issue with your idea, approach, your expected outcome and why it's use
 
 > print("Start contributing for Dev-Mint")
 
-
+<!--
+<td align="center">
+<a href="https://swoc.getsocialnow.co/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Social%20Winter%20Of%20Code%202022/Social-Winter-Of-Code-Logo.png" width=100px height=100px /><br /><sub><b>Social Winter Of Code 2022</b></sub></a>
+ </td>
+ -->
+ 
  ## ❄️ Open Source Programs
  
 <table>
 <tr>
- <td align="center">
-<a href="https://swoc.getsocialnow.co/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Social%20Winter%20Of%20Code%202022/Social-Winter-Of-Code-Logo.png" width=100px height=100px /><br /><sub><b>Social Winter Of Code 2022</b></sub></a>
- </td>
  <td align="center">
 <a href="https://www.codepeak.tech/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Code%20Peak%202022/Code%20Peak.png" width=100px height=60px /><br /><sub><b>Code Peak 2022</b></sub></a>
  </td>
