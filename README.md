@@ -167,6 +167,15 @@ You can find our Code of Conduct [here](https://github.com/prathimacode-hub/Dev-
 This project follows the [GNU General Public License 3.0](https://github.com/prathimacode-hub/Dev-Mint/blob/main/LICENSE).
 
 
+## 😎 CodePeak Mentor
+
+<table>
+  <tr>
+<td align="center"><a href="https://github.com/Kumar-Ankit56"><img src="https://avatars.githubusercontent.com/u/73521123?v=4" width="100px;" alt=""/><br /><sub><b>Ankit Kumar</b></sub></a></td>
+  </tr>
+</table>
+
+
 ## 😎 Project Admin
 
 <table>
