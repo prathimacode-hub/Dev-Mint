@@ -2,6 +2,12 @@
 
 List of Open Source Events in which this project participated.
 
+- CodePeak 2022
+
+CODE PEAK is a month-long program that helps students understand the paradigm of Open Source contribution and gives them real-world software development experience. The event targets first-timers who wish to participate in Free and Open Source(FOSS) Contributions and the experienced developers who want to show their skills by contributing to real-world projects.
+
+<a href="https://github.com/prathimacode-hub"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Code%20Peak%202022/Code%20Peak.png" width=150px height=150px /></a>
+
 - Social Winter Of Code 2022 (SWOC)
 
 Script Winter of Code is an open-source program envisioned by the Social. It aims to bring students into the world of open source development and see the power of unified problem-solving in real time.✨
