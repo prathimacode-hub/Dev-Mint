@@ -1,15 +1,15 @@
 ---
 name: Bug Report
-about: This template will help in creating a bug report for the project
+about: This issue template will help in reporting a bug in this project
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-name: Bug Report
+name: "Bug Report"
 description: Report a bug you found
-title: "[Bug Project Title here] "
+title: "[Bug Project Title here]"
 labels: "bug"
 body:
   - type: markdown
@@ -36,7 +36,7 @@ Category/Repo It Belongs To :
   - type: textarea #reproduce
     attributes:
       label: How can we reproduce this bug?
-      description: Are there any specific steps you had to take in order to trigger the bug, and what is the expected behaviour we should expect?
+      description: Are there any specific steps you had to take in order to trigger the bug, and what is the expected behavior we should expect?
       placeholder: Kindly elaborate.
     validations:
       required: true
