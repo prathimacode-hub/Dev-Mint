@@ -2,7 +2,6 @@
 
 - Info about the related issue 
 
-- [ ] Social Winter Of Code Participant  
 - [ ] Code Peak Participant 
 - [ ] Contributor
 
