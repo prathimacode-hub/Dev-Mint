@@ -5,6 +5,14 @@ labels: "Feature Request"
 body:
   - type: textarea #description
     attributes:
+      label: Are you a CodePeak participant?
+      description: Give your answer along with your Full Name.
+      placeholder: Ex. Fill the info here
+    validations:
+      required: true
+      
+  - type: textarea #description
+    attributes:
       label: Is your feature request related to a problem? Please describe.
       description: A clear and concise description of what the problem is.
       placeholder: Ex. I'm always frustrated when [...]
