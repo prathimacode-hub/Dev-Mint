@@ -46,5 +46,3 @@ Example how to mark a checkbox:-
  Original           | Updated
  :--------------------: |:--------------------:
  Original Screenshot | Updated Screenshot |
- Original Block Diagram | Updated Block Diagram |
- Original Emulator Prototype Diagram | Updated Emulator Prototype Diagram |
