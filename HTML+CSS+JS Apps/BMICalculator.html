@@ -1,0 +1,70 @@
+>
+<html lang="en">
+
+<head>
+    <title>BMI Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" >
+        <h1>BMI Calculator</h1>
+        <div class="display" style="border-radius: 2rem;">
+            <p id="result">20.0</p>
+            <p id="category">Normal weight</p>
+        </div>
+        <div class="row">
+            <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()">
+            <span id="weight-val">20 kg</span>
+        </div>
+        <div class="row">
+            <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()">
+            <span id="height-val">100 cm</span>
+        </div>
+
+
+    </div>
+    <script>
+        function calculate(){
+      var bmi;
+      var result = document.getElementById("result");
+      var height = parseInt(document.getElementById("height").value);
+      var weight = parseInt(document.getElementById("weight").value);
+    
+      document.getElementById("weight-val").textContent = weight + " kg";
+      document.getElementById("height-val").textContent = height + " cm";
+    
+      bmi = (weight / Math.pow( (height/100), 2 )).toFixed(1);
+      result.textContent = bmi;
+  
+      if(bmi < 18.5){
+          category = "Underweight 😒";
+          result.style.color = "#ffc44d";
+      }
+ 
+      else if( bmi >= 18.5 && bmi <= 24.9 ){
+          category = "Normal Weight 😍";
+          result.style.color = "#0be881";
+      }
+
+      else if( bmi >= 25 && bmi <= 29.9 ){
+          category = "Overweight 😮";
+          result.style.color = "#ff884d";
+      }
+    
+    //If BMI is <= 30
+      else{
+          category = "Obese 😱";
+          result.style.color = "#ff5e57";
+      }
+    
+  
+ 
+      document.getElementById("category").textContent = category;
+  }
+    </script>
+</body>
+
+</html>
