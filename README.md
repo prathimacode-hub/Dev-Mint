@@ -72,16 +72,15 @@ Content
 
 **Note**: One should follow these templates while creating a new issue or pull request. 
 
-
+<!--
 ## 📝 Project Structure for Issues :
-
-
+-->
 
 ## 📝 Project Structure for All Kind of Issues and PR's
 
 Your projects should contain certain flow to maintain similarity across all other projects. Make sure to note these things, before you create a issue or PR.
 
-Create an issue with your idea, approach, your expected outcome and why it's useful to be necessary to be included in this project. For PR, include issue number along with PR template, it's details and compiled output screenshot
+Create an issue with your idea, approach, your expected outcome and why it's useful to be necessary to be included in this project. For PR, include issue number along with PR template, it's details and compiled output screenshot.
 
 
 ## ⚙️ Things to Note
@@ -120,7 +119,7 @@ Create an issue with your idea, approach, your expected outcome and why it's use
 <table>
 <tr>
  <td align="center">
-<a href="https://www.codepeak.tech/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Code%20Peak%202022/Code%20Peak.png" width=100px height=60px /><br /><sub><b>Code Peak 2022</b></sub></a>
+<a href="https://www.codepeak.tech/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Code%20Peak%202022/Code%20Peak.png" width=100px height=60px /><br /><sub><b>Code Peak 2023</b></sub></a>
  </td>
 </tr>
 </table>
@@ -156,6 +155,7 @@ Thanks go to these Wonderful People. Contributions of any kind are welcome!🚀 
   <img src="https://contrib.rocks/image?repo=prathimacode-hub/Dev-Mint" />
 </a>
 -->
+
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
@@ -170,7 +170,7 @@ You can find our Code of Conduct [here](https://github.com/prathimacode-hub/Dev-
 
 This project follows the [GNU General Public License 3.0](https://github.com/prathimacode-hub/Dev-Mint/blob/main/LICENSE).
 
-
+<!--
 ## 😎 CodePeak Mentor
 
 <table>
@@ -178,7 +178,7 @@ This project follows the [GNU General Public License 3.0](https://github.com/pra
 <td align="center"><a href="https://github.com/Kumar-Ankit56"><img src="https://avatars.githubusercontent.com/u/73521123?v=4" width="100px;" alt=""/><br /><sub><b>Ankit Kumar</b></sub></a></td>
   </tr>
 </table>
-
+-->
 
 ## 😎 Project Admin
 
@@ -198,7 +198,7 @@ This project follows the [GNU General Public License 3.0](https://github.com/pra
 
 ## ⭐ Give this Project a Star
 
-[![GitHub followers](https://img.shields.io/github/followers/prathimacode-hub.svg?label=Follow%20@prathimacode-hub&style=social)](https://github.com/prathimak88/)  [![Twitter Follow](https://img.shields.io/twitter/follow/prathimak88?style=social)](https://twitter.com/prathimak88)
+[![GitHub followers](https://img.shields.io/github/followers/prathimacode-hub.svg?label=Follow%20@prathimacode-hub&style=social)](https://github.com/prathimacode-hub/)  [![Twitter Follow](https://img.shields.io/twitter/follow/prathima_kadari?style=social)](https://twitter.com/prathima_kadari)
 
 If you liked working on this project, do ⭐ and share this repository.
 
@@ -215,7 +215,7 @@ If you liked working on this project, do ⭐ and share this repository.
 
 If you want to contact me, you can reach me through the below handles.
 
-<a href="https://twitter.com/prathimak88"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/1200px-Twitter_Bird.svg.png" width="25"></img></a>&nbsp;&nbsp; <a href="https://www.linkedin.com/in/prathima-kadari/"><img src="https://www.felberpr.com/wp-content/uploads/linkedin-logo.png" width="25"></img></a>
+<a href="https://twitter.com/prathima_kadari"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/1200px-Twitter_Bird.svg.png" width="25"></img></a>&nbsp;&nbsp; <a href="https://www.linkedin.com/in/prathima-kadari/"><img src="https://www.felberpr.com/wp-content/uploads/linkedin-logo.png" width="25"></img></a>
 
 © 2022 Prathima Kadari
 
