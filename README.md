@@ -40,13 +40,15 @@ Warm welcome to the Web Enthusiasts and Professionals into Dev-Mint. Start contr
 
 ## ✔Table Of Contents
 
-- [Frontend Layouts](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Frontend%20Layouts) 
-- [CSS Animations & Effects](https://github.com/prathimacode-hub/Dev-Mint/tree/main/CSS%20Animations%20%26%20Effects)
 - [HTML+CSS Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%20Apps)
+- [CSS Animations & Effects](https://github.com/prathimacode-hub/Dev-Mint/tree/main/CSS%20Animations%20%26%20Effects)
+- [JS Scripts](https://github.com/prathimacode-hub/Dev-Mint/tree/main/JS%20Scripts)
 - [HTML+CSS+JS Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps)
+- [Frontend Layouts](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Frontend%20Layouts) 
 - [MERN Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/MERN%20Apps)
 - [Chrome Extensions](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Chrome%20Extensions)
-
+- [Calculators](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators)
+  
 <!--
 Videos, Blogs, Programming, Tutorials, IDE, Self Guided Projects, Courses
 Web Development, Data Science, Github -->
