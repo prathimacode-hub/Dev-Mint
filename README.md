@@ -12,7 +12,7 @@
 <a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green"></a> 
 <a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square"></a>
 <a href="https://github.com/prathimacode-hub/Dev-Mint/graphs/contributors"><img src="https://img.shields.io/github/contributors-anon/prathimacode-hub/Dev-Mint"></a>
-<a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/maintenance/yes/2022"></a>
+<a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/maintenance/yes/2023"></a>
 </p> 
 
 <p align="center">
@@ -198,7 +198,7 @@ This project follows the [GNU General Public License 3.0](https://github.com/pra
 
 ## ⭐ Give this Project a Star
 
-[![GitHub followers](https://img.shields.io/github/followers/prathimacode-hub.svg?label=Follow%20@prathimacode-hub&style=social)](https://github.com/prathimacode-hub/)  [![Twitter Follow](https://img.shields.io/twitter/follow/prathima_kadari?style=social)](https://twitter.com/prathima_kadari)
+[![GitHub followers](https://img.shields.io/github/followers/prathimacode-hub.svg?label=Follow%20@prathimacode-hub&style=social)](https://github.com/prathimacode-hub/)  [![Twitter Follow](https://img.shields.io/twitter/follow/prathima_kadari.svg?label=Follow%20@prathima_kadari&style=social)]([https://twitter.com/prathima_kadari)
 
 If you liked working on this project, do ⭐ and share this repository.
 
