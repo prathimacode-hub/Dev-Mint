@@ -1,48 +1,53 @@
-name: Bug Report
-description: Report a bug you found
-title: "[Bug Title here] "
-labels: "bug"
-body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-        
-  - type: textarea #description
-    attributes:
-      label: Are you a CodePeak participant?
-      description: Give your answer along with your Full Name.
-      placeholder: Ex. Fill the info here
-    validations:
-      required: true
+Thanks for taking the time to fill out this bug report!
 
-  - type: textarea #description
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-    validations:
-      required: true
+---
+name: BUG REPORT
+about: If you find any bugs in the repository use this template to report them
+title: "[BUG]"
+labels: ""
+assignees: ""
+---
 
-  - type: textarea #reproduce
-    attributes:
-      label: How can we reproduce this bug?
-      description: Are there any specific steps you had to take in order to trigger the bug, and what is the expected behaviour we should expect?
-      placeholder: Kindly elaborate.
-    validations:
-      required: true
+# Bug Report
 
-  - type: textarea #desktop info
-    attributes:
-      label: Desktop Information (Optional)
-      description: Please provide the desktop configuration (OS,Browser, dependency version etc)
-      placeholder: Type here.
+<!-- If you found a bug in the code, please report it using this template. -->
 
-  - type: dropdown #urgent
-    attributes:
-      label: Urgency (Optional)
-      description: How urgent do you think it is to fix this bug?
-      options:
-        - Low priority
-        - Medium priority
-        - High priority
+---
+
+| Field    | Description                               |
+| -------- | ----------------------------------------- |
+| About    | Explain in detail the bug you experienced |
+| Name     | Your GitHub name                          |
+| Email    |                                           |
+| Label    | Bug Report                                |
+| Assignee | ''                                        |
+
+<!-- Your GitHub profile link -->
+
+---
+
+**Define Yourself**
+
+- [ ] CodePeak 2023
+
+<!-- Have you talked to any of the Moderators or Project Admin (Prathima Kadari) before creating this issue? If not, please have a quick discussion first and then once approved, create this bug report. -->
+
+**Describe the Problem**
+
+<!-- A clear and concise description of what the problem is. -->
+
+**Expected Behavior**
+
+<!-- A clear and concise description of what you expected to happen. -->
+
+**Actual Behavior**
+
+<!-- A clear and concise description of what actually happened. -->
+
+**Screenshots**
+
+<!-- If applicable, add screenshots to help explain the bug. -->
+
+**Possible Solution (optional)**
+
+<!-- If you have suggestions on a possible solution, please describe it here. -->
