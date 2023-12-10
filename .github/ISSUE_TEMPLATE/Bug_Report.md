@@ -1,5 +1,3 @@
-Thanks for taking the time to fill out this bug report!
-
 ---
 name: BUG REPORT
 about: If you find any bugs in the repository use this template to report them
@@ -51,3 +49,6 @@ assignees: ""
 **Possible Solution (optional)**
 
 <!-- If you have suggestions on a possible solution, please describe it here. -->
+
+
+Thanks for taking the time to fill out this bug report!
