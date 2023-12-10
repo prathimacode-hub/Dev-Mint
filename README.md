@@ -65,10 +65,10 @@ Content
 
 ## 🛠 Templates to Follow
 
-- [Feature request](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/issue_template/feature_request.md)
-- [Bug Report](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/issue_template/bug_report.md)
-- [Pull Request](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/pullrequest_template.md)
-- [README](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/readme_template.md)
+- [Feature-Request](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/ISSUE_TEMPLATE/Feature_Request.md)
+- [Bug-Report](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/ISSUE_TEMPLATE/Bug_Report.md)
+- [PR-Template](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/PULL_REQUEST_TEMPLATE.md)
+- [README](https://github.com/prathimacode-hub/Dev-Mint/blob/main/README.md)
 
 **Note**: One should follow these templates while creating a new issue or pull request. 
 
