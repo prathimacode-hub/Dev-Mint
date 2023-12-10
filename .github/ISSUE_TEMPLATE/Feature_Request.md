@@ -25,7 +25,8 @@ assignees: ""
 
 **Define You**
 
-- [ ] CodePeak 2023
+- [ ] CodePeak 2023 Participant
+- [ ] Contributor
 
 <!-- Have you talked to any of the Moderators or Project Admin (Adithya S K or CognitiveLab) before creating this issue? If not, just have a quick discussion and then once approved, create this feature request. -->
 
