@@ -51,4 +51,4 @@ assignees: ""
 <!-- If you have suggestions on a possible solution, please describe it here. -->
 
 
-Thanks for taking the time to fill out this bug report!
+**Thanks for taking the time to fill out this bug report!**
