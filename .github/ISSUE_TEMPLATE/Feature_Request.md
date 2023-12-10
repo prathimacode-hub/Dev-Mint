@@ -1,41 +1,49 @@
-name: Feature Request
-description: Request/Suggest any feature you think is missing
-title: "Title: "
-labels: "Feature Request"
-body:
-  - type: textarea #description
-    attributes:
-      label: Are you a CodePeak participant?
-      description: Give your answer along with your Full Name.
-      placeholder: Ex. Fill the info here
-    validations:
-      required: true
-      
-  - type: textarea #description
-    attributes:
-      label: Is your feature request related to a problem? Please describe.
-      description: A clear and concise description of what the problem is.
-      placeholder: Ex. I'm always frustrated when [...]
-    validations:
-      required: true
+---
+name: Project Request
+about: If you want to propose a project idea that can be added to the repository
+title: "[PROJECT PROPOSAL]"
+labels: ""
+assignees: ""
+---
 
-  - type: textarea #solution
-    attributes:
-      label: Describe the solution you'd like.
-      description: A clear and concise description of what you want to happen.
-      placeholder: Kindly elaborate.
-    validations:
-      required: true
+## Project Request
 
-  - type: textarea #alternatives
-    attributes:
-      label: Describe alternatives you've considered.
-      description: A clear and concise description of any alternative solutions or features you've considered.
-      placeholder: Type here.
-    validations:
-      required: true
+<!-- Describe the project and the problem statement-->
 
-  - type: textarea #Additional Context
-    attributes:
-      label: Add any other context or screenshots about the feature request here.
-      description: Any miscellaneous suggestions you'd like to give.
+---
+
+| Field  | Description                       |
+| ------ | --------------------------------- |
+| About  | A short Description about project |
+| Github | Your Github name                  |
+| Email  |                                   |
+| Label  | Project Request                   |
+
+<!-- your github profile link -->
+
+---
+
+**Define You**
+
+- [ ] CodePeak 2023
+
+<!-- Have you talked to any of the Moderators or Project Admin (Adithya S K or CognitiveLab) before creating this issue? If not, just have a quick discussion and then once approved, create this feature request. -->
+
+# Project Name
+
+<!-- Replace with the project name -->
+
+## Description (Is your feature request related to a problem? Please describe)
+
+<!-- add description to the project -->
+
+[Description of the project, its goals, and expected outcomes] A clear and concise description of what the problem is. 
+
+## Scope (Describe the solution you'd like.)
+
+[The project's boundaries, including its objectives, deliverables, and constraints]
+A clear and concise description of what you want to happen. Kindly elaborate.
+
+## Video Links or Support Links (if applicable)
+
+[Links that can support the project in anyway] Add any other context or screenshots about the feature request here
