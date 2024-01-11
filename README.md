@@ -121,6 +121,15 @@ Create an issue with your idea, approach, your expected outcome and why it's use
  <td align="center">
 <a href="https://www.codepeak.tech/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Code%20Peak%202022/Code%20Peak.png" width=100px height=60px /><br /><sub><b>Code Peak 2023</b></sub></a>
  </td>
+ <td align="center">
+<a href="https://jwoc-2k23.vercel.app/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/JGEC%20Winter%20Of%20Code%202023/JGEC-Winter-Of-Code%20-2023.jpg" width=100px height=60px /><br /><sub><b>JGEC Winter Of Code 2023</b></sub></a>
+ </td>
+ <td align="center">
+<a href="https://www.codepeak.tech/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Code%20Peak%202022/Code%20Peak.png" width=100px height=60px /><br /><sub><b>Code Peak 2022</b></sub></a>
+ </td>
+ <td align="center">
+<a href="https://www.socialwinterofcode.com/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Social%20Winter%20Of%20Code%202022/Social-Winter-Of-Code-Logo.png" width=100px height=60px /><br /><sub><b>Social Winter Of Code 2022</b></sub></a>
+ </td>
 </tr>
 </table>
 
