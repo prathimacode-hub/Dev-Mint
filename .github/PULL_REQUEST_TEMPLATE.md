@@ -2,7 +2,7 @@
 
 - Info about the related issue 
 
-- [ ] CodePeak 2023 Participant
+- [ ] DWOC 2023 Participant
 - [ ] Contributor
 
 Closes: #issue number that will be closed through this PR
