@@ -2,6 +2,12 @@
 
 List of Open Source Events in which this project participated.
 
+- Delta Winter Of Code 2023
+
+DWOC is an open source initiative by Delta Force, the official coding club of NIT Trichy. This program will be exposed to various real world problems and effective means to solve while giving a headstart for projects in this community of collaboration.
+
+<a href="https://dwoc.io/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Delta%20Winter%20Of%20Code%202023/DWOC2023.jpg" width=150px height=150px /></a>
+
 - CodePeak 2023
 
 CODE PEAK is a 1month-long program that helps students understand the paradigm of Open Source contribution and gives them real-world software development experience. The event targets first-timers who wish to participate in Free and Open Source(FOSS) Contributions and the experienced developers who want to show their skills by contributing to real-world projects. This event is organized by Coding Club IIT Guwahati and NWoC IIT Patna
