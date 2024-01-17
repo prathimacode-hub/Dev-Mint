@@ -26,7 +26,7 @@ assignees: ""
 
 **Define Yourself**
 
-- [ ] CodePeak 2023 Participant
+- [ ] DWOC 2023 Participant
 - [ ] Contributor
 
 <!-- Have you talked to any of the Moderators or Project Admin (Prathima Kadari) before creating this issue? If not, please have a quick discussion first and then once approved, create this bug report. -->
