@@ -37,6 +37,16 @@ Warm welcome to the Web Enthusiasts and Professionals into Dev-Mint. Start contr
 
 **Programming Lanaguages - HTML, CSS, JS, MERN | Domain Knowledge - Web Development**
 
+<!--
+Videos, Blogs, Programming, Tutorials, IDE, Self Guided Projects, Courses
+Web Development, Data Science, Github -->
+
+When raising an issue, do make sure to mention the kind of script, project title, short description of the project and how would you expect it to work. As a good practice, always link the issue number with a pull request. (#issue number: Give these details when you raise a PR).
+
+If you worked on or want to initiate a unique project and share it with the world, you can do that here. Go through the contributing guidelines in [CONTRIBUTING](https://github.com/prathimacode-hub/Dev-Mint/blob/main/CONTRIBUTING.md)👩‍💻
+
+Subsequently, also go through the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
 
 ## ✔Table Of Contents
 
@@ -49,28 +59,9 @@ Warm welcome to the Web Enthusiasts and Professionals into Dev-Mint. Start contr
 - [Chrome Extensions](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Chrome%20Extensions)
 - [Calculators](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators)
   
-<!--
-Videos, Blogs, Programming, Tutorials, IDE, Self Guided Projects, Courses
-Web Development, Data Science, Github -->
-
-When raising an issue, do make sure to mention the kind of script, project title, short description of the project and how would you expect it to work. As a good practice, always link the issue number with a pull request. (#issue number: Give these details when you raise a PR).
-
-If you worked on or want to initiate a unique project and share it with the world, you can do that here. Go through the contributing guidelines in [CONTRIBUTING](https://github.com/prathimacode-hub/Dev-Mint/blob/main/CONTRIBUTING.md)👩‍💻
-
-Subsequently, also go through the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
 <!-- 
 Content
  -->
-
-## 🛠 Templates to Follow
-
-- [Feature-Request](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/ISSUE_TEMPLATE/Feature_Request.md)
-- [Bug-Report](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/ISSUE_TEMPLATE/Bug_Report.md)
-- [PR-Template](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/PULL_REQUEST_TEMPLATE.md)
-- [ReadMe-Template](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/README_TEMPLATE.md)
-
-**Note**: One should follow these templates while creating a new issue or pull request. 
 
 <!--
 ## 📝 Project Structure for Issues :
@@ -81,17 +72,6 @@ Content
 Your projects should contain certain flow to maintain similarity across all other projects. Make sure to note these things, before you create a issue or PR.
 
 Create an issue with your idea, approach, your expected outcome and why it's useful to be necessary to be included in this project. For PR, include issue number along with PR template, it's details and compiled output screenshot.
-
-
-## ⚙️ Things to Note
-
-* Make sure you do not copy codes from external sources because that work will not be considered. Plagiarism is strictly not allowed.
-* You can only work on issues that have been assigned to you.
-* If you want to contribute the script, it's preferable that you create a new issue before making a PR and link your PR to that issue.
-* If you have modified/added code, make sure the code compiles before submitting.
-* Strictly use snake_case (underscore_separated) in your file_name and push it in the correct folder.
-* Add Screenshots and output video to help us know what this Script is all about. 
-* Do not update the **[README.md](https://github.com/prathimacode-hub/Dev-Mint/blob/main/README.md).**
 
 
 ## 💻 Workflow:
@@ -107,6 +87,27 @@ Create an issue with your idea, approach, your expected outcome and why it's use
 - Then in GitHub, in your cloned repository, find the option to make a pull request. 
 
 > print("Start contributing for Dev-Mint")
+
+
+## 🛠 Templates to Follow
+
+- [Feature-Request](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/ISSUE_TEMPLATE/Feature_Request.md)
+- [Bug-Report](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/ISSUE_TEMPLATE/Bug_Report.md)
+- [PR-Template](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/PULL_REQUEST_TEMPLATE.md)
+- [ReadMe-Template](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/README_TEMPLATE.md)
+
+**Note**: One should follow these templates while creating a new issue or pull request. 
+
+
+## ⚙️ Things to Note
+
+* Make sure you do not copy codes from external sources because that work will not be considered. Plagiarism is strictly not allowed.
+* You can only work on issues that have been assigned to you.
+* If you want to contribute the script, it's preferable that you create a new issue before making a PR and link your PR to that issue.
+* If you have modified/added code, make sure the code compiles before submitting.
+* Strictly use snake_case (underscore_separated) in your file_name and push it in the correct folder.
+* Add Screenshots and output video to help us know what this Script is all about. 
+* Do not update the **[README.md](https://github.com/prathimacode-hub/Dev-Mint/blob/main/README.md).**
 
 <!--
 <td align="center">
