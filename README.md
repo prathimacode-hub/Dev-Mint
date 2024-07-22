@@ -200,9 +200,10 @@ This project follows the [GNU General Public License 3.0](https://github.com/pra
 
 <table>
   <tr>
-<td align="center"><a href="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Profile%20Assets/Official%20Professional%20Pic.jpg" width="80px;" alt=""/><br /><sub><b>Prathima Kadari</b></sub></a></td>
+<td align="center"><a href="https://github.com/prathimacode-hub"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Profile%20Assets/Official%20Professional%20Pic.jpg" width="100px;" alt=""/><br /><sub><b>Prathima Kadari</b></sub></a></td>
   </tr>
 </table>
+
 
 ![Visitor Count](https://profile-counter.glitch.me/{prathimacode-hub}/count.svg)
 
