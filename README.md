@@ -119,7 +119,10 @@ Create an issue with your idea, approach, your expected outcome and why it's use
 <table>
 <tr>
 <td align="center">
-<a href="https://dwoc.io/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Delta%20Winter%20Of%20Code%202023/DWOC2023.jpg" width=100px height=100px /><br /><sub><b>Delta Winter Of Code 20243</b></sub></a>
+<a href="https://codesapiens.in/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/CodeSapiens%20Summer%20Of%20Code%202024/CodeSapiens%20Summer%20Of%20Code.png" width=100px height=100px /><br /><sub><b>Code Sapiens Summer Of Code 2024</b></sub></a>
+</td>
+<td align="center">
+<a href="https://dwoc.io/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Delta%20Winter%20Of%20Code%202023/DWOC2023.jpg" width=100px height=100px /><br /><sub><b>Delta Winter Of Code 2023</b></sub></a>
  </td>
  <td align="center">
 <a href="https://www.codepeak.tech/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Code%20Peak%202022/Code%20Peak.png" width=100px height=60px /><br /><sub><b>Code Peak 2023</b></sub></a>
@@ -137,12 +140,12 @@ Create an issue with your idea, approach, your expected outcome and why it's use
 </table>
 
 
-<!-- 
 ## 🏆 Achievements of this Project Repo 🎉
 
 **:one: Recognized as the "BEST PROJECT ADMIN" for the project ['IoT-Spot'](https://github.com/prathimacode-hub/IoT-Spot) in GirlScript Summer Of Code 2022.**</br>
 **:two: Recognized as the "🥇 BEST ORGANIZATION" for "FIESTA OF PROJECTS" undertaking the project ['IoT-Spot'](https://github.com/prathimacode-hub/IoT-Spot) at Delta Winter Of Code for the year 2021-22.**</br>
 
+<!-- 
 
 ## 📊 Leaderboard 
 
@@ -155,6 +158,7 @@ Create an issue with your idea, approach, your expected outcome and why it's use
 -->
 
 <!--
+
 ## ✨ Hall Of Fame   
 
 Thanks go to these Wonderful People. Contributions of any kind are welcome!🚀 -->
