@@ -8,8 +8,7 @@ I'm happy to welcome all the contributions from anyone willing to add new script
 
 ## 💻Before Contributing
 
-Welcome to [prathimacode-hub/IoT-Spot](https://github.com/prathimacode-hub/Dev-Mint/). Before sending your pull requests, make sure that you **read the whole
-guidelines**. If you have any doubt about the contributing guide, please feel free to reach out.
+Welcome to [prathimacode-hub/Dev-Mint](https://github.com/prathimacode-hub/Dev-Mint/). Before sending your pull requests, make sure that you **read the whole guidelines**. If you have any doubt about the contributing guide, please feel free to reach out.
 
 
 ## 🙌Contribution
