@@ -2,7 +2,7 @@
 
 - Info about the related issue 
 
-- [ ] Code Peak Participant 
+- [ ] CSSOC 2024 Participant
 - [ ] Contributor
 
 Closes: #issue number that will be closed through this PR
@@ -46,5 +46,3 @@ Example how to mark a checkbox:-
  Original           | Updated
  :--------------------: |:--------------------:
  Original Screenshot | Updated Screenshot |
- Original Block Diagram | Updated Block Diagram |
- Original Emulator Prototype Diagram | Updated Emulator Prototype Diagram |

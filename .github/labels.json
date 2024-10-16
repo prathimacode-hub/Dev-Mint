@@ -1,0 +1,22 @@
+[
+  {
+    "name": "good first issue",
+    "description": "This issue is good for first timers",
+    "color": "F6FE17"
+  },
+  {
+    "name": "help wanted",
+    "description": "This issue needs help ! Please help if possible !",
+    "color": "008672"
+  },
+  {
+    "name": "codepeak",
+    "description": "This issue/pull request will be considered for CodePeak 2k23.",
+    "color": "1d4cb0"
+  },
+  {
+    "name": "🤩 Up for Grab",
+    "description": "This issue is not assigned ! Grab It !",
+    "color": "bf00ff"
+  }
+]

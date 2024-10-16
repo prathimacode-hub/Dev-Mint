@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Welcome to Dev Mint👋🏆</h1>
-  <h3>Website for Dev Mint Project Application : <a href="https://prathimacode-hub.github.io/Dev-Mint/">Click Here!</a></h3>
+ <!-- <h3>Website for Dev Mint Project Application : <a href="https://prathimacode-hub.github.io/Dev-Mint/">Click Here!</a></h3> -->
 </div>
 
 <p align="center">
@@ -12,7 +12,7 @@
 <a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green"></a> 
 <a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square"></a>
 <a href="https://github.com/prathimacode-hub/Dev-Mint/graphs/contributors"><img src="https://img.shields.io/github/contributors-anon/prathimacode-hub/Dev-Mint"></a>
-<a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/maintenance/yes/2022"></a>
+<a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/maintenance/yes/2024"></a>
 </p> 
 
 <p align="center">
@@ -37,16 +37,6 @@ Warm welcome to the Web Enthusiasts and Professionals into Dev-Mint. Start contr
 
 **Programming Lanaguages - HTML, CSS, JS, MERN | Domain Knowledge - Web Development**
 
-
-## ✔Table Of Contents
-
-- [Frontend Layouts](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Frontend%20Layouts) 
-- [CSS Animations & Effects](https://github.com/prathimacode-hub/Dev-Mint/tree/main/CSS%20Animations%20%26%20Effects)
-- [HTML+CSS Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%20Apps)
-- [HTML+CSS+JS Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps)
-- [MERN Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/MERN%20Apps)
-- [Chrome Extensions](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Chrome%20Extensions)
-
 <!--
 Videos, Blogs, Programming, Tutorials, IDE, Self Guided Projects, Courses
 Web Development, Data Science, Github -->
@@ -57,40 +47,31 @@ If you worked on or want to initiate a unique project and share it with the worl
 
 Subsequently, also go through the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
+
+## ✔Table Of Contents
+
+- [HTML+CSS Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%20Apps)
+- [CSS Animations & Effects](https://github.com/prathimacode-hub/Dev-Mint/tree/main/CSS%20Animations%20%26%20Effects)
+- [JS Scripts](https://github.com/prathimacode-hub/Dev-Mint/tree/main/JS%20Scripts)
+- [HTML+CSS+JS Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps)
+- [Frontend Layouts](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Frontend%20Layouts) 
+- [MERN Apps](https://github.com/prathimacode-hub/Dev-Mint/tree/main/MERN%20Apps)
+- [Chrome Extensions](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Chrome%20Extensions)
+- [Calculators](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators)
+  
 <!-- 
 Content
  -->
 
-## 🛠 Templates to Follow
-
-- [Feature request](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/issue_template/feature_request.md)
-- [Bug Report](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/issue_template/bug_report.md)
-- [Pull Request](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/pullrequest_template.md)
-- [README](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/readme_template.md)
-
-**Note**: One should follow these templates while creating a new issue or pull request. 
-
-
+<!--
 ## 📝 Project Structure for Issues :
-
-
+-->
 
 ## 📝 Project Structure for All Kind of Issues and PR's
 
 Your projects should contain certain flow to maintain similarity across all other projects. Make sure to note these things, before you create a issue or PR.
 
-Create an issue with your idea, approach, your expected outcome and why it's useful to be necessary to be included in this project. For PR, include issue number along with PR template, it's details and compiled output screenshot
-
-
-## ⚙️ Things to Note
-
-* Make sure you do not copy codes from external sources because that work will not be considered. Plagiarism is strictly not allowed.
-* You can only work on issues that have been assigned to you.
-* If you want to contribute the script, it's preferable that you create a new issue before making a PR and link your PR to that issue.
-* If you have modified/added code, make sure the code compiles before submitting.
-* Strictly use snake_case (underscore_separated) in your file_name and push it in the correct folder.
-* Add Screenshots and output video to help us know what this Script is all about. 
-* Do not update the **[README.md](https://github.com/prathimacode-hub/Dev-Mint/blob/main/README.md).**
+Create an issue with your idea, approach, your expected outcome and why it's useful to be necessary to be included in this project. For PR, include issue number along with PR template, it's details and compiled output screenshot.
 
 
 ## 💻 Workflow:
@@ -107,6 +88,27 @@ Create an issue with your idea, approach, your expected outcome and why it's use
 
 > print("Start contributing for Dev-Mint")
 
+
+## 🛠 Templates to Follow
+
+- [Feature-Request](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/ISSUE_TEMPLATE/Feature_Request.md)
+- [Bug-Report](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/ISSUE_TEMPLATE/Bug_Report.md)
+- [PR-Template](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/PULL_REQUEST_TEMPLATE.md)
+- [ReadMe-Template](https://github.com/prathimacode-hub/Dev-Mint/blob/main/.github/README_TEMPLATE.md)
+
+**Note**: One should follow these templates while creating a new issue or pull request. 
+
+
+## ⚙️ Things to Note
+
+* Make sure you do not copy codes from external sources because that work will not be considered. Plagiarism is strictly not allowed.
+* You can only work on issues that have been assigned to you.
+* If you want to contribute the script, it's preferable that you create a new issue before making a PR and link your PR to that issue.
+* If you have modified/added code, make sure the code compiles before submitting.
+* Strictly use snake_case (underscore_separated) in your file_name and push it in the correct folder.
+* Add Screenshots and output video to help us know what this Script is all about. 
+* Do not update the **[README.md](https://github.com/prathimacode-hub/Dev-Mint/blob/main/README.md).**
+
 <!--
 <td align="center">
 <a href="https://swoc.getsocialnow.co/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Social%20Winter%20Of%20Code%202022/Social-Winter-Of-Code-Logo.png" width=100px height=100px /><br /><sub><b>Social Winter Of Code 2022</b></sub></a>
@@ -117,19 +119,34 @@ Create an issue with your idea, approach, your expected outcome and why it's use
  
 <table>
 <tr>
+<td align="center">
+<a href="https://codesapiens.in/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/CodeSapiens%20Summer%20Of%20Code%202024/CodeSapiens%20Summer%20Of%20Code.png" width=100px height=100px /><br /><sub><b>Code Sapiens Summer Of Code 2024</b></sub></a>
+</td>
+<td align="center">
+<a href="https://dwoc.io/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Delta%20Winter%20Of%20Code%202023/DWOC2023.jpg" width=100px height=100px /><br /><sub><b>Delta Winter Of Code 2023</b></sub></a>
+ </td>
+ <td align="center">
+<a href="https://www.codepeak.tech/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Code%20Peak%202022/Code%20Peak.png" width=100px height=60px /><br /><sub><b>Code Peak 2023</b></sub></a>
+ </td>
+ <td align="center">
+<a href="https://jwoc-2k23.vercel.app/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/JGEC%20Winter%20Of%20Code%202023/JGEC-Winter-Of-Code%20-2023.jpg" width=100px height=60px /><br /><sub><b>JGEC Winter Of Code 2023</b></sub></a>
+ </td>
  <td align="center">
 <a href="https://www.codepeak.tech/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Code%20Peak%202022/Code%20Peak.png" width=100px height=60px /><br /><sub><b>Code Peak 2022</b></sub></a>
+ </td>
+ <td align="center">
+<a href="https://www.socialwinterofcode.com/"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Social%20Winter%20Of%20Code%202022/Social-Winter-Of-Code-Logo.png" width=100px height=60px /><br /><sub><b>Social Winter Of Code 2022</b></sub></a>
  </td>
 </tr>
 </table>
 
 
-<!-- 
 ## 🏆 Achievements of this Project Repo 🎉
 
 **:one: Recognized as the "BEST PROJECT ADMIN" for the project ['IoT-Spot'](https://github.com/prathimacode-hub/IoT-Spot) in GirlScript Summer Of Code 2022.**</br>
 **:two: Recognized as the "🥇 BEST ORGANIZATION" for "FIESTA OF PROJECTS" undertaking the project ['IoT-Spot'](https://github.com/prathimacode-hub/IoT-Spot) at Delta Winter Of Code for the year 2021-22.**</br>
 
+<!-- 
 
 ## 📊 Leaderboard 
 
@@ -142,6 +159,7 @@ Create an issue with your idea, approach, your expected outcome and why it's use
 -->
 
 <!--
+
 ## ✨ Hall Of Fame   
 
 Thanks go to these Wonderful People. Contributions of any kind are welcome!🚀 -->
@@ -154,6 +172,7 @@ Thanks go to these Wonderful People. Contributions of any kind are welcome!🚀 
   <img src="https://contrib.rocks/image?repo=prathimacode-hub/Dev-Mint" />
 </a>
 -->
+
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
@@ -168,7 +187,7 @@ You can find our Code of Conduct [here](https://github.com/prathimacode-hub/Dev-
 
 This project follows the [GNU General Public License 3.0](https://github.com/prathimacode-hub/Dev-Mint/blob/main/LICENSE).
 
-
+<!--
 ## 😎 CodePeak Mentor
 
 <table>
@@ -176,15 +195,16 @@ This project follows the [GNU General Public License 3.0](https://github.com/pra
 <td align="center"><a href="https://github.com/Kumar-Ankit56"><img src="https://avatars.githubusercontent.com/u/73521123?v=4" width="100px;" alt=""/><br /><sub><b>Ankit Kumar</b></sub></a></td>
   </tr>
 </table>
-
+-->
 
 ## 😎 Project Admin
 
 <table>
   <tr>
-<td align="center"><a href="https://github.com/prathimacode-hub"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Profile%20Assets/Prathima-Kadari-Picture.png" width="100px;" alt=""/><br /><sub><b>Prathima Kadari</b></sub></a></td>
+<td align="center"><a href="https://github.com/prathimacode-hub"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Profile%20Assets/Official%20Professional%20Pic.jpg" width="100px;" alt=""/><br /><sub><b>Prathima Kadari</b></sub></a></td>
   </tr>
 </table>
+
 
 ![Visitor Count](https://profile-counter.glitch.me/{prathimacode-hub}/count.svg)
 
@@ -196,7 +216,7 @@ This project follows the [GNU General Public License 3.0](https://github.com/pra
 
 ## ⭐ Give this Project a Star
 
-[![GitHub followers](https://img.shields.io/github/followers/prathimacode-hub.svg?label=Follow%20@prathimacode-hub&style=social)](https://github.com/prathimak88/)  [![Twitter Follow](https://img.shields.io/twitter/follow/prathimak88?style=social)](https://twitter.com/prathimak88)
+[![GitHub followers](https://img.shields.io/github/followers/prathimacode-hub.svg?label=Follow%20@prathimacode-hub&style=social)](https://github.com/prathimacode-hub/) [![Twitter Follow](https://img.shields.io/twitter/follow/prathima_kadari?label=Follow%20@prathima_kadari&style=social)](https://twitter.com/prathima_kadari)
 
 If you liked working on this project, do ⭐ and share this repository.
 
@@ -213,9 +233,9 @@ If you liked working on this project, do ⭐ and share this repository.
 
 If you want to contact me, you can reach me through the below handles.
 
-<a href="https://twitter.com/prathimak88"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/1200px-Twitter_Bird.svg.png" width="25"></img></a>&nbsp;&nbsp; <a href="https://www.linkedin.com/in/prathima-kadari/"><img src="https://www.felberpr.com/wp-content/uploads/linkedin-logo.png" width="25"></img></a>
+<a href="https://www.linkedin.com/in/prathima-kadari/"><img src="https://www.felberpr.com/wp-content/uploads/linkedin-logo.png" width="25"></img></a>&nbsp;&nbsp; <a href="https://twitter.com/prathima_kadari"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzSYNFWywSHd7i84bmvUomd99zCDo-rC_utR43Ihn6peRcE9cUOTkP5K0SHdBmz-dU7tA&usqp=CAU" width="25"></img></a>
 
-© 2022 Prathima Kadari
+© 2024 Prathima Kadari
 
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com) 
