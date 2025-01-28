@@ -2,7 +2,7 @@
 name: Project Request
 about: If you want to propose a project idea that can be added to the repository
 title: "[PROJECT PROPOSAL]"
-labels: ""
+labels: "IWOC2025"
 assignees: ""
 ---
 
