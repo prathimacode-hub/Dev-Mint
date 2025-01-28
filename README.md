@@ -238,7 +238,7 @@ If you want to contact me, you can reach me through the below handles.
 
 <a href="https://www.linkedin.com/in/prathima-kadari/"><img src="https://www.felberpr.com/wp-content/uploads/linkedin-logo.png" width="25"></img></a>&nbsp;&nbsp; <a href="https://twitter.com/prathima_kadari"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzSYNFWywSHd7i84bmvUomd99zCDo-rC_utR43Ihn6peRcE9cUOTkP5K0SHdBmz-dU7tA&usqp=CAU" width="25"></img></a>
 
-© 2024 Prathima Kadari
+© 2025 Prathima Kadari
 
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com) 
