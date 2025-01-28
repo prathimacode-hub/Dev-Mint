@@ -2,7 +2,7 @@
 
 - Info about the related issue 
 
-- [ ] CSSOC 2024 Participant
+- [ ] IWOC 2025 Participant
 - [ ] Contributor
 
 Closes: #issue number that will be closed through this PR
