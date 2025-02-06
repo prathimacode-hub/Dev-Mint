@@ -1,0 +1,44 @@
+body {
+    background-color: #024;
+    font-family: "Press Start 2P", serif;
+  }
+  
+  h1 {
+    color: gainsboro;
+    text-align: center;
+    margin: 5%;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    width: 200px;
+    height: 200px;
+    margin: 1em;
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .pressedButton {
+    opacity: 0.7;
+    box-shadow: 12px 0 20px white;
+  }
