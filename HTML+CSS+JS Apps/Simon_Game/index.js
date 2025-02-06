@@ -53,7 +53,7 @@ function nextSequence() {
 }
 
 function playSound(colorName) {
-  const audio = new Audio("sounds/" + colorName + ".mp3");
+  const audio = new Audio("sounds/"+"sounds/" + colorName + ".mp3");
   audio.play();
 }
 
