@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.dice {
+    transition: transform 0.5s;
+    perspective: 1000px;
+}
+
+.dice:hover {
+    transform: scale(1.1) rotateY(360deg);
+}
+
+.roll-button {
+    background: linear-gradient(to right, #ff6b6b, #f06292);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.roll-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+}
+
+.game-container {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    color: black;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}

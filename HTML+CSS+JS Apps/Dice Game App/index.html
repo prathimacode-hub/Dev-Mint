@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dice Roller Challenge</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex items-center justify-center min-h-screen text-white">
+    <div id="startPopup" class="popup">
+        <div class="popup-content">
+            <h2 class="text-2xl mb-4">Dice Roller Challenge!</h2>
+            <p class="mb-6">Try to roll a total of exactly 7. Roll the dice and see if you can win!</p>
+            <button id="startButton" class="roll-button w-full py-3 rounded-lg text-white uppercase tracking-wider transform hover:scale-105 active:scale-95">
+                Start Game
+            </button>
+        </div>
+    </div>
+
+    <!-- Win Popup -->
+    <div id="winPopup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h2 class="text-2xl mb-4">Congratulations! 🎉</h2>
+            <p class="mb-6">You won the Dice Roller Challenge!</p>
+            <button id="playAgainButton" class="roll-button w-full py-3 rounded-lg text-white uppercase tracking-wider transform hover:scale-105 active:scale-95">
+                Play Again
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Game Container -->
+    <div id="gameContainer" style="display: none;" class="game-container p-8 rounded-xl text-center w-96 shadow-2xl">
+        <h1 class="text-2xl mb-6 uppercase tracking-wider">Dice Roller</h1>
+        
+        <div class="flex justify-center space-x-4 mb-6">
+            <div id="dice1" class="dice w-24 h-24 bg-white rounded-lg shadow-lg flex items-center justify-center text-4xl text-black">
+                ?
+            </div>
+            <div id="dice2" class="dice w-24 h-24 bg-white rounded-lg shadow-lg flex items-center justify-center text-4xl text-black">
+                ?
+            </div>
+        </div>
+        
+        <div id="result" class="mb-6 h-12 text-xl font-bold"></div>
+        
+        <button id="rollButton" class="roll-button w-full py-3 rounded-lg text-white uppercase tracking-wider transform hover:scale-105 active:scale-95">
+            Roll Dice
+        </button>
+        
+        <div class="mt-6 text-sm opacity-75">
+            First to roll a total of 7 wins!
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
