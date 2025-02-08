@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Rock Paper Scissors</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <div class="game-container">
+        <div class="header">
+            <h1 class="title">Rock Paper Scissors</h1>
+            <div class="scoreboard">
+                <div class="score-item">
+                    <div class="score-label">Player</div>
+                    <div class="score-value" id="player-score">0</div>
+                </div>
+                <div class="score-item">
+                    <div class="score-label">Computer</div>
+                    <div class="score-value" id="computer-score">0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="battle-area">
+                <div class="player-choice"></div>
+                <div class="result-display" id="result"></div>
+                <div class="computer-choice"></div>
+            </div>
+        </div>
+
+        <div class="choices">
+            <div class="choice" data-choice="rock">
+                <svg viewBox="0 0 100 100">
+                    <path d="M50,10 C30,10 15,25 15,45 C15,65 30,80 50,80 C70,80 85,65 85,45 C85,25 70,10 50,10 Z M50,70 C35,70 25,60 25,45 C25,30 35,20 50,20 C65,20 75,30 75,45 C75,60 65,70 50,70 Z"/>
+                </svg>
+            </div>
+            <div class="choice" data-choice="paper">
+                <svg viewBox="0 0 100 100">
+                    <rect x="20" y="20" width="60" height="60" rx="10"/>
+                </svg>
+            </div>
+            <div class="choice" data-choice="scissors">
+                <!-- <svg viewBox="0 0 100 100">
+                    <path d="M30,30 L70,70 M30,70 L70,30"/>
+                </svg> -->
+                <svg viewBox="0 0 100 100">
+                    <path d="M30,30 L70,70 M30,70 L70,30" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="streak-counter">Streak: <span id="streak">0</span></div>
+
+    <div class="modal" id="start-modal">
+        <div class="modal-content">
+            <h2>Welcome to Rock Paper Scissors!</h2>
+            <p>Are you ready to play?</p>
+            <button class="btn" id="start-button">Start Game</button>
+        </div>
+    </div>
+
+    <div class="modal" id="end-modal">
+        <div class="modal-content">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button class="btn" id="play-again-button">Play Again</button>
+        </div>
+    </div>
+
+    <canvas class="particles"></canvas>
+
+    <script src="./script.js"></script>
+</body>
+</html>
