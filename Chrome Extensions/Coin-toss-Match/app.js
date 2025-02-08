@@ -31,10 +31,10 @@ function displayRandom(random){
     console.log(random);
     
         if (random === 1){
-            displayResult.style.backgroundImage =  "url('./heads.png')";
+            displayResult.style.backgroundImage =  "url(./images/heads.png')";
             
         } else {
-            displayResult.style.backgroundImage =  "url('./tails.png')";
+            displayResult.style.backgroundImage =  "url('./images/tails.png')";
         }    
 }
 
