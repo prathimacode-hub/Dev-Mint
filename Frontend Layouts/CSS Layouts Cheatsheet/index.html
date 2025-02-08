@@ -1,0 +1,131 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Layouts Cheat Sheet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Frontend Layouts Cheat Sheet</h1>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Key CSS Layout Techniques</h2>
+      <ul>
+        <li><strong>Flexbox:</strong> Align and distribute items along a single axis.</li>
+        <li><strong>Grid:</strong> Create complex, two-dimensional layouts with ease.</li>
+        <li><strong>Positioning:</strong> Use <code>absolute</code>, <code>relative</code>, <code>fixed</code>, and <code>sticky</code> for custom placement.</li>
+        <li><strong>Float:</strong> Wrap text or elements around floated items (deprecated for layout purposes).</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Common Layout Patterns</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Pattern</th>
+            <th>Description</th>
+            <th>CSS Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Two-Column Layout</td>
+            <td>Sidebar and Main Content.</td>
+            <td>
+              <pre>
+.container {
+  display: flex;
+}
+.sidebar {
+  width: 25%;
+}
+.main-content {
+  flex: 1;
+}
+              </pre>
+            </td>
+          </tr>
+          <tr>
+            <td>Holy Grail Layout</td>
+            <td>Header, Footer, Sidebar, Main Content.</td>
+            <td>
+              <pre>
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+              </pre>
+            </td>
+          </tr>
+          <tr>
+            <td>Centering Content</td>
+            <td>Horizontally and vertically align an element.</td>
+            <td>
+              <pre>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+              </pre>
+            </td>
+          </tr>
+          <tr>
+            <td>Responsive Layout</td>
+            <td>Make layouts adapt to screen sizes.</td>
+            <td>
+              <pre>
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+              </pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Best Practices</h2>
+      <div class="tip-box">
+        <ul>
+          <li>Use <code>rem</code> and <code>em</code> for scalable spacing and font sizes.</li>
+          <li>Set <code>box-sizing: border-box;</code> globally for consistent sizing.</li>
+          <li>Leverage CSS variables for theme consistency.</li>
+          <li>Combine Grid and Flexbox for advanced layouts.</li>
+          <li>Test layouts on different devices and browsers.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Additional Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">CSS Grid Documentation (MDN)</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">CSS Flexbox Documentation (MDN)</a></li>
+        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-Tricks: Flexbox Guide</a></li>
+        <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS-Tricks: Grid Guide</a></li>
+        <li><a href="https://web.dev/responsive-web-design-basics/">Responsive Web Design Basics</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Frontend Layouts Cheat Sheet | Designed with ❤️
+  </footer>
+</body>
+</html>
