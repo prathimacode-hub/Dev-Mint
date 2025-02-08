@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Master</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="game-title">Memory Master</h1>
+    
+    <div class="game-info">
+        <div class="info-box">Moves: <span id="moves">0</span></div>
+        <div class="info-box">Time: <span id="time">0:00</span></div>
+        <div class="info-box">Score: <span id="score">0</span></div>
+    </div>
+
+    <div class="game-board" id="gameBoard"></div>
+
+    <div class="controls">
+        <button id="resetBtn">Reset Game</button>
+        <button id="difficultyBtn">Change Difficulty</button>
+        <select id="difficultySelect">
+            <option value="easy">Easy (4x4)</option>
+            <option value="medium">Medium (6x6)</option>
+            <option value="hard">Hard (8x8)</option>
+        </select>
+    </div>
+
+    <div id="winModal" class="modal">
+        <h2>Congratulations! 🎉</h2>
+        <p>You've completed the game!</p>
+        <p>Time: <span id="finalTime">0:00</span></p>
+        <p>Moves: <span id="finalMoves">0</span></p>
+        <p>Score: <span id="finalScore">0</span></p>
+        <button id="playAgainBtn">Play Again</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
