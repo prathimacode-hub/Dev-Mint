@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Mint</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Dev-Mint</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#tools">Tools</a>
+            <a href="#about">About</a>
+            <a href="https://github.com/prathimacode-hub/Dev-Mint">GitHub</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Dev-Mint</h1>
+            <p>Your One-Stop Hub for Fun & Utility!</p>
+            <button class="cta-button" onclick="scrollToGames()">Explore Now</button>
+        </div>
+    </section>
+
+    <section id="games">
+        <h2 class="section-title">🎮 Fun & Engaging Games</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="assets/numberguess.jpg" alt="Number Guessing Game">
+                <h3>Number Guessing Game</h3>
+                <p>Try your luck and guess the number!</p>
+                <a href="HTML+CSS+JS Apps/Number Guessing Game/Index.html" class="card-button">Play Now</a>
+            </div>
+            <div class="card">
+                <img src="assets/snakegamebg.jpg" alt="Snake Game">
+                <h3>Snake Game</h3>
+                <p>Classic snake, modern twist.</p>
+                <a href="HTML+CSS+JS Apps/Snake Game/index.html" class="card-button">Play Now</a>
+            </div>
+            <div class="card">
+                <img src="assets/comsoon.jpg" alt="Future Games">
+                <h3>More Games Coming Soon</h3>
+                <p>Stay tuned for exciting new additions!</p>
+                <a href="#" class="card-button">Coming Soon</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools">
+        <h2 class="section-title">🛠 Powerful Tools for Everyone</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="assets/background_remover.jpg" alt="AI Image Generator">
+                <h3>AI Image Generator</h3>
+                <p>Generate Image Easily.</p>
+                <a href="HTML+CSS+JS Apps/AI Image Generator/index.html" class="card-button">Try Now</a>
+            </div>
+            <div class="card">
+                <img src="assets/dicbg.jpg" alt="Word Meaning App">
+                <h3>Word Meaning App</h3>
+                <p>Get instant meanings of words.</p>
+                <a href="HTML+CSS+JS Apps/Word Meaning App/index.html" class="card-button">Try Now</a>
+            </div>
+            <div class="card">
+                <img src="assets/BMI_Calcu.png" alt="Calculator">
+                <h3>BMI Calculator</h3>
+                <p>Tool for quick calculations.</p>
+                <a href="#" class="card-button">Try Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">Why Choose Dev-Mint?</h2>
+        <div class="grid">
+            <div class="feature">
+                <h3>Fast & Lightweight</h3>
+                <p>Runs smoothly on any device</p>
+            </div>
+            <div class="feature">
+                <h3>Completely Open Source</h3>
+                <p>Contribute and improve!</p>
+            </div>
+            <div class="feature">
+                <h3>More Features Coming Soon</h3>
+                <p>Community-driven improvements</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/prathimacode-hub/Dev-Mint">GitHub</a>
+            <a href="#privacy">Privacy Policy</a>
+        </div>
+        <p>Built with ❤️ by Dev-Mint Team</p>
+    </footer>
+
+    <script>
+        // Function to scroll to games section
+        function scrollToGames() {
+            document.getElementById('games').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Add smooth scrolling to all navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
