@@ -1,0 +1,17 @@
+{
+    "manifest_version":3,
+    "name":"Code Adder",
+    "description":"Code launcher of popular coding platforms",
+    "version":"1.0",
+    "icons":{
+        "16":"./Images/icon19.png",
+        "48":"./Images/icon128.png",
+        "128":"./Images/icon150.png"
+    },
+    "action":{
+        "default_icon":"./Images/icon19.png",
+        "default_popup":"./Images/popup.html"
+    },
+    "permissions":["activeTab"]
+
+}
