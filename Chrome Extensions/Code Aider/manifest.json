@@ -1,6 +1,6 @@
 {
     "manifest_version":3,
-    "name":"Code Adder",
+    "name":"Code Aider",
     "description":"Code launcher of popular coding platforms",
     "version":"1.0",
     "icons":{
