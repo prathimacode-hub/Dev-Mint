@@ -1,0 +1,164 @@
+
+:root {
+    --primary: #2a9d8f;
+    --secondary: #e9c46a;
+    --background: #264653;
+    --card-back: #f4a261;
+    --text: #e76f51;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--background);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+.game-title {
+    font-size: 3rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--primary);
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--primary);
+    }
+}
+
+.game-info {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.info-box {
+    background: rgba(255,255,255,0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    perspective: 1000px;
+    margin: 20px;
+    max-width: 900px;
+}
+
+.card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+.card.matched {
+    animation: matched 0.5s ease-in-out;
+}
+
+@keyframes matched {
+    0%, 100% { transform: scale(1) rotateY(180deg); }
+    50% { transform: scale(1.1) rotateY(180deg); }
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-front {
+    background: var(--primary);
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    background: var(--card-back);
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0.1));
+    background-size: 20px 20px;
+}
+
+.controls {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--secondary);
+    color: var(--background);
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: var(--text);
+    color: white;
+}
+
+select {
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--background);
+    z-index: 100;
+}
+
+.modal.show {
+    display: block;
+}
