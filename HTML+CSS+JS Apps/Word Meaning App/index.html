@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Dictionary</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-purple-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white shadow-2xl rounded-xl p-8 w-[600px] transform transition-all hover:scale-105">
+        <h1 class="text-3xl font-bold text-center mb-6 text-indigo-600">Word Dictionary</h1>
+        
+        <div class="mb-4 flex">
+            <input 
+                type="text" 
+                id="wordInput" 
+                placeholder="Enter a word..." 
+                class="flex-grow px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 mr-2"
+            >
+            <button 
+                onclick="searchWord()" 
+                class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition duration-300"
+            >
+                Search
+            </button>
+        </div>
+
+        <div id="resultContainer" class="hidden">
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 id="wordDisplay" class="text-2xl font-semibold text-indigo-700"></h2>
+                    <div class="flex space-x-2">
+                        <button 
+                            id="speakBtn" 
+                            class="bg-green-500 text-white p-2 rounded-full hover:bg-green-600"
+                        >
+                            🔊 Speak
+                        </button>
+                        <button 
+                            id="audioBtn" 
+                            class="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600"
+                        >
+                            🎵 Pronunciation
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <h3 class="font-medium text-gray-600">Phonetic:</h3>
+                    <p id="phoneticText" class="text-xl"></p>
+                </div>
+
+                <div class="mb-3">
+                    <h3 class="font-medium text-gray-600">Origin:</h3>
+                    <p id="originText" class="text-gray-800"></p>
+                </div>
+
+                <div id="meaningsContainer" class="mb-3">
+                    <h3 class="font-medium text-gray-600">Meanings:</h3>
+                    <div id="meanings"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

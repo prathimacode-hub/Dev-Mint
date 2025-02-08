@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neon Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="scoreDisplay">Score: 0</div>
+        <canvas id="gameBoard" width="400" height="400"></canvas>
+        <div id="startScreen">
+            <h1>Neon Snake Game</h1>
+            <button onclick="startGame()">Start Game</button>
+        </div>
+        <div id="gameOverScreen" style="display:none;">
+            <h1>Oops! Game Over</h1>
+            <p id="finalScore">Your Score: 0</p>
+            <button onclick="restartGame()">Try Again</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
