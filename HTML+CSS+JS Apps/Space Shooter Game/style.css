@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+#gameContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000033, #000066);
+}
+
+#gameCanvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #33ccff;
+    box-shadow: 0 0 20px #33ccff;
+}
+
+.hud {
+    position: absolute;
+    color: #33ccff;
+    padding: 20px;
+    font-size: 24px;
+    text-shadow: 0 0 10px #33ccff;
+}
+
+#score {
+    top: 0;
+    left: 0;
+}
+
+#health {
+    top: 0;
+    right: 0;
+}
+
+#gameOver {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #33ccff;
+    background: rgba(0, 0, 51, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #33ccff;
+    box-shadow: 0 0 20px #33ccff;
+}
+
+#gameOver h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#gameOver button {
+    background: #33ccff;
+    color: #000033;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#gameOver button:hover {
+    background: #66ddff;
+    transform: scale(1.1);
+}
+
+.powerup {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #ffcc00;
+    border-radius: 50%;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+#tutorial {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #33ccff;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.8;
+}
