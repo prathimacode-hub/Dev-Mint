@@ -66,7 +66,7 @@ function userPress(colorName) {
 }
 
 function gameOver() {
-  document.getElementById("title").textContent = "Game over!, press to start";
+  document.getElementById("title").textContent = "Game over!, press Enter to restart";
   document.body.style.backgroundColor = "red";
 
   restart();
