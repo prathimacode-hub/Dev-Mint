@@ -7,7 +7,7 @@ let score = 0;
 let gameOver = false;
 let objectIntervals = [];
 
-// Move Basket
+
 document.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft" && basketPosition > 0) {
         basketPosition -= 20;
@@ -17,23 +17,23 @@ document.addEventListener("keydown", (event) => {
     basket.style.left = basketPosition + "px";
 });
 
-// Function to create falling objects
+
 function createFallingObject() {
     if (gameOver) return;
 
     const object = document.createElement("div");
     object.classList.add("falling-object");
 
-    // Randomly choose fruit 🍎 or bomb 💣
+ 
     const isFruit = Math.random() > 0.3;
     object.innerText = isFruit ? "🍎" : "💣";
     object.classList.add(isFruit ? "fruit" : "bomb");
 
-    object.style.left = Math.random() * 370 + "px"; // Random position
+    object.style.left = Math.random() * 370 + "px"; 
     object.style.top = "0px";
     gameContainer.appendChild(object);
 
-    // Move the object down
+    
     let fallInterval = setInterval(() => {
         if (gameOver) {
             clearInterval(fallInterval);
@@ -43,7 +43,7 @@ function createFallingObject() {
         let topPosition = parseInt(object.style.top) + 5;
         object.style.top = topPosition + "px";
 
-        // Check if object reached the basket
+       
         let basketRect = basket.getBoundingClientRect();
         let objectRect = object.getBoundingClientRect();
 
@@ -60,13 +60,13 @@ function createFallingObject() {
             } else {
                 alert("Game Over! Your Score: " + score);
                 gameOver = true;
-                resetBtn.style.display = "block"; // Show reset button
+                resetBtn.style.display = "block"; 
             }
 
             scoreDisplay.innerText = "Score: " + score;
         }
 
-        // Remove object if it falls off the screen
+        
         if (topPosition >= 500) {
             clearInterval(fallInterval);
             object.remove();
@@ -76,20 +76,20 @@ function createFallingObject() {
     objectIntervals.push(fallInterval);
 }
 
-// Function to start game loop
+
 function startGame() {
     gameOver = false;
     score = 0;
     scoreDisplay.innerText = "Score: 0";
     resetBtn.style.display = "none";
 
-    objectIntervals.forEach(interval => clearInterval(interval)); // Clear old intervals
+    objectIntervals.forEach(interval => clearInterval(interval)); 
     objectIntervals = [];
 
-    // Remove all falling objects
+
     document.querySelectorAll(".falling-object").forEach(obj => obj.remove());
 
-    // Start new objects falling
+  
     let gameLoop = setInterval(() => {
         if (gameOver) {
             clearInterval(gameLoop);
@@ -99,10 +99,10 @@ function startGame() {
     }, 1000);
 }
 
-// Reset game when the reset button is clicked
+
 function resetGame() {
     startGame();
 }
 
-// Start game on page load
+
 startGame();
