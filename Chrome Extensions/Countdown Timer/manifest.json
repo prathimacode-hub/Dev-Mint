@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Countdown Timer",
+    "version": "1.0",
+    "description": "A simple countdown timer that alerts when time is up.",
+    "permissions": ["alarms", "notifications", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
