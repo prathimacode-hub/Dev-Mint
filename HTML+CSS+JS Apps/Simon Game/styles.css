@@ -1,0 +1,92 @@
+body {
+    background-color: #111827;
+    font-family: "Press Start 2P", serif;
+  }
+
+  .text-center {
+    text-align: center;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 3rem; /* Adjusted for better responsiveness */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+.text-gray-400 {
+    color: #b0b0b0; /* Soft gray for better readability */
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+#title {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+}
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    width: 200px;
+    height: 200px;
+    margin: 1em;
+    border: 10px solid #ffffff;
+    border-radius: 20%;
+  }
+.color-box {
+    width: 8rem; 
+    height: 8rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Background colors */
+#green {
+    background-color: #22c55e;
+}
+
+#red {
+    background-color: #ef4444; 
+}
+
+#yellow {
+    background-color: #eab308; 
+}
+
+#blue {
+    background-color: #3b82f6; 
+}
+
+/* Hover effect */
+.color-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+  .pressedButton {
+    opacity: 0.7;
+    box-shadow: 12px 0 20px white;
+  }
