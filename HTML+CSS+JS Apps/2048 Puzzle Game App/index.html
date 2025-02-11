@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Extended</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-menu">
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('game')">Play</a>
+        <a href="#" onclick="showPage('settings')">Settings</a>
+        <a href="#" onclick="showPage('leaderboard')">Leaderboard</a>
+    </div>
+
+    <!-- Home Page -->
+    <div id="home" class="home-container">
+        <h1 class="title">2048 Extended</h1>
+        <button class="menu-button" onclick="showPage('game')">Play Game</button>
+        <button class="menu-button" onclick="showPage('settings')">Settings</button>
+        <button class="menu-button" onclick="showPage('leaderboard')">Leaderboard</button>
+    </div>
+
+    <!-- Game Page -->
+    <div id="game" class="game-container">
+        <div class="score-container">
+            Score: <span id="score">0</span>
+        </div>
+        <div class="grid" id="grid"></div>
+        <button onclick="resetGame()">New Game</button>
+    </div>
+
+    <!-- Settings Page -->
+    <div id="settings" class="settings-container">
+        <h2>Game Settings</h2>
+        <div class="settings-option">
+            <label for="gridSize">Grid Size:</label>
+            <select id="gridSize" onchange="updateGridSize()">
+                <option value="4">4x4 (Classic)</option>
+                <option value="5">5x5</option>
+                <option value="6">6x6</option>
+                <option value="8">8x8</option>
+            </select>
+        </div>
+        <button onclick="saveSettings()">Save Settings</button>
+    </div>
+
+    <!-- Leaderboard Page -->
+    <div id="leaderboard" class="leaderboard-container">
+        <h2>High Scores</h2>
+        <table class="leaderboard-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Score</th>
+                    <th>Grid Size</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboardBody"></tbody>
+        </table>
+    </div>
+
+    <!-- Game Over Overlay -->
+    <div class="game-over" id="gameOver">
+        <h2>Game Over!</h2>
+        <p>Final Score: <span id="finalScore">0</span></p>
+        <button onclick="resetGame()">Play Again</button>
+    </div>
+
+   <script src="./script.js"></script>
+</body>
+</html>
