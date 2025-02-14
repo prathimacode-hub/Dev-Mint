@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  h1, h2 {
+    color: #222;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  /* navbar */
+  .navbar {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    display: flex;
+    justify-content: space-between;
+    background-color: #746f6f;
+
+  }
+
+  #nav_heading{
+    font-size: 47px;
+    color: #e55d00;
+    
+  }
+
+   /* Search Bar */
+   .search-bar {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    margin-right: 130px;
+  }
+
+  .search-bar input {
+    padding: 15px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    padding: 15px 25px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .search-bar button:hover {
+    background-color: #e55d00;
+  }
+  
+  #user_profile a{
+    margin-top: 15px;
+    margin-right: 10px;
+    display: flex;
+  }
+
+  #user_profile img{
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  /* Hero Banner */
+  .hero-banner {
+    height: 450px;
+    background-image: url('images/banner2.jpg');
+    background-size: cover;
+    
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    border-bottom: 3px solid #fff;
+  }
+
+  /* explore */
+  
+  .explore{
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: center;
+  }
+  .explore h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  .explore p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+  }
+  
+  .explore button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff6600;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .explore button:hover {
+    background-color: #e55d00;
+  }
+  
+ 
+
+  /* Featured Recipes */
+  .featured-recipes {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .featured-recipes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .recipe-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .recipe-card h3 {
+    padding: 15px;
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  .recipe-card p {
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Recipe Categories */
+  .recipe-categories {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .recipe-categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .category-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .category-card {
+    background-color: #ff6600;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 180px;
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .category-card:hover {
+    background-color: #e55d00;
+  }
+  
+
+
+  /* foot_panel */
+
+  .foot_panel{
+    padding: 10px;
+    display: flex;
+  }
+
+  .foot_panel p{
+    padding-left: 20px;
+  }

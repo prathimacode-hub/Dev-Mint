@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Hero Banner -->
+  <header>
+<div class="navbar">
+    <h1 id="nav_heading">RecipeWeb</h1>
+    <section class="search-bar">  <!-- Recipe Search Bar -->
+        <input type="text" id="search-input" placeholder="Search for recipes, ingredients, or types...">
+        <button>Search</button>
+      </section>
+    <section id="user_profile">
+        <a href="user_dash.html">
+            <img src="images/blank-profile-picture.webp" alt="">
+        <h2>My Profile</h2>
+        </a>
+    </section>  
+</div>
+
+<hr>
+
+<div class="explore">
+    <section><h1>Discover Delicious Recipes</h1></section>
+    <p>Find the perfect recipe for every meal</p>
+    <button onclick="location.href='recipes.html'">Browse Recipes</button>
+</div>
+
+<br>
+    <div class="hero-banner">
+    </div>
+  </header>
+ 
+  <!-- Featured Recipes -->
+  <section class="featured-recipes">
+    <h2>Featured Recipes</h2>
+    <div class="recipe-grid">
+      <div class="recipe-card">
+        <a href="carbonara.html" style="text-decoration: none;">
+        <img src="images/carbonara.jpg" alt="Recipe 1">
+        <h3>Pasta Carbonara</h3>
+        <p>30 mins | Easy | 4.5/5</p>
+        </a>
+      </div>
+      <div class="recipe-card">
+        <a href="vegan-salad.html" style="text-decoration: none;">
+        <img src="images/vegan-salad.jpg" alt="Recipe 2">
+        <h3>Vegan Salad</h3>
+        <p>20 mins | Easy | 5/5</p>
+        </a>
+      </div>
+      <div class="recipe-card">
+        <a href="chicken-curry.html" style="text-decoration: none;">
+        <img src="images/chicken-curry.jpg" alt="Recipe 3">
+        <h3>Chicken Curry</h3>
+        <p>40 mins | Medium | 4/5</p>
+        </a>
+      </div>
+      <!-- Add more recipe cards here -->
+    </div>
+  </section>
+
+  <!-- Recipe Categories -->
+  <section class="recipe-categories">
+    <h2>Explore Categories</h2>
+    <div class="category-grid">
+      <div class="category-card">Healthy Meals</div>
+      <div class="category-card">Desserts</div>
+      <div class="category-card">Vegan</div>
+      <div class="category-card">Quick Meals</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot_panel">
+      <a href="contact.html"><p>Contact Us</p></a>
+      <a href="about_us.html"><p>About Us</p></a>
+    </div>
+  </footer>
+</body>
+</html>
+
