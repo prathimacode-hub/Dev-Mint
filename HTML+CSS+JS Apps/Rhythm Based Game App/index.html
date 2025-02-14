@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm Master | The Ultimate Rhythm Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="#game" class="nav-link active">Play</a>
+            <a href="#settings" class="nav-link">Settings</a>
+            <a href="#leaderboard" class="nav-link">Leaderboard</a>
+            <a href="#profile" class="nav-link">Profile</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Game Section -->
+        <section id="game" class="section active">
+            <div class="instructions">
+                <h2>How to Play</h2>
+                <p>Hit the notes when they reach the white line using these keys:</p>
+                <div class="key-guide">
+                    <div class="key">D</div>
+                    <div class="key">F</div>
+                    <div class="key">J</div>
+                    <div class="key">K</div>
+                </div>
+                <p>Perfect timing = more points! Build combos to increase your score.</p>
+            </div>
+
+            <div class="controls">
+                <button class="start-btn" onclick="toggleGame()">Start Game</button>
+            </div>
+
+            <div class="game-container">
+                <div class="lane-markers">
+                    <div class="lane"></div>
+                    <div class="lane"></div>
+                    <div class="lane"></div>
+                    <div class="lane"></div>
+                </div>
+                <div class="note-highway"></div>
+                <div class="hit-zone"></div>
+                <div class="score-display">Score: 0</div>
+                <div class="combo-display">Combo: 0</div>
+                <div class="hit-feedback"></div>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings" class="section">
+            <div class="settings-panel">
+                <div class="settings-group">
+                    <h3>Audio Settings</h3>
+                    <div class="slider-container">
+                        <span>Music Volume</span>
+                        <input type="range" id="musicVolume" min="0" max="100" value="80">
+                        <span id="musicVolumeValue">80%</span>
+                    </div>
+                    <div class="slider-container">
+                        <span>SFX Volume</span>
+                        <input type="range" id="sfxVolume" min="0" max="100" value="100">
+                        <span id="sfxVolumeValue">100%</span>
+                    </div>
+                </div>
+                <div class="settings-group">
+                    <h3>Gameplay Settings</h3>
+                    <div class="slider-container">
+                        <span>Scroll Speed</span>
+                        <input type="range" id="scrollSpeed" min="1" max="10" value="5">
+                        <span id="scrollSpeedValue">5</span>
+                    </div>
+                    <div class="slider-container">
+                        <span>Note Size</span>
+                        <input type="range" id="noteSize" min="50" max="150" value="100">
+                        <span id="noteSizeValue">100%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaderboard Section -->
+        <section id="leaderboard" class="section">
+            <div class="leaderboard">
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Score</th>
+                            <th>Max Combo</th>
+                            <th>Accuracy</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboardBody">
+                        <!-- Will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="section">
+            <div class="profile-card">
+                <h2>Player Profile</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h4>Total Score</h4>
+                        <p id="totalScore">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Games Played</h4>
+                        <p id="gamesPlayed">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Average Accuracy</h4>
+                        <p id="avgAccuracy">0%</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Highest Combo</h4>
+                        <p id="highestCombo">0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
