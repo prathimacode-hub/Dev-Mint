@@ -8,7 +8,7 @@
 - [Memory Card Game](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/Memory%20Card%20Game)
 - [Number Guessing Game](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/Number%20Guessing%20Game)
 - [Ping Pong Game](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/Ping%20Pong%20Game)
-- [Rhythm Based Game App](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/Rhythm%20Based%20Game%20App)
+- [Rhythm Based Game](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/Rhythm%20Based%20Game%20App)
 - [Rock Paper Scissor Game](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/Rock%20Paper%20Scissor%20Game)
 - [Simon Game](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/Simon%20Game)
 - [Snake Game](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/Snake%20Game)
