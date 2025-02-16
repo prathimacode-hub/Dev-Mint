@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Platformer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="tabs">
+            <button class="tab active" data-tab="game">Game</button>
+            <button class="tab" data-tab="controls">Controls</button>
+            <button class="tab" data-tab="settings">Settings</button>
+            <button class="tab" data-tab="about">About</button>
+        </div>
+
+        <canvas id="game-canvas"></canvas>
+        <div id="hud">
+            Score: <span id="score">0</span> | Lives: <span id="lives" class="lives">❤️❤️❤️</span>
+        </div>
+        <div id="level-display">Level: <span id="level">1</span></div>
+
+        <div id="start-screen" class="screen active">
+            <h1>Physics Platformer</h1>
+            <p>Navigate through challenging levels using physics!</p>
+            <p style="margin: 1rem 0">Complete all 3 levels to win!</p>
+            <button class="btn" id="start-btn">Start Game</button>
+        </div>
+
+        <div id="level-complete" class="screen popup">
+            <h2>Level Complete! 🎉</h2>
+            <p>Score: <span id="level-score">0</span></p>
+            <button class="btn" id="next-level-btn">Next Level</button>
+        </div>
+
+        <div id="game-over" class="screen popup">
+            <h2>Game Over! 💔</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button class="btn" id="retry-btn">Try Again</button>
+            <button class="btn red" id="quit-btn">Quit</button>
+        </div>
+
+        <div id="game-complete" class="screen popup">
+            <h2>Congratulations! 🏆</h2>
+            <p>You've completed all levels!</p>
+            <p>Total Score: <span id="total-score">0</span></p>
+            <button class="btn" id="play-again-btn">Play Again</button>
+        </div>
+
+        <div id="controls-screen" class="screen">
+            <h2>Controls</h2>
+            <p>← → : Move left/right</p>
+            <p>SPACE : Jump</p>
+            <p>SHIFT : Dash</p>
+            <button class="btn" onclick="hideScreen('controls-screen')">Back</button>
+        </div>
+
+        <div id="settings-screen" class="screen">
+            <h2>Settings</h2>
+            <p>Volume: <input type="range" min="0" max="100" value="50" id="volume-slider"></p>
+            <p>Particles: <input type="checkbox" checked id="particles-toggle"></p>
+            <button class="btn" onclick="hideScreen('settings-screen')">Save</button>
+        </div>
+
+        <div id="about-screen" class="screen">
+            <h2>About</h2>
+            <p>A physics-based platformer created for IWOC2025</p>
+            <p>Created by: Saksham Jain</p>
+            <button class="btn" onclick="hideScreen('about-screen')">Back</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
