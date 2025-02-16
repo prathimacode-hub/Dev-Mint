@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maze Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Maze Runner</h1>
+        </div>
+
+        <div class="tab-container">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="game">Game</button>
+                <button class="tab-btn" data-tab="leaderboard">Leaderboard</button>
+                <button class="tab-btn" data-tab="settings">Settings</button>
+                <button class="tab-btn" data-tab="help">Help</button>
+            </div>
+
+            <div class="tab-content active" id="game">
+                <div class="game-container">
+                    <div class="game-info">
+                        <div class="timer">Time: <span id="time">60</span>s</div>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <div class="stat-label">Level</div>
+                                <div class="stat-value" id="level">1</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Score</div>
+                                <div class="stat-value" id="score">0</div>
+                            </div>
+                        </div>
+                        <button class="btn" id="startGame">Start Game</button>
+                        <button class="btn" id="resetGame">Reset Game</button>
+                    </div>
+                    <div class="maze-container">
+                        <div id="maze"></div>
+                        <div class="game-over">
+                            <h2>Game Over!</h2>
+                            <p>Final Score: <span id="finalScore">0</span></p>
+                            <button class="btn" id="restartGame">Play Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="leaderboard">
+                <h2>Leaderboard</h2>
+                <div id="leaderboardContent"></div>
+            </div>
+
+            <div class="tab-content" id="settings">
+                <h2>Settings</h2>
+                <div class="settings-content">
+                    <div class="setting-item">
+                        <label>Difficulty:</label>
+                        <select id="difficulty">
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="help">
+                <h2>How to Play</h2>
+                <p>Use arrow keys or WASD to move through the maze.</p>
+                <p>Reach the yellow exit before time runs out!</p>
+                <p>Collect orange power-ups for bonus points and time.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="levelComplete">
+        <div class="modal-content">
+            <h2>Level Complete!</h2>
+            <p>Score: <span id="levelScore">0</span></p>
+            <button class="btn" id="nextLevel">Next Level</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
