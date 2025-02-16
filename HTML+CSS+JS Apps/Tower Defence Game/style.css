@@ -1,0 +1,154 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #1a1a2e;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigation Tabs */
+        .tabs {
+            display: flex;
+            background: #16213e;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            transition: all 0.3s;
+            border-radius: 5px;
+        }
+
+        .tab.active {
+            background: #0f3460;
+        }
+
+        .tab:hover {
+            background: #0f3460;
+        }
+
+        /* Game Canvas Container */
+        .game-container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+            background: #0f3460;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #gameCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* UI Elements */
+        .game-ui {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+        }
+
+        .resources {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .tower-selection {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .tower-button {
+            padding: 8px;
+            background: #e94560;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tower-button:hover {
+            background: #ff6b6b;
+            transform: scale(1.05);
+        }
+
+        /* Tab Content */
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background: #16213e;
+            border-radius: 10px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Stats Page */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: #0f3460;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Tutorial Page */
+        .tutorial-content {
+            line-height: 1.6;
+        }
+
+        .tutorial-section {
+            margin-bottom: 20px;
+        }
+
+        /* Settings Page */
+        .settings-form {
+            display: grid;
+            gap: 15px;
+        }
+
+        .setting-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .setting-item input {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #e94560;
+            background: #16213e;
+            color: white;
+        }
+    

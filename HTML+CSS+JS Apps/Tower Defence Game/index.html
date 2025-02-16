@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Tower Defense</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab active" data-tab="game">Game</button>
+            <button class="tab" data-tab="stats">Stats</button>
+            <button class="tab" data-tab="tutorial">Tutorial</button>
+            <button class="tab" data-tab="settings">Settings</button>
+        </div>
+
+        <div id="gameTab" class="tab-content active">
+            <div class="game-container">
+                <canvas id="gameCanvas" width="800" height="600"></canvas>
+                <div class="game-ui">
+                    <div class="resources">
+                        Gold: <span id="goldDisplay">100</span>
+                        Lives: <span id="livesDisplay">20</span>
+                        Wave: <span id="waveDisplay">1</span>
+                    </div>
+                    <div class="tower-selection">
+                        <button class="tower-button" data-tower="basic">Basic Tower (50g)</button>
+                        <button class="tower-button" data-tower="splash">Splash Tower (100g)</button>
+                        <button class="tower-button" data-tower="sniper">Sniper Tower (150g)</button>
+                        <button class="tower-button" data-tower="frost">Frost Tower (125g)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="statsTab" class="tab-content">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3>Overall Stats</h3>
+                    <p>Games Played: <span id="gamesPlayed">0</span></p>
+                    <p>Highest Wave: <span id="highestWave">0</span></p>
+                    <p>Total Enemies Defeated: <span id="totalEnemies">0</span></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Tower Stats</h3>
+                    <p>Towers Built: <span id="towersBuilt">0</span></p>
+                    <p>Most Used Tower: <span id="mostUsedTower">Basic</span></p>
+                    <p>Damage Dealt: <span id="totalDamage">0</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="tutorialTab" class="tab-content">
+            <div class="tutorial-content">
+                <div class="tutorial-section">
+                    <h3>Welcome to Tower Defense!</h3>
+                    <p>Defend your base against waves of enemies by strategically placing towers.</p>
+                </div>
+                <div class="tutorial-section">
+                    <h3>Tower Types</h3>
+                    <ul>
+                        <li>Basic Tower: Balanced damage and range</li>
+                        <li>Splash Tower: Area damage</li>
+                        <li>Sniper Tower: High damage, slow rate</li>
+                        <li>Frost Tower: Slows enemies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="settingsTab" class="tab-content">
+            <div class="settings-form">
+                <div class="setting-item">
+                    <label>Game Difficulty:</label>
+                    <select id="difficulty">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label>Sound Effects:</label>
+                    <input type="range" id="sfxVolume" min="0" max="100" value="50">
+                </div>
+                <div class="setting-item">
+                    <label>Music Volume:</label>
+                    <input type="range" id="musicVolume" min="0" max="100" value="50">
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script src="./script.js"></script>
+</body>
+</html>
