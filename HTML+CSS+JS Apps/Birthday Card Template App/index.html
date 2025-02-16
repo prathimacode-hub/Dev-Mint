@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <title>Birthday Card Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎉 Birthday Card Creator</h1>
+            <p>Create beautiful birthday cards in minutes!</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active">Design</button>
+            <button class="tab-btn">Customize</button>
+            <button class="tab-btn">Preview</button>
+        </div>
+
+        <div class="main-content">
+            <div class="card-preview">
+                <div id="cardPreview">
+                    <div id="frontCover"></div>
+                </div>
+            </div>
+
+            <div class="tools-panel">
+                <div class="tool-section">
+                    <h3>Basic Information</h3>
+                    <div class="form-group">
+                        <label for="recipient">Recipient's Name</label>
+                        <input type="text" id="recipient" placeholder="Enter name...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Birthday Message</label>
+                        <textarea id="message" rows="3" placeholder="Write your message..."></textarea>
+                    </div>
+                </div>
+
+                <div class="tool-section">
+                    <h3>Background Music</h3>
+                    <div class="form-group">
+                        <select id="musicSelect" onchange="changeBgMusic()">
+                            <option value="">No Music</option>
+                            <option value="happy">Happy Birthday</option>
+                            <option value="jazz">Jazz Version</option>
+                            <option value="classic">Classic Celebration</option>
+                        </select>
+                    </div>
+                    <div class="audio-visualizer"></div>
+                </div>
+
+                <div class="tool-section">
+                    <h3>Add Image</h3>
+                    <div class="upload-btn">
+                        <input type="file" accept="image/*" onchange="handleImageUpload(event)" style="display: none" id="imageInput">
+                        <label for="imageInput">Choose Image</label>
+                    </div>
+                    
+                    <div class="filter-options" style="margin-top: 15px;">
+                        <button class="filter-btn active">Normal</button>
+                        <button class="filter-btn">Sepia</button>
+                        <button class="filter-btn">Grayscale</button>
+                        <button class="filter-btn">Blur</button>
+                    </div>
+                </div>
+
+                <div class="tool-section">
+                    <h3>Stickers</h3>
+                    <div class="sticker-grid">
+                        <div class="sticker" onclick="addSticker('🎂')">🎂</div>
+                        <div class="sticker" onclick="addSticker('🎈')">🎈</div>
+                        <div class="sticker" onclick="addSticker('🎁')">🎁</div>
+                        <div class="sticker" onclick="addSticker('🎉')">🎉</div>
+                        <div class="sticker" onclick="addSticker('⭐')">⭐</div>
+                        <div class="sticker" onclick="addSticker('🎵')">🎵</div>
+                        <div class="sticker" onclick="addSticker('🎪')">🎪</div>
+                        <div class="sticker" onclick="addSticker('🌟')">🌟</div>
+                    </div>
+                </div>
+
+                <div class="tool-section">
+                    <button class="save-btn" onclick="saveCard()">Save Card</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="effect-controls">
+        <button class="effect-btn" onclick="addSparkles()">✨ Add Sparkles</button>
+        <button class="effect-btn" onclick="addConfetti()">🎊 Add Confetti</button>
+        <button class="effect-btn" onclick="toggleAdvancedAnimation()">🔄 Toggle Animation</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
