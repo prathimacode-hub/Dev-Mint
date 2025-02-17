@@ -38,6 +38,24 @@ header {
     font-weight: bold;
     color: var(--primary-color);
 }
+.logo h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+    white-space: nowrap; /* Ensure text stays in one line */
+    width: 0ch; /* Start with no width */
+    animation: typing 2s steps(20, end) 100;  /* Repeat 5 times */
+
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+    to {
+        width: 20ch;
+    }
+}
+
 
 nav a {
     margin-left: 2rem;
