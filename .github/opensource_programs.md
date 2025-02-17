@@ -2,6 +2,12 @@
 
 List of Open Source Events in which this project participated.
 
+- Innogeeks Winter Of Code Season2 2025
+
+IWOC is a winter friendly event with 35+ impactful projects that facilitate contributions for providing valuable guidance to participants. This is a thriving platform for collaboration and learning hosted by KIET.
+
+<a href="https://iwoc3.live"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/Open%20Source%20Programs/Innogeeks%20Winter%20Of%20Code%202025/Innogeeks%20Winter%20Of%20Code%202025.jpg" width=150px height=150px /></a>
+
 - CodeSapiens Summer Of Code 2024
 
 CSSOC is a beginner friendly summer of code event where a senior helps junior but just done at a different larger scale that is loved by students and wanted by companies. It's student-run community of 1100+ students in and around Tamil Nadu from various colleges that focuses on technical events, sessions with industry experts and hackathons along with bringing practical exposure from working on real projects.
