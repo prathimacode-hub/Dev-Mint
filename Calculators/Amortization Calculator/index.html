@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Amortization Calculator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Advanced Amortization Calculator</h1>
+            <p>Calculate and visualize your loan payments with precision</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('calculator')">Calculator</button>
+            <button class="tab" onclick="switchTab('schedule')">Amortization Schedule</button>
+            <button class="tab" onclick="switchTab('comparison')">Loan Comparison</button>
+            <button class="tab" onclick="switchTab('analytics')">Analytics</button>
+            <button class="tab" onclick="switchTab('optimization')">Loan Optimization</button>
+        </div>
+
+        <div id="calculator" class="tab-content active">
+            <div class="calculator-form">
+                <div class="input-group">
+                    <label for="loanAmount">Loan Amount ($)</label>
+                    <input type="number" id="loanAmount" min="0" step="1000" value="100000">
+                    <div class="slider-container">
+                        <input type="range" class="slider" min="1000" max="1000000" step="1000" value="100000" 
+                               oninput="document.getElementById('loanAmount').value=this.value">
+                        <span class="slider-value">$100,000</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="interestRate">Annual Interest Rate (%)</label>
+                    <input type="number" id="interestRate" min="0" step="0.1" value="5">
+                    <div class="slider-container">
+                        <input type="range" class="slider" min="0" max="20" step="0.1" value="5" 
+                               oninput="document.getElementById('interestRate').value=this.value">
+                        <span class="slider-value">5%</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="loanTerm">Loan Term (Years)</label>
+                    <input type="number" id="loanTerm" min="1" max="30" value="30">
+                </div>
+                <div class="input-group">
+                    <label for="paymentFrequency">Payment Frequency</label>
+                    <select id="paymentFrequency">
+                        <option value="12">Monthly</option>
+                        <option value="26">Bi-weekly</option>
+                        <option value="52">Weekly</option>
+                    </select>
+                </div>
+
+                <button class="toggle-advanced" onclick="toggleAdvanced()">
+                    Advanced Options ▼
+                </button>
+
+                <div class="advanced-options">
+                    <div class="input-group">
+                        <label for="extraPayment">Extra Monthly Payment ($)</label>
+                        <input type="number" id="extraPayment" min="0" value="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="propertyTax">Annual Property Tax (%)</label>
+                        <input type="number" id="propertyTax" min="0" step="0.1" value="1.2">
+                    </div>
+                    <div class="input-group">
+                        <label for="insurance">Annual Insurance ($)</label>
+                        <input type="number" id="insurance" min="0" value="1200">
+                    </div>
+                    <div class="input-group">
+                        <label for="pmi">PMI Rate (%)</label>
+                        <input type="number" id="pmi" min="0" step="0.01" value="0.5">
+                    </div>
+                    <div class="input-group">
+                        <label for="downPayment">Down Payment (%)</label>
+                        <input type="number" id="downPayment" min="0" max="100" value="20">
+                    </div>
+                </div>
+
+                <button class="btn" onclick="calculateLoan()">Calculate</button>
+            </div>
+            <div class="results" id="results">
+                <div class="analytics-grid">
+                    <div class="metric-card">
+                        <h3>Monthly Payment</h3>
+                        <div class="metric-value" id="monthlyPayment">$0</div>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Total Interest</h3>
+                        <div class="metric-value" id="totalInterest">$0</div>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Total Payment</h3>
+                        <div class="metric-value" id="totalPayment">$0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="schedule" class="tab-content">
+            <div class="results">
+                <h2>Amortization Schedule</h2>
+                <div class="chart-container">
+                    <canvas id="paymentBreakdownChart"></canvas>
+                </div>
+                <div id="scheduleTable"></div>
+            </div>
+        </div>
+
+        <div id="comparison" class="tab-content">
+            <div class="calculator-form">
+                <h2>Loan Comparison Tool</h2>
+                <p>Compare different loan scenarios to find the best option</p>
+                <button class="btn" onclick="addLoanScenario()">Add Scenario</button>
+                <div id="scenarios"></div>
+                <button class="btn" onclick="compareScenarios()" style="margin-top: 1rem;">Compare Scenarios</button>
+            </div>
+            <div class="results" id="comparisonResults"></div>
+        </div>
+
+        <div id="analytics" class="tab-content">
+            <div class="analytics-grid">
+                <div class="analytics-card">
+                    <h3>Payment Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="paymentDistributionChart"></canvas>
+                    </div>
+                </div>
+                <div class="analytics-card">
+                    <h3>Interest vs Principal Over Time</h3>
+                    <div class="chart-container">
+                        <canvas id="timelineChart"></canvas>
+                    </div>
+                </div>
+                <div class="analytics-card">
+                    <h3>Cumulative Interest</h3>
+                    <div class="chart-container">
+                        <canvas id="cumulativeInterestChart"></canvas>
+                    </div>
+                </div>
+                <div class="analytics-card">
+                    <h3>Loan Balance Over Time</h3>
+                    <div class="chart-container">
+                        <canvas id="balanceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="optimization" class="tab-content">
+            <div class="calculator-form">
+                <h2>Loan Optimization</h2>
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <h3>Early Payoff Calculator</h3>
+                        <div class="input-group">
+                            <label>Additional Monthly Payment</label>
+                            <input type="number" id="additionalPayment" min="0" value="100">
+                        </div>
+                        <button class="btn" onclick="calculateEarlyPayoff()">Calculate Impact</button>
+                        <div id="earlyPayoffResults"></div>
+                    </div>
+                    <div class="analytics-card">
+                        <h3>Refinance Analysis</h3>
+                        <div class="input-group">
+                            <label>New Interest Rate (%)</label>
+                            <input type="number" id="newRate" min="0" step="0.1" value="4">
+                        </div>
+                        <div class="input-group">
+                            <label>Closing Costs ($)</label>
+                            <input type="number" id="closingCosts" min="0" value="3000">
+                        </div>
+                        <button class="btn" onclick="analyzeRefinance()">Analyze Refinance</button>
+                        <div id="refinanceResults"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
