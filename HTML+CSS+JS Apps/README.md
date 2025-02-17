@@ -1,8 +1,10 @@
 ## HTML+CSS+JS Applications
 
 - [2048 Puzzle Game](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/2048%20Puzzle%20Game%20App)
+- [2D Platformer Physics Engine App](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/2D%20Platformer%20Physics%20Engine%20App)
 - [AI Image Generator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/AI%20Image%20Generator)
 - [Analog Clock](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/Analog%20Clock)
+- [Birthday Card Template App](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/Birthday%20Card%20Template%20App)
 - [Calendar App](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/Calendar%20App)
 - [Dice Game](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/Dice%20Game%20App)
 - [Dinosaur Hurdle Game](https://github.com/prathimacode-hub/Dev-Mint/tree/main/HTML%2BCSS%2BJS%20Apps/Dinosaur%20Hurdle%20Game%20App)
