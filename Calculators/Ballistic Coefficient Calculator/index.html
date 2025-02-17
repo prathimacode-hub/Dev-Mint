@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Ballistic Coefficient Calculator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="title">Advanced Ballistic Coefficient Calculator</h1>
+            <p class="subtitle">Comprehensive Projectile Analysis Tool</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab active" data-tab="calculator">
+                <i class="fas fa-calculator"></i> Calculator
+            </button>
+            <button class="tab" data-tab="visualization">
+                <i class="fas fa-chart-line"></i> Visualization
+            </button>
+            <button class="tab" data-tab="comparison">
+                <i class="fas fa-table"></i> Comparison
+            </button>
+            <button class="tab" data-tab="theory">
+                <i class="fas fa-book"></i> Theory
+            </button>
+            <button class="tab" data-tab="about">
+                <i class="fas fa-info-circle"></i> About
+            </button>
+        </div>
+
+        <div class="content">
+            <div class="tab-content active" id="calculator">
+                <div class="input-group">
+                    <label for="mass">Projectile Mass (grains)</label>
+                    <input type="number" id="mass" placeholder="Enter mass">
+                </div>
+                <div class="input-group">
+                    <label for="diameter">Projectile Diameter (inches)</label>
+                    <input type="number" id="diameter" step="0.001" placeholder="Enter diameter">
+                </div>
+                <div class="input-group">
+                    <label for="dragCoef">Drag Coefficient</label>
+                    <input type="number" id="dragCoef" step="0.001" placeholder="Enter drag coefficient">
+                </div>
+                <div class="input-group">
+                    <label for="velocity">Muzzle Velocity (fps)</label>
+                    <input type="number" id="velocity" placeholder="Enter velocity">
+                </div>
+                <div class="input-group">
+                    <label for="altitude">Altitude (feet)</label>
+                    <input type="number" id="altitude" placeholder="Enter altitude">
+                </div>
+                <div class="input-group">
+                    <label for="temperature">Temperature (°F)</label>
+                    <input type="number" id="temperature" placeholder="Enter temperature">
+                </div>
+                <div class="input-group">
+                    <label for="humidity">Humidity (%)</label>
+                    <input type="number" id="humidity" placeholder="Enter humidity">
+                </div>
+                <button onclick="calculateBC()">Calculate</button>
+                <div class="loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="result">
+                    <h3>Results</h3>
+                    <p id="bcResult"></p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="visualization">
+                <div class="info-card">
+                    <h3>Trajectory Visualization</h3>
+                    <p>This section shows the projectile's trajectory based on the calculated ballistic coefficient and environmental factors.</p>
+                </div>
+                <div class="chart-container">
+                    <canvas id="trajectoryChart"></canvas>
+                </div>
+            </div>
+
+            <div class="tab-content" id="comparison">
+                <h3>Common Projectile Comparison</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Projectile Type</th>
+                            <th>Mass (grains)</th>
+                            <th>Diameter (inches)</th>
+                            <th>Typical BC Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Match Grade .308</td>
+                            <td>168</td>
+                            <td>0.308</td>
+                            <td>0.462 - 0.505</td>
+                        </tr>
+                        <tr>
+                            <td>Match Grade .223</td>
+                            <td>77</td>
+                            <td>0.224</td>
+                            <td>0.372 - 0.395</td>
+                        </tr>
+                        <tr>
+                            <td>Match Grade 6.5mm</td>
+                            <td>140</td>
+                            <td>0.264</td>
+                            <td>0.520 - 0.560</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-content" id="theory">
+                <h3>Ballistic Coefficient Theory</h3>
+                <div class="info-card">
+                    <p>The ballistic coefficient (BC) is a measure of a projectile's ability to overcome air resistance in flight. It's calculated using the formula:</p>
+                    <p>BC = (Mass × Form Factor) / (Diameter² × Density Factor)</p>
+                </div>
+                <div class="info-card">
+                    <h4>Factors Affecting BC</h4>
+                    <ul>
+                        <li>Projectile Mass</li>
+                        <li>Projectile Shape</li>
+                        <li>Cross-sectional Area</li>
+                        <li>Air Density</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-content" id="about">
+                <h3>About This Calculator</h3>
+                <div class="info-card">
+                    <p>This calculator is designed to help shooters and ballistics enthusiasts calculate and understand ballistic coefficients. It provides accurate calculations based on industry-standard formulas and includes visualization tools for better understanding.</p>
+                </div>
+                <div class="info-card">
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Precise BC Calculations</li>
+                        <li>Trajectory Visualization</li>
+                        <li>Comparison Tools</li>
+                        <li>Educational Resources</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
