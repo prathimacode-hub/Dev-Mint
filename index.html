@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="logo">Dev-Mint</div>
@@ -100,7 +102,7 @@
             <a href="https://github.com/prathimacode-hub/Dev-Mint">GitHub</a>
             <a href="#privacy">Privacy Policy</a>
         </div>
-        <p>Built with ❤️ by Dev-Mint Team</p>
+        <p>&copy; <span id="copyright-year"></span> All Rights Reserved || Built with ❤️ by Dev-Mint Team</p>
     </footer>
 
     <script>
@@ -111,7 +113,7 @@
 
         // Add smooth scrolling to all navigation links
         document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 if (this.getAttribute('href').startsWith('#')) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
@@ -120,5 +122,7 @@
             });
         });
     </script>
+    <script src="./copyrightYear.js"></script>
 </body>
+
 </html>
