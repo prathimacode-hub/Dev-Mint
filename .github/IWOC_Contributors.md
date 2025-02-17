@@ -35,7 +35,7 @@ Completed PR (1) - Unified Access - Tools & Games App  <br>
 
 LinkedIn Profile: https://www.linkedin.com/in/meankit18  <br>
 
-6. Uday Pratap Singh | UDAY-DEVELOPER-07 | udaysinghno2005@gmail.com | Discord Username  <br>
+6. Uday Pratap Singh | UDAY-DEVELOPER-07 | udaysinghno2005@gmail.com | Ud_coder  <br>
     
 Completed PR (1) - Simon Game App   <br>
 
