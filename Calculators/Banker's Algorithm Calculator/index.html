@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banker's Algorithm Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-microchip"></i>
+                <span>Banker's Algorithm</span>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active" data-tab="calculator">Calculator</li>
+                    <li data-tab="visualization">Visualization</li>
+                    <li data-tab="tutorial">Tutorial</li>
+                    <li data-tab="about">About</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="tabs">
+            <div class="tab active" data-tab="calculator">
+                <i class="fas fa-calculator"></i> Calculator
+            </div>
+            <div class="tab" data-tab="visualization">
+                <i class="fas fa-chart-bar"></i> Visualization
+            </div>
+            <div class="tab" data-tab="tutorial">
+                <i class="fas fa-book"></i> Tutorial
+            </div>
+            <div class="tab" data-tab="about">
+                <i class="fas fa-info-circle"></i> About
+            </div>
+        </div>
+
+        <!-- Calculator Tab -->
+        <div class="tab-content active" id="calculator">
+            <div class="card animate-slide-up">
+                <h2>Resource and Process Configuration</h2>
+                <p>Enter the number of resources and processes to start the calculation.</p>
+                
+                <div class="input-group">
+                    <label for="resource-count">Number of Resources (1-10):</label>
+                    <input type="number" id="resource-count" min="1" max="10" value="3">
+                </div>
+                
+                <div class="input-group">
+                    <label for="process-count">Number of Processes (1-10):</label>
+                    <input type="number" id="process-count" min="1" max="10" value="5">
+                </div>
+                
+                <button id="initialize-btn">
+                    <i class="fas fa-sync-alt"></i> Initialize
+                </button>
+            </div>
+            
+            <div id="resource-allocation" class="resource-allocation" style="display: none;">
+                <div class="card">
+                    <h2>Available Resources</h2>
+                    <p>Enter the total number of instances for each resource type:</p>
+                    <div id="available-resources-container" class="matrix-wrapper"></div>
+                </div>
+                
+                <div class="card mt-20">
+                    <h2>Process Allocation</h2>
+                    <p>Enter the currently allocated resources and maximum resources needed for each process:</p>
+                    
+                    <div class="matrix-wrapper">
+                        <h3>Currently Allocated Resources</h3>
+                        <div id="allocated-matrix-container"></div>
+                    </div>
+                    
+                    <div class="matrix-wrapper">
+                        <h3>Maximum Resources Needed</h3>
+                        <div id="max-matrix-container"></div>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button id="calculate-btn">
+                            <i class="fas fa-play"></i> Calculate Safety
+                        </button>
+                        <button id="reset-btn" class="secondary">
+                            <i class="fas fa-undo"></i> Reset
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="result" class="result">
+                    <div id="result-message"></div>
+                </div>
+                
+                <div id="step-execution" class="step-execution" style="display: none;">
+                    <div class="card">
+                        <h2>Step-by-Step Execution</h2>
+                        <div id="steps-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Visualization Tab -->
+        <div class="tab-content" id="visualization">
+            <div class="card">
+                <h2>Banker's Algorithm Visualization</h2>
+                <p>This interactive visualization demonstrates how the Banker's Algorithm works to prevent deadlock.</p>
+                
+                <div class="input-group">
+                    <label for="visualization-preset">Choose a preset scenario:</label>
+                    <select id="visualization-preset">
+                        <option value="safe">Safe State Scenario</option>
+                        <option value="unsafe">Unsafe State Scenario</option>
+                        <option value="deadlock">Deadlock Scenario</option>
+                    </select>
+                </div>
+                
+                <button id="start-visualization-btn">
+                    <i class="fas fa-play"></i> Start Visualization
+                </button>
+                
+                <div class="visualization-area" id="visualization-area">
+                    <!-- Visualization will be rendered here -->
+                </div>
+                
+                <div class="info-card mt-20">
+                    <h3>Execution Progress</h3>
+                    <div id="visualization-progress">
+                        <p>Press 'Start Visualization' to begin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tutorial Tab -->
+        <div class="tab-content" id="tutorial">
+            <div class="card">
+                <h2>Understanding Banker's Algorithm</h2>
+                <p>The Banker's Algorithm is a resource allocation and deadlock avoidance algorithm that tests for safety by simulating the allocation of all resources to each process.</p>
+                
+                <div class="info-card mt-20">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li><strong>Available Resources:</strong> The number of available instances of each resource type</li>
+                        <li><strong>Maximum Resources:</strong> The maximum demand of each process for each resource type</li>
+                        <li><strong>Allocated Resources:</strong> The number of resources of each type currently allocated to each process</li>
+                        <li><strong>Need Resources:</strong> The remaining resources needed for each process (Maximum - Allocated)</li>
+                    </ul>
+                </div>
+                
+                <div class="mt-20">
+                    <h3>Algorithm Steps</h3>
+                    <div class="step animate-slide-up" style="opacity: 1; transform: translateX(0);">
+                        <strong>Step 1:</strong> Initialize the system state with available resources, maximum needs, and current allocations.
+                    </div>
+                    <div class="step animate-slide-up" style="opacity: 1; transform: translateX(0);">
+                        <strong>Step 2:</strong> Calculate the need matrix by subtracting the allocated resources from the maximum needs.
+                    </div>
+                    <div class="step animate-slide-up" style="opacity: 1; transform: translateX(0);">
+                        <strong>Step 3:</strong> Find a process that can be satisfied with the available resources.
+                    </div>
+                    <div class="step animate-slide-up" style="opacity: 1; transform: translateX(0);">
+                        <strong>Step 4:</strong> Assume that process finishes, and release its resources back to the available pool.
+                    </div>
+                    <div class="step animate-slide-up" style="opacity: 1; transform: translateX(0);">
+                        <strong>Step 5:</strong> Repeat steps 3-4 until all processes are allocated or no process can be allocated.
+                    </div>
+                    <div class="step animate-slide-up" style="opacity: 1; transform: translateX(0);">
+                        <strong>Step 6:</strong> If all processes can finish, the state is safe. Otherwise, it's unsafe.
+                    </div>
+                </div>
+                
+                <div class="button-group">
+                    <button id="show-examples-btn">
+                        <i class="fas fa-list"></i> Show Examples
+                    </button>
+                    <button id="show-theory-btn" class="secondary">
+                        <i class="fas fa-graduation-cap"></i> Theoretical Background
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- About Tab -->
+        <div class="tab-content" id="about">
+            <div class="card">
+                <h2>About This Project</h2>
+                <p>This Banker's Algorithm Calculator was developed to help students, researchers, and professionals understand and apply the Banker's Algorithm for resource allocation and deadlock avoidance.</p>
+                
+                <div class="info-card mt-20">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Interactive calculator for testing safe and unsafe states</li>
+                        <li>Visual representation of the allocation process</li>
+                        <li>Step-by-step execution details</li>
+                        <li>Comprehensive tutorial with examples</li>
+                        <li>Responsive design for desktop and mobile devices</li>
+                    </ul>
+                </div>
+                
+                <div class="mt-20">
+                    <h3>Developer</h3>
+                    <p>Created by <a href="https://github.com/sakshamjain98" target="_blank">sakshamjain98</a></p>
+                    <p>Feel free to contribute or report issues on the <a href="https://github.com/sakshamjain98/bankers-algorithm-calculator" target="_blank">GitHub repository</a>.</p>
+                </div>
+                
+                <div class="button-group">
+                    <button id="view-github-btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </button>
+                    <button id="feedback-btn" class="secondary">
+                        <i class="fas fa-comment"></i> Provide Feedback
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="examples-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Example Scenarios</h2>
+            
+            <div class="mt-20">
+                <h3>Example 1: Safe State</h3>
+                <p>Consider a system with 3 resource types and 5 processes:</p>
+                
+                <div class="matrix-wrapper mt-20">
+                    <h4>Available Resources: [3, 3, 2]</h4>
+                    
+                    <h4>Allocation Matrix:</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Process</th>
+                                <th>Resource A</th>
+                                <th>Resource B</th>
+                                <th>Resource C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>P0</td><td>0</td><td>1</td><td>0</td></tr>
+                            <tr><td>P1</td><td>2</td><td>0</td><td>0</td></tr>
+                            <tr><td>P2</td><td>3</td><td>0</td><td>2</td></tr>
+                            <tr><td>P3</td><td>2</td><td>1</td><td>1</td></tr>
+                            <tr><td>P4</td><td>0</td><td>0</td><td>2</td></tr>
+                        </tbody>
+                    </table>
+                    
+                    <h4>Max Matrix:</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Process</th>
+                                <th>Resource A</th>
+                                <th>Resource B</th>
+                                <th>Resource C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>P0</td><td>7</td><td>5</td><td>3</td></tr>
+                            <tr><td>P1</td><td>3</td><td>2</td><td>2</td></tr>
+                            <tr><td>P2</td><td>9</td><td>0</td><td>2</td></tr>
+                            <tr><td>P3</td><td>2</td><td>2</td><td>2</td></tr>
+                            <tr><td>P4</td><td>4</td><td>3</td><td>3</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <p class="mt-20">Result: <span style="color: var(--success);">Safe State</span></p>
+                <p>Safe Sequence: P1 → P3 → P4 → P0 → P2</p>
+            </div>
+            
+            <div class="mt-20">
+                <h3>Example 2: Unsafe State</h3>
+                <p>Consider a system with 2 resource types and 3 processes:</p>
+                
+                <div class="matrix-wrapper mt-20">
+                    <h4>Available Resources: [1, 0]</h4>
+                    
+                    <h4>Allocation Matrix:</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Process</th>
+                                <th>Resource A</th>
+                                <th>Resource B</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>P0</td><td>1</td><td>2</td></tr>
+                            <tr><td>P1</td><td>2</td><td>0</td></tr>
+                            <tr><td>P2</td><td>3</td><td>1</td></tr>
+                        </tbody>
+                    </table>
+                    
+                    <h4>Max Matrix:</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Process</th>
+                                <th>Resource A</th>
+                                <th>Resource B</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>P0</td><td>3</td><td>3</td></tr>
+                            <tr><td>P1</td><td>3</td><td>2</td></tr>
+                            <tr><td>P2</td><td>4</td><td>1</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <p class="mt-20">Result: <span style="color: var(--danger);">Unsafe State</span></p>
+                <p>No safe sequence exists - potential deadlock situation!</p>
+            </div>
+            
+            <button id="load-example-1-btn" class="mt-20">
+                <i class="fas fa-upload"></i> Load Example 1
+            </button>
+        </div>
+    </div>
+    
+    <div id="theory-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Theoretical Background</h2>
+            
+            <div class="mt-20">
+                <h3>The Deadlock Problem</h3>
+                <p>A deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process.</p>
+                
+                <h3 class="mt-20">Banker's Algorithm</h3>
+                <p>Developed by Edsger Dijkstra, the Banker's Algorithm is a deadlock avoidance algorithm. It's called the Banker's Algorithm because it mirrors how a banker would handle loans - never allocating more resources than available and ensuring the system can always reach completion.</p>
+                
+                <h3 class="mt-20">Mathematical Formulation</h3>
+                <p>The algorithm uses several matrices:</p>
+                <ul>
+                    <li><strong>Available[m]</strong>: Vector of length m (number of resource types) representing available resources</li>
+                    <li><strong>Max[n][m]</strong>: n×m matrix defining the maximum demand of each process</li>
+                    <li><strong>Allocation[n][m]
+                        <li><strong>Allocation[n][m]</strong>: n×m matrix showing current allocation for each process</li>
+                    <li><strong>Need[n][m]</strong>: n×m matrix indicating remaining resources needed (Max - Allocation)</li>
+                </ul>
+                
+                <h3 class="mt-20">Safety Algorithm</h3>
+                <ol>
+                    <li>Let Work = Available and Finish[i] = false for all i</li>
+                    <li>Find an i such that Finish[i] = false and Need[i] ≤ Work</li>
+                    <li>If no such i exists, go to step 5</li>
+                    <li>Work = Work + Allocation[i], Finish[i] = true, go to step 2</li>
+                    <li>If Finish[i] = true for all i, the system is in a safe state</li>
+                </ol>
+                
+                <h3 class="mt-20">Advantages and Limitations</h3>
+                <h4>Advantages:</h4>
+                <ul>
+                    <li>Prevents deadlock by ensuring the system never enters an unsafe state</li>
+                    <li>Allows for dynamic resource allocation</li>
+                    <li>Does not require process preemption</li>
+                </ul>
+                <h4>Limitations:</h4>
+                <ul>
+                    <li>Requires knowledge of maximum resource needs in advance</li>
+                    <li>Assumes a fixed number of resources and processes</li>
+                    <li>Can lead to low resource utilization due to its conservative nature</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Provide Feedback</h2>
+            
+            <div class="mt-20">
+                <div class="input-group">
+                    <label for="feedback-name">Name (optional):</label>
+                    <input type="text" id="feedback-name">
+                </div>
+                
+                <div class="input-group">
+                    <label for="feedback-email">Email (optional):</label>
+                    <input type="email" id="feedback-email">
+                </div>
+                
+                <div class="input-group">
+                    <label for="feedback-type">Feedback Type:</label>
+                    <select id="feedback-type">
+                        <option value="bug">Bug Report</option>
+                        <option value="feature">Feature Request</option>
+                        <option value="comment">General Comment</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="feedback-message">Your Feedback:</label>
+                    <textarea id="feedback-message" rows="5" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 10px;"></textarea>
+                </div>
+                
+                <button id="submit-feedback-btn" class="mt-20">
+                    <i class="fas fa-paper-plane"></i> Submit Feedback
+                </button>
+            </div>
+        </div>
+    </div>
+
+   <script src="./script.js"></script>
+</body>
+</html>
