@@ -50,6 +50,27 @@ nav a {
 nav a:hover {
     color: var(--primary-color);
 }
+.flex-container{
+    display: flex; 
+}
+.flex-item-left {
+    background-color: transparent;
+    margin-left: 10px;
+    flex: 5%;
+    position: relative;
+    left:-25px;
+}
+.flex-item-right {
+    background-color: transparent;
+    padding: 0px;
+    margin-left: 5px;
+    font-size: 1.5rem;
+    color: rgb(24, 150, 189);
+    text-shadow: 1px 1.5px 2px rgb(14, 96, 220), 1px 1px 1px white;
+    font-weight: 700;
+    position: relative;
+    left:-25px; 
+}
 
 /* Hero Section */
 .hero {
