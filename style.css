@@ -193,6 +193,16 @@ footer {
 .footer-links a:hover {
     text-decoration: underline;
 }
+.img-container {
+    overflow: hidden;
+    border-radius: 5px;
+}
+.img-container img{
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+.img-container:hover img {
+    transform: scale(1.08);
+}
 
 /* Animations */
 @keyframes fadeIn {
