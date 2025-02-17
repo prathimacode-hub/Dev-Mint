@@ -27,16 +27,60 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: fixed;
     width: 100%;
+    height: 90px;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#search-bar{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px;
+    border:2px solid transparent;
+    border-radius: 50px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+#search-bar:hover{
+    background-color:white;
+    border: 2px solid #ffdbf9;
+}
+#search-bar input{
+    width: 65%;
+    outline: none;
+    background-color:#f1f1f1 ;
+    border-color:transparent;
+    font-weight: normal;
+}
+#search-bar input::placeholder{
+    color: black;
+}
+#search-bar:hover input {
+    background-color:white;
+}
+#search-bar i{
+    font-size: 20px;
+    padding: 6px;
+    background-color:#EA4C89 ;
+    color:white;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 nav a {
@@ -46,9 +90,22 @@ nav a {
     font-weight: 500;
     transition: color 0.3s;
 }
-
+nav a::after{
+    content:"";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+     transition: width 0.5s linear;
+}
+nav a:hover::after{
+    width: 100%;
+    background-color: var(--primary-color);
+        
+}
 nav a:hover {
     color: var(--primary-color);
+   
 }
 
 /* Hero Section */
@@ -190,8 +247,16 @@ footer {
     text-decoration: none;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
+.footer-links a::after{
+    content:"";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.5s linear;
+}
+.footer-links a:hover::after {
+    width:100%;
 }
 
 /* Animations */

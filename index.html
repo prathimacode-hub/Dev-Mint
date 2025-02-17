@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev-Mint</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="logo">Dev-Mint</div>
+        <div id="search-bar">
+            <input type="text" placeholder="What are you looking for?">
+            <div>
+                <i class="ri-search-line "></i>
+            </div>
+        </div>
+        </div>
         <nav>
             <a href="#home">Home</a>
             <a href="#games">Games</a>
@@ -111,7 +122,7 @@
 
         // Add smooth scrolling to all navigation links
         document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 if (this.getAttribute('href').startsWith('#')) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
@@ -121,4 +132,5 @@
         });
     </script>
 </body>
+
 </html>
