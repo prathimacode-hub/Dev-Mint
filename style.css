@@ -154,7 +154,7 @@ nav a:hover {
     background-image: url("assets/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat, repeat;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
