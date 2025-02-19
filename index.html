@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="logo">Dev-Mint</div>
@@ -31,19 +33,25 @@
         <h2 class="section-title">🎮 Fun & Engaging Games</h2>
         <div class="grid">
             <div class="card">
-                <img src="assets/numberguess.jpg" alt="Number Guessing Game">
+                <div class="img-container">
+                    <img src="assets/numberguess.jpg" alt="Number Guessing Game">
+                </div>
                 <h3>Number Guessing Game</h3>
                 <p>Try your luck and guess the number!</p>
                 <a href="HTML+CSS+JS Apps/Number Guessing Game/Index.html" class="card-button">Play Now</a>
             </div>
             <div class="card">
-                <img src="assets/snakegamebg.jpg" alt="Snake Game">
+                <div class="img-container">
+                    <img src="assets/snakegamebg.jpg" alt="Snake Game">
+                </div>
                 <h3>Snake Game</h3>
                 <p>Classic snake, modern twist.</p>
                 <a href="HTML+CSS+JS Apps/Snake Game/index.html" class="card-button">Play Now</a>
             </div>
             <div class="card">
-                <img src="assets/comsoon.jpg" alt="Future Games">
+                <div class="img-container">
+                    <img src="assets/comsoon.jpg" alt="Future Games">
+                </div>
                 <h3>More Games Coming Soon</h3>
                 <p>Stay tuned for exciting new additions!</p>
                 <a href="#" class="card-button">Coming Soon</a>
@@ -55,19 +63,25 @@
         <h2 class="section-title">🛠 Powerful Tools for Everyone</h2>
         <div class="grid">
             <div class="card">
-                <img src="assets/background_remover.jpg" alt="AI Image Generator">
+                <div class="img-container">
+                    <img src="assets/background_remover.jpg" alt="AI Image Generator">
+                </div>
                 <h3>AI Image Generator</h3>
                 <p>Generate Image Easily.</p>
                 <a href="HTML+CSS+JS Apps/AI Image Generator/index.html" class="card-button">Try Now</a>
             </div>
             <div class="card">
-                <img src="assets/dicbg.jpg" alt="Word Meaning App">
+                <div class="img-container">
+                    <img src="assets/dicbg.jpg" alt="Word Meaning App">
+                </div>
                 <h3>Word Meaning App</h3>
                 <p>Get instant meanings of words.</p>
                 <a href="HTML+CSS+JS Apps/Word Meaning App/index.html" class="card-button">Try Now</a>
             </div>
             <div class="card">
-                <img src="assets/BMI_Calcu.png" alt="Calculator">
+                <div class="img-container">
+                    <img src="assets/BMI_Calcu.png" alt="Calculator">
+                </div>
                 <h3>BMI Calculator</h3>
                 <p>Tool for quick calculations.</p>
                 <a href="#" class="card-button">Try Now</a>
@@ -111,7 +125,7 @@
 
         // Add smooth scrolling to all navigation links
         document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 if (this.getAttribute('href').startsWith('#')) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
@@ -121,4 +135,5 @@
         });
     </script>
 </body>
+
 </html>
