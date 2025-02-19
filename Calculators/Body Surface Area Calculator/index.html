@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced BSA Calculator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="container">
+        <div class="header">
+            <h1>Enhanced BSA Calculator</h1>
+            <p>Advanced Body Surface Area Calculator with Simulations</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" data-tab="calculator">
+                <i class="fas fa-calculator"></i> Calculator
+            </button>
+            <button class="tab" data-tab="simulations">
+                <i class="fas fa-chart-line"></i> Simulations
+            </button>
+            <button class="tab" data-tab="history">
+                <i class="fas fa-history"></i> History
+            </button>
+            <button class="tab" data-tab="about">
+                <i class="fas fa-info-circle"></i> About
+            </button>
+        </div>
+
+        <div id="calculator" class="tab-content active">
+            <div class="calculator-form">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Measurement System</label>
+                        <select id="unit-system" onchange="updateUnits()">
+                            <option value="metric">Metric (cm/kg)</option>
+                            <option value="imperial">Imperial (in/lbs)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Gender</label>
+                        <select id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Height <span id="height-unit">(cm)</span></label>
+                        <input type="number" id="height" step="0.1" placeholder="Enter height">
+                    </div>
+                    <div class="input-group">
+                        <label>Weight <span id="weight-unit">(kg)</span></label>
+                        <input type="number" id="weight" step="0.1" placeholder="Enter weight">
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Age (years)</label>
+                        <input type="number" id="age" placeholder="Enter age">
+                    </div>
+                    <div class="input-group">
+                        <label>Activity Level</label>
+                        <select id="activity-level">
+                            <option value="sedentary">Sedentary</option>
+                            <option value="light">Light Activity</option>
+                            <option value="moderate">Moderate Activity</option>
+                            <option value="active">Very Active</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="calculate-btn" onclick="calculateBSA()">
+                    Calculate BSA & Metrics
+                </button>
+
+                <div class="advanced-metrics" id="metrics-result"></div>
+            </div>
+        </div>
+
+        <div id="simulations" class="tab-content">
+            <div class="simulation-container">
+                <h3>BSA Change Simulation</h3>
+                <div class="simulation-controls">
+                    <button onclick="startSimulation()">Start Simulation</button>
+                    <button onclick="stopSimulation()">Stop</button>
+                    <button onclick="resetSimulation()">Reset</button>
+                </div>
+                <div class="simulation-graph" id="simulation-graph"></div>
+            </div>
+        </div>
+
+        <div id="history" class="tab-content">
+            <div id="history-container"></div>
+        </div>
+
+        <div id="about" class="tab-content">
+            <div class="calculator-form">
+                <h2>About BSA Calculator</h2>
+                <div class="about-content">
+                    <h3>What is BSA?</h3>
+                    <p>Body Surface Area (BSA) is a calculated measure of the total surface area of the human body. It's widely used in medicine for various purposes including drug dosing, metabolic rate calculations, and cardiac output measurements.</p>
+                    
+                    <h3>Formulas Used</h3>
+                    <ul>
+                        <li>Du Bois Formula: BSA = 0.007184 × W^0.425 × H^0.725</li>
+                        <li>Mosteller Formula: BSA = √((W × H)/3600)</li>
+                        <li>Haycock Formula: BSA = 0.024265 × W^0.5378 × H^0.3964</li>
+                    </ul>
+
+                    <h3>Applications</h3>
+                    <ul>
+                        <li>Drug Dosing</li>
+                        <li>Metabolic Rate Calculations</li>
+                        <li>Cardiac Output Measurements</li>
+                        <li>Burns Assessment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

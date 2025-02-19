@@ -24,11 +24,11 @@ Completed PR's (4) - Hover Card Flip | CSS Layouts Cheatsheet | Dinosaur Hurdle 
 
 LinkedIn Profile: https://www.linkedin.com/in/shivam-tripathi-9bbb2b223 <br>
 
-4. Vinita More | vimore03 | Email Address | Discord Username <br>
+4. Vinita More | vimore03 | Email Address | vinitam03 <br>
    
 Completed PR's (2) - Analog Clock App | Calendar App <br>
 
-LinkedIn Profile: https://www.linkedin.com/in/  <br>
+LinkedIn Profile: www.linkedin.com/in/vinita-more-6b439a262  <br>
 
 5. Ankit Kumar | meAnkit18 | ankit1842kumar@gmail.com | ankit2023_  <br>
 
@@ -41,3 +41,25 @@ LinkedIn Profile: https://www.linkedin.com/in/meankit18  <br>
 Completed PR (1) - Simon Game App   <br>
 
 LinkedIn Profile: https://www.linkedin.com/in/uday-coder <br>
+
+7. Gaurav Pratap Singh | gauravsingh1281 | gs492979@gmail.com | gauravsingh1281 <br>
+
+Completed PR's -
+
+LinkedIn Profile: https://www.linkedin.com/in/gauravsingh1281
+
+8. Seetha Pragna | pragna7 | https://www.linkedin.com/in/seetha-pragna-659015312 | s_pragna  <br>
+
+Completed PR's -
+
+LinkedIn Profile: https://www.linkedin.com/in/seetha-pragna-659015312
+
+9. Shubham Patel | spbyname | | spbyname  <br>
+
+LinkedIn Profile: 
+
+10. Khushi Agrawal | Army-cloud-95 | khushiagrawal0196@gmail.com | agrawalkhushi  <br>
+
+Completed PR's -
+
+LinkedIn Profile: 
