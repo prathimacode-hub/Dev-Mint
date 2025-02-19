@@ -11,7 +11,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth; /* Add smooth scrolling for the whole page */
+    scroll-behavior: smooth;
+    /* Add smooth scrolling for the whole page */
 }
 
 body {
@@ -24,7 +25,7 @@ body {
 header {
     background-color: white;
     padding: 1rem 2rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     height: 90px;
@@ -32,7 +33,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+
+
 }
 
 .logo {
@@ -40,72 +42,110 @@ header {
     font-weight: bold;
     color: var(--primary-color);
 }
-nav{
+
+#desktop-nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+}
+
+#mobile-nav {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: white;
+    width: 100%;
+    height: 196px;
+
+}
+
+#mobile-nav div {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 10px;
 }
-#search-bar{
-    width: 400px;
+
+.hidden {
+    display: none;
+}
+
+#search-bar {
+    width: 348px;
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding: 15px;
-    border:2px solid transparent;
+    padding: 14px;
+    border: 2px solid transparent;
     border-radius: 50px;
     background-color: #f1f1f1;
     cursor: pointer;
 }
-#search-bar:hover{
-    background-color:white;
+
+#search-bar:hover {
+    background-color: white;
     border: 2px solid #ffdbf9;
 }
-#search-bar input{
+
+#search-bar input {
     width: 65%;
     outline: none;
-    background-color:#f1f1f1 ;
-    border-color:transparent;
+    background-color: #f1f1f1;
+    border-color: transparent;
     font-weight: normal;
 }
-#search-bar input::placeholder{
+
+#search-bar input::placeholder {
     color: black;
 }
+
 #search-bar:hover input {
-    background-color:white;
+    background-color: white;
 }
-#search-bar i{
+
+#search-bar i {
     font-size: 20px;
     padding: 6px;
-    background-color:#EA4C89 ;
-    color:white;
+    background-color: #EA4C89;
+    color: white;
     border-radius: 50%;
     cursor: pointer;
 }
 
 nav a {
-    margin-left: 2rem;
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
     transition: color 0.3s;
 }
-nav a::after{
-    content:"";
+
+nav a::after {
+    content: "";
     display: block;
     width: 0%;
     height: 2px;
     background-color: black;
-     transition: width 0.5s linear;
+    transition: width 0.5s linear;
 }
-nav a:hover::after{
+
+nav a:hover::after {
     width: 100%;
     background-color: var(--primary-color);
-        
+
 }
+
 nav a:hover {
     color: var(--primary-color);
-   
+
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
 }
 
 /* Hero Section */
@@ -113,8 +153,8 @@ nav a:hover {
     min-height: 100vh;
     background-image: url("assets/bg.jpg");
     background-size: cover;
-  background-repeat: no-repeat, repeat;
-    display: flex;
+    background-repeat: no-repeat, repeat;
+    display: none;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -159,7 +199,8 @@ nav a:hover {
 /* Section Styles */
 section {
     padding: 5rem 2rem;
-    scroll-margin-top: 80px; /* Add space for fixed header when scrolling to section */
+    scroll-margin-top: 80px;
+    /* Add space for fixed header when scrolling to section */
 }
 
 .section-title {
@@ -181,7 +222,7 @@ section {
     background: var(--card-background);
     border-radius: 10px;
     padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
@@ -247,22 +288,28 @@ footer {
     text-decoration: none;
 }
 
-.footer-links a::after{
-    content:"";
+.footer-links a::after {
+    content: "";
     display: block;
     width: 0%;
     height: 2px;
     background-color: white;
     transition: width 0.5s linear;
 }
+
 .footer-links a:hover::after {
-    width:100%;
+    width: 100%;
 }
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInDown {
@@ -270,6 +317,7 @@ footer {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -281,6 +329,7 @@ footer {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -289,8 +338,12 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav {
+    #desktop-nav {
         display: none;
+    }
+
+    .menu-icon {
+        display: block;
     }
 
     .hero h1 {
@@ -299,5 +352,40 @@ footer {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    #search-bar {
+        width: 226px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 9px;
+        border: 2px solid transparent;
+        border-radius: 50px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+
+    #search-bar input {
+        width: 85%;
+        outline: none;
+        background-color: #f1f1f1;
+        border-color: transparent;
+        font-weight: normal;
+    }
+
+    #search-bar i {
+        font-size: 17px;
+        padding: 6px;
+        background-color: #EA4C89;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:768px) {
+    #mobile-nav {
+        display: none;
     }
 }

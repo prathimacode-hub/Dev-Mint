@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loading...</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+            gap: 10;
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
@@ -56,7 +59,7 @@
         <div class="loader"></div>
         <p id="percentage">0%</p>
     </div>
-
+    <div class="logo">Dev-Mint</div>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             let percentage = 0;
