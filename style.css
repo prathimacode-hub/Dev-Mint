@@ -194,6 +194,22 @@ footer {
     text-decoration: underline;
 }
 
+#goto-top-btn {
+    background-color: white;
+    padding: 15px 19px;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 55px;
+    right: 30px;
+    display: none;
+    border:5px solid red;
+    cursor: pointer;
+}
+
+#goto-top-btn:hover {
+    background-color: #bdbaba;
+}
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
