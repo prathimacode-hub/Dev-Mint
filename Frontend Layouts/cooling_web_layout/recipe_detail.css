@@ -1,0 +1,72 @@
+/* Recipe Detail Page Styles */
+.recipe-detail {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .recipe-detail-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .recipe-detail h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-detail img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .recipe-detail h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-detail ul,
+  .recipe-detail ol {
+    margin-bottom: 30px;
+  }
+  
+  .recipe-detail ul li,
+  .recipe-detail ol li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .recipe-detail p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .buttons button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: #e55d00;
+  }
+  

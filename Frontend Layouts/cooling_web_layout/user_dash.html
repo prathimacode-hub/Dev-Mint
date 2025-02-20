@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="user_dash.css">
+</head>
+<body>
+  <div class="user-dashboard">
+    <!-- Profile Section -->
+    <section class="profile-section">
+      
+      <div class="profile-info">
+        <img src="images/blank-profile-picture.webp" alt="Profile Picture" class="profile-picture">
+        <div class="profile-details">
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Dietary Preferences:</strong> Vegan</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Saved Recipes Section -->
+    <section class="saved-recipes">
+      <h2>Saved Recipes</h2>
+      <ul class="recipe-list">
+        <li><a href="carbonara.html">Pasta Carbonara</a></li>
+        <li><a href="vegan-salad.html">Vegan Salad</a></li>
+        <li><a href="chicken-curry.html">Chicken Curry</a></li>
+      </ul>
+    </section>
+
+    <!-- User-Uploaded Recipes Section -->
+    <section class="uploaded-recipes">
+      <h2>Your Uploaded Recipes</h2>
+      <ul class="recipe-list">
+        <li><a href="uploaded-recipe1.html">Avocado Toast</a></li>
+        <li><a href="uploaded-recipe2.html">Chickpea Curry</a></li>
+      </ul>
+    </section>
+
+    <!-- Recipe History Section -->
+    <section class="recipe-history">
+      <h2>Recipe History</h2>
+      <ul class="history-list">
+        <li><a href="recipe-history1.html">Vegan Tacos</a></li>
+        <li><a href="recipe-history2.html">Cauliflower Stir Fry</a></li>
+      </ul>
+    </section>
+
+    <!-- Preferences Section -->
+    <section class="preferences-section">
+      <h2>Update Preferences</h2>
+      <form action="/update-preferences" method="POST">
+        <label for="dietary-preferences">Dietary Preferences:</label>
+        <select id="dietary-preferences" name="dietary-preferences">
+          <option value="vegan">Vegan</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="gluten-free">Gluten-Free</option>
+          <option value="none">None</option>
+        </select>
+        <button type="submit">Save Preferences</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>

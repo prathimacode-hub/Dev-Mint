@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Listing</title>
+  <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+
+  <!-- Recipe Filters -->
+  <div class="recipe-filters">
+    <h1>Filter Recipes</h1>
+    <select id="filter-category">
+      <option value="">All Categories</option>
+      <option value="Healthy Meals">Healthy Meals</option>
+      <option value="Desserts">Desserts</option>
+      <option value="Vegan">Vegan</option>
+      <option value="Quick Meals">Quick Meals</option>
+    </select>
+    <button>Apply Filters</button>
+</div>
+
+  <!-- Recipe Grid -->
+  <section class="recipe-list">
+    <h2>Recipes</h2>
+    <div class="recipe-grid">
+      <!-- Recipe cards will be displayed here -->
+      
+      <div class="recipe-card">
+        <a href="carbonara.html" style="text-decoration: none;">
+        <img src="images/carbonara.jpg" alt="Recipe 1">
+        <h3>Pasta Carbonara</h3>
+        <p>30 mins | Easy | 4.5/5</p>
+    </a>
+      </div>
+    
+      <div class="recipe-card">
+        <a href="vegan-salad.html" style="text-decoration: none;">
+        <img src="images/vegan-salad.jpg" alt="Recipe 2">
+        <h3>Vegan Salad</h3>
+        <p>20 mins | Easy | 5/5</p>
+    </a>
+      </div>
+      <div class="recipe-card">
+        <a href="chicken-curry.html" style="text-decoration: none;">
+        <img src="images/chicken-curry.jpg" alt="Recipe 3">
+        <h3>Chicken Curry</h3>
+        <p>40 mins | Medium | 4/5</p>
+        </a>
+      </div>
+
+      <!-- Add more recipe cards here -->
+    </div>
+  </section>
+
+</body>
+</html>
