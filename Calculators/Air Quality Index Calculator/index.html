@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced AQI Calculator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-wind"></i> AQI Calculator Pro
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="tab-container">
+            <div class="tabs">
+                <div class="tab active" data-tab="calculator">
+                    <i class="fas fa-calculator"></i> Calculator
+                </div>
+                <div class="tab" data-tab="map">
+                    <i class="fas fa-map-marked-alt"></i> Map View
+                </div>
+                <div class="tab" data-tab="history">
+                    <i class="fas fa-chart-line"></i> History
+                </div>
+                <div class="tab" data-tab="settings">
+                    <i class="fas fa-cog"></i> Settings
+                </div>
+            </div>
+
+            <!-- Calculator Tab -->
+            <div class="tab-content active" id="calculator">
+                <form class="calculator-form" id="aqi-form">
+                    <div class="input-group">
+                        <label for="pm25">PM2.5 (μg/m³)</label>
+                        <input type="number" id="pm25" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="pm10">PM10 (μg/m³)</label>
+                        <input type="number" id="pm10" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="co">CO (mg/m³)</label>
+                        <input type="number" id="co" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="no2">NO₂ (ppb)</label>
+                        <input type="number" id="no2" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="so2">SO₂ (ppb)</label>
+                        <input type="number" id="so2" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="o3">O₃ (ppb)</label>
+                        <input type="number" id="o3" required>
+                    </div>
+                    <button type="submit">Calculate AQI</button>
+                </form>
+
+                <div class="loading" id="loading-indicator"></div>
+
+                <div class="results" id="results">
+                    <h2>Air Quality Index Results</h2>
+                    <div class="aqi-display" id="aqi-value"></div>
+                    <div id="health-implications"></div>
+                </div>
+            </div>
+
+           <!-- Update the Map Tab content -->
+<div class="tab-content" id="map">
+    <div id="map"></div>
+    <div class="map-controls">
+        <input type="text" id="location-search" placeholder="Search location..." class="search-input">
+        <button onclick="searchLocation()">Search</button>
+        <button onclick="getCurrentLocation()">Use My Location</button>
+    </div>
+    <div id="saved-locations"></div>
+</div>
+
+
+            <!-- History Tab -->
+            <div class="tab-content" id="history">
+                <div class="history-filters">
+                    <select id="time-range" onchange="updateHistoryChart()">
+                        <option value="day">Last 24 Hours</option>
+                        <option value="week">Last 7 Days</option>
+                        <option value="month">Last 30 Days</option>
+                    </select>
+                    <button class="export-btn" onclick="exportHistory()">
+                        <i class="fas fa-download"></i> Export Data
+                    </button>
+                </div>
+                <div class="chart-container">
+                    <canvas id="history-chart"></canvas>
+                </div>
+                <div id="history-list"></div>
+            </div>
+            
+            <!-- Settings Tab -->
+            <div class="tab-content" id="settings">
+                <div class="settings-grid">
+                    <div class="setting-card">
+                        <h3>Notification Settings</h3>
+                        <div class="input-group">
+                            <label>
+                                <input type="checkbox" id="email-notifications">
+                                Email Notifications
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label>
+                                <input type="checkbox" id="push-notifications">
+                                Push Notifications
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-card">
+                        <h3>Display Settings</h3>
+                        <div class="input-group">
+                            <label>Unit System</label>
+                            <select id="unit-system">
+                                <option value="metric">Metric</option>
+                                <option value="imperial">Imperial</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    
+  <script src="./script.js"></script>
