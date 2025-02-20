@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGP Calculator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Arithmetic Geometric Progression Calculator</h1>
+            <p>Calculate and visualize AGP sequences with advanced features</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab active" data-tab="calculator">
+                <i class="fas fa-calculator"></i> Calculator
+            </button>
+            <button class="tab" data-tab="visualization">
+                <i class="fas fa-chart-line"></i> Visualization
+            </button>
+            <button class="tab" data-tab="history">
+                <i class="fas fa-history"></i> History
+            </button>
+            <button class="tab" data-tab="help">
+                <i class="fas fa-question-circle"></i> Help
+            </button>
+        </div>
+
+        <div class="tab-content active" id="calculator">
+            <div class="input-group">
+                <label for="first-term">First Term (a)</label>
+                <input type="number" id="first-term" placeholder="Enter first term">
+            </div>
+            <div class="input-group">
+                <label for="common-difference">Common Difference (d)</label>
+                <input type="number" id="common-difference" placeholder="Enter common difference">
+            </div>
+            <div class="input-group">
+                <label for="common-ratio">Common Ratio (r)</label>
+                <input type="number" id="common-ratio" placeholder="Enter common ratio">
+            </div>
+            <div class="input-group">
+                <label for="num-terms">Number of Terms (n)</label>
+                <input type="number" id="num-terms" placeholder="Enter number of terms">
+            </div>
+            <button class="btn" onclick="calculateAGP()">Calculate</button>
+            <div class="result" id="result"></div>
+        </div>
+
+        <div class="tab-content" id="visualization">
+            <div class="input-group">
+                <label>Select Visualization Type</label>
+                <select id="chart-type" class="input-group input">
+                    <option value="line">Line Chart</option>
+                    <option value="bar">Bar Chart</option>
+                    <option value="scatter">Scatter Plot</option>
+                </select>
+            </div>
+            <div class="visualization" id="chart-container"></div>
+        </div>
+
+        <div class="tab-content" id="history">
+            <div id="history-list"></div>
+        </div>
+
+        <div class="tab-content" id="help">
+            <h2>How to Use the Calculator</h2>
+            <p>An Arithmetic-Geometric Progression (AGP) is a sequence where each term after the first is found by:</p>
+            <ol>
+                <li>Adding a constant (arithmetic part)</li>
+                <li>Multiplying by a constant (geometric part)</li>
+            </ol>
+            <h3>Input Parameters:</h3>
+            <ul>
+                <li>First Term (a): The initial value of the sequence</li>
+                <li>Common Difference (d): The arithmetic increment</li>
+                <li>Common Ratio (r): The geometric multiplier</li>
+                <li>Number of Terms (n): How many terms to calculate</li>
+            </ul>
+        </div>
+    </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
