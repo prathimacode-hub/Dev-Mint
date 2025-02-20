@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width initial-scale=1">
+		<meta name="description" content="This is a quiz designed for basic HTML, CSS, and JavaScript basics.">
+		<title>Quiz - HTML, CSS, and JS Basics</title>
+		<link rel="stylesheet" type="text/css" href="../css/wireframes.css.css">
+	</head>
+	<body>
+		<header>
+			<section class="title">
+				<h1>Title</h1>
+			</section>
+			<button class="hide hint-btn">Hint</button>
+			
+		</header>
+
+		<main>
+			<article class="question-answer-wrapper">
+				<section class="results-wrapper">
+					<p class="quiz-end-feedback">Feedback on results</p>
+					<p class="quiz-end-score">Total score</p>
+					<button class="retry-btn">Retry</button>
+					<button class="share-btn">Share</button>
+				</section>
+				<section class="hide question-wrapper">
+					<p class="hide question">Quiz Question<span class="answer-boolean hide">Incorrect</span></p>
+					<button class="hide submit-btn submit-btn-landscape" disabled>Submit</button>
+				</section>
+				<section class="hide answer-wrapper">
+					<button class="start-quiz">Start Quiz</button>
+					<button class="hide quit-quiz">Quit</button>
+					<button class="share-results">Quit</button>
+					<button class="hide answer-btn">Answer 1</button>
+					<button class="hide pass answer-btn">Answer 2</button>
+					<button class="hide fail selected-answer answer-btn">Answer 1</button>
+					<button class="hide answer-btn">Answer 2</button>
+					<button class="hide submit-btn submit-btn-portrait continue-btn">Continue</button>
+				</section>
+			</article>
+		</main>
+
+		<footer>
+			<section class="progress-bar">
+				<div class="progress-indicator pass"></div>
+				<div class="progress-indicator fail"></div>
+				<div class="progress-indicator pass"></div>
+				<div class="progress-indicator fail"></div>
+				<div class="progress-indicator pass"></div>
+			</section>
+			<section class="progress">
+				<p>Completion Percentage</p>
+			</section>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
