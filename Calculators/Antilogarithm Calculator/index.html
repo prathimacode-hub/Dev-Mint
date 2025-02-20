@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Antilog Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <button class="toggle-dark-mode" id="darkModeToggle">🌙</button>
+            <h1>Advanced Antilog Calculator</h1>
+            <p>Calculate antilogarithms with precision and visualize the results</p>
+        </div>
+        
+        <div class="tabs">
+            <div class="tab active" data-tab="basic">Basic Calculator</div>
+            <div class="tab" data-tab="advanced">Advanced Options</div>
+            <div class="tab" data-tab="comparison">Comparison Tools</div>
+            <div class="tab" data-tab="visualization">Visualization</div>
+            <div class="tab" data-tab="history">Calculation History</div>
+            <div class="tab-indicator"></div>
+        </div>
+        
+        <div class="tab-content active" id="basic">
+            <div class="calculator-grid">
+                <div>
+                    <h2>Antilogarithm Calculator</h2>
+                    <p>Enter a logarithmic value and select a base to calculate its antilogarithm</p>
+                    
+                    <div class="input-group">
+                        <label for="logValue">Logarithmic Value:</label>
+                        <input type="number" id="logValue" class="input-field" step="any" placeholder="Enter the logarithmic value">
+                        <div class="error-message" id="logValueError">Please enter a valid logarithmic value</div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="baseValue">Base:
+                            <div class="tooltip">ⓘ
+                                <span class="tooltip-text">Common bases: 10 (common log), 2 (binary log), e ≈ 2.718 (natural log)</span>
+                            </div>
+                        </label>
+                        <input type="number" id="baseValue" class="input-field" step="any" placeholder="Enter the base (e.g., 10, 2, e)" value="10">
+                        <div class="error-message" id="baseValueError">Base must be a positive number not equal to 1</div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <button id="calculateBtn" class="btn">Calculate Antilogarithm</button>
+                        <button id="clearBtn" class="btn btn-secondary">Clear</button>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="result-container">
+                        <div class="result-header">Result</div>
+                        <div class="result-value" id="resultValue">-</div>
+                        
+                        <div class="steps-container">
+                            <div class="result-header">Mathematical Steps</div>
+                            <div id="calculationSteps">Enter values and calculate to see steps</div>
+                        </div>
+                        
+                        <div class="formula-container">
+                            <div class="result-header">Formula Used:</div>
+                            <div class="formula">y = base<sup>x</sup></div>
+                            <span>where x is log value and y is antilog result</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="advanced">
+            <h2>Advanced Antilogarithm Options</h2>
+            <p>Fine-tune your calculations with advanced settings</p>
+            
+            <div class="calculator-grid">
+                <div>
+                    <div class="input-group">
+                        <label for="advLogValue">Logarithmic Value:</label>
+                        <input type="number" id="advLogValue" class="input-field" step="any" placeholder="Enter the logarithmic value">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="baseSelector">Base Type:</label>
+                        <select id="baseSelector" class="input-field">
+                            <option value="common">Common Log (Base 10)</option>
+                            <option value="natural">Natural Log (Base e)</option>
+                            <option value="binary">Binary Log (Base 2)</option>
+                            <option value="custom">Custom Base</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group" id="customBaseGroup" style="display: none;">
+                        <label for="advBaseValue">Custom Base Value:</label>
+                        <input type="number" id="advBaseValue" class="input-field" step="any" placeholder="Enter custom base value" value="10">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="precisionValue">Result Precision:
+                            <span id="precisionDisplay">5</span> decimal places
+                        </label>
+                        <input type="range" id="precisionValue" min="0" max="15" value="5">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="notationSelector">Output Notation:</label>
+                        <select id="notationSelector" class="input-field">
+                            <option value="standard">Standard Notation</option>
+                            <option value="scientific">Scientific Notation</option>
+                            <option value="engineering">Engineering Notation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Show Calculation Steps</label>
+                        <label class="switch">
+                            <input type="checkbox" id="showStepsToggle" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="result-container">
+                        <div class="result-header">Advanced Result</div>
+                        <div class="result-value" id="advResultValue">-</div>
+                        
+                        <div class="steps-container" id="advStepsContainer">
+                            <div class="result-header">Detailed Steps</div>
+                            <div id="advCalculationSteps">Enter values and calculate to see steps</div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <button id="advCalculateBtn" class="btn">Calculate Advanced Antilogarithm</button>
+                            <button id="advClearBtn" class="btn btn-secondary">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="comparison">
+            <h2>Antilogarithm Comparison Tools</h2>
+            <p>Compare antilogarithm values across different bases</p>
+            
+            <div class="calculator-grid">
+                <div>
+                    <div class="input-group">
+                        <label for="compLogValue">Logarithmic Value:</label>
+                        <input type="number" id="compLogValue" class="input-field" step="any" placeholder="Enter the logarithmic value">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Bases to Compare:</label>
+                        <div>
+                            <input type="checkbox" id="base10Check" checked>
+                            <label for="base10Check">Base 10 (Common)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="baseECheck" checked>
+                            <label for="baseECheck">Base e (Natural)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="base2Check" checked>
+                            <label for="base2Check">Base 2 (Binary)</label>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="customCompBase">Custom Base (Optional):</label>
+                        <input type="number" id="customCompBase" class="input-field" step="any" placeholder="Enter a custom base to compare">
+                    </div>
+                    
+                    <div class="input-group">
+                        <button id="compareBtn" class="btn">Compare Antilogarithms</button>
+                        <button id="compClearBtn" class="btn btn-secondary">Clear</button>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="result-container">
+                        <div class="result-header">Comparison Results</div>
+                        <table class="comparison-table" id="comparisonTable">
+                            <thead>
+                                <tr>
+                                    <th>Base Type</th>
+                                    <th>Antilogarithm Value</th>
+                                    <th>Difference from Base 10</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Comparison results will be added here -->
+                                <tr>
+                                    <td colspan="3" class="empty-message">Enter a value and calculate to see comparison</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="visualization">
+            <h2>Antilogarithm Visualization</h2>
+            <p>Visualize antilogarithms on interactive graphs</p>
+            
+            <div class="calculator-grid">
+                <div>
+                    <div class="input-group">
+                        <label for="visBaseValue">Base for Visualization:</label>
+                        <input type="number" id="visBaseValue" class="input-field" step="any" value="10" placeholder="Enter base value">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="visRangeStart">Log Range Start:</label>
+                        <input type="number" id="visRangeStart" class="input-field" step="any" value="-2" placeholder="Start value">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="visRangeEnd">Log Range End:</label>
+                        <input type="number" id="visRangeEnd" class="input-field" step="any" value="2" placeholder="End value">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="visSteps">Number of Points:</label>
+                        <input type="number" id="visSteps" class="input-field" value="20" min="5" max="100" placeholder="Number of points">
+                    </div>
+                    
+                    <div class="input-group">
+                        <button id="visualizeBtn" class="btn">Generate Graph</button>
+                        <button id="visClearBtn" class="btn btn-secondary">Reset</button>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="result-container">
+                        <div class="result-header">Antilogarithm Curve</div>
+                        <div class="visualization-container" id="visualizationContainer">
+                            <canvas id="graphCanvas" width="600" height="300"></canvas>
+                        </div>
+                        <div id="pointInfo" class="steps-container" style="display: none;">
+                            <div class="result-header">Point Information</div>
+                            <div id="pointDetails">Hover over the graph to see point details</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="history">
+            <h2>Calculation History</h2>
+            <p>View and reuse your previous calculations</p>
+            
+            <div class="input-group">
+                <button id="clearHistoryBtn" class="btn btn-secondary">Clear History</button>
+                <button id="exportHistoryBtn" class="btn">Export History</button>
+            </div>
+            
+            <div class="result-container">
+                <ul class="history-list" id="historyList">
+                    <li class="history-item empty-history">No calculations yet. Use the calculator to see history.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Advanced Antilog Calculator | Created for Saksham Jain</p>
+            <p>© 2025 | <a href="https://github.com/sakshamjain98" target="_blank">https://github.com/sakshamjain98</a></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
