@@ -24,7 +24,7 @@ Completed PR's (4) - Hover Card Flip | CSS Layouts Cheatsheet | Dinosaur Hurdle 
 
 LinkedIn Profile: https://www.linkedin.com/in/shivam-tripathi-9bbb2b223 <br>
 
-4. Vinita More | vimore03 | Email Address | vinitam03 <br>
+4. Vinita More | vimore03 | vinimore0307@gmail.com | vinitam03 <br>
    
 Completed PR's (2) - Analog Clock App | Calendar App <br>
 
