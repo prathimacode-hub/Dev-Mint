@@ -1,3 +1,13 @@
 ## CALCULATORS
 
+- [Age Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Age%20Calculator)
+- [Air Quality Index Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Air%20Quality%20Index%20Calculator)
 - [Amortization Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Amortization%20Calculator)
+- [Anagram Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Anagram%20Calculator)
+- [Antilogarithm Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Antilogarithm%20Calculator)
+- [Arithmetic Geometric Progression Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Arithmetic%20Geometric%20Progression%20Calculator)
+- [Ballistic Coefficient Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Ballistic%20Coefficient%20Calculator)
+- [Banker's Algorithm Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Banker's%20Algorithm%20Calculator)
+- [Body Surface Area Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Body%20Surface%20Area%20Calculator)
+- [Calorie Intake Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Calorie%20Intake%20Calculator)
+- [Currency Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Currency%20Calculator)
