@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact_about.css">
+</head>
+<body>
+  <div class="contact-page">
+    <h1>Contact Us</h1>
+    
+    <section class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>If you have any questions, feedback, or need support, feel free to reach out to us. We’re here to help!</p>
+      
+      <div class="contact-details">
+        <p><strong>Email:</strong></p>
+        <p><strong>Phone:</strong></p>
+        <p><strong>Address:</strong></p>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="/submit-message" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
