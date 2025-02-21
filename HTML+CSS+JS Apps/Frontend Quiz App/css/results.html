@@ -1,0 +1,65 @@
+<html lang="en"><head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width initial-scale=1">
+		<meta name="description" content="This is a quiz designed for basic HTML, CSS, and JavaScript basics.">
+		<title>Quiz - HTML, CSS, and JS Basics</title>
+		<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<section class="title">
+				<h1>Quiz<span class="sub-title">Front End Fundamentals</span></h1>
+			</section>
+			<button type="button" class="hide hint-btn">Hint</button>
+		</header>
+
+		<main>
+			<article class="question-answer-wrapper" style="display: flex;">
+				<section class="results-wrapper" style="display: flex;">
+					<p class="quiz-end-score" style="display: flex;">You got 40% correct!</p>
+					<div class="quiz-end-feedback" style="display: flex;">
+						<p class="quiz-end-feedback-p">You missed a few. You may want to study up on the following topics:</p>
+						<div class="quiz-end-categories"><ul class="failures"><li class="category">accessibility</li><li class="category">forms</li><li class="category">loops</li><li class="category">CSS</li><li class="category">conditionals</li><li class="category">objects</li></ul></div>
+					</div>
+					<button type="button" class="retry-btn pass" style="display: flex;">Retry</button>
+				</section>
+				<section class="question-wrapper" style="display: none;">
+					<p class="question">What would the following code console.log?</p>
+					<p class="code"><pre>let obj = {
+	total: 5,
+	multiplier: 4,
+	multiply: function(){
+		return 
+			this.total *
+			this.multiplier;
+	}
+}
+console.log(obj.multiply() * 2);</pre></p></section>
+				<form class="answer-wrapper" style="display: none;">
+					<button type="button" class="start-quiz" style="display: none;">Start Quiz</button>
+					<button type="button" class="quit-quiz" style="display: none;">Quit</button>
+					<input type="submit" class="submit-btn-portrait continue-btn" value="Continue">
+				</form>
+			</article>
+		</main>
+
+		<footer>
+			<section class="progress-bar" style=""><div class="progress-indicator fail"></div><div class="progress-indicator pass"></div><div class="progress-indicator pass"></div><div class="progress-indicator pass"></div><div class="progress-indicator fail"></div><div class="progress-indicator fail"></div><div class="progress-indicator pass"></div><div class="progress-indicator fail"></div><div class="progress-indicator fail"></div><div class="progress-indicator fail"></div></section>
+			<section class="progress" style="">
+				<p class="progress-fill">
+					Progress: <span class="progress-count">
+		10 / 10
+	</span><span class="progress-perc">
+		 // 40%
+	</span>
+				</p>
+			</section>
+		</footer>
+		<div id="output">
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	
+</body></html>
