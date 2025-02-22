@@ -549,6 +549,23 @@ footer {
     color: #5865F2;
 }
 
+#goto-top-btn {
+    background-color: white;
+    padding: 15px 19px;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 55px;
+    right: 30px;
+    display: none;
+    border: 5px solid red;
+    cursor: pointer;
+}
+
+#goto-top-btn:hover {
+    background-color: #bdbaba;
+}
+
 @keyframes animate {
     50% {
         transform: translateY(-8px);
