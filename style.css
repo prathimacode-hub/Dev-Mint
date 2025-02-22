@@ -566,6 +566,19 @@ footer {
     background-color: #bdbaba;
 }
 
+.img-container {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.img-container img {
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.18);
+}
+
 @keyframes animate {
     50% {
         transform: translateY(-8px);
