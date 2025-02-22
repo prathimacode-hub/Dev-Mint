@@ -11,7 +11,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth; /* Add smooth scrolling for the whole page */
+    scroll-behavior: smooth;
+    /* Add smooth scrolling for the whole page */
 }
 
 body {
@@ -24,7 +25,7 @@ body {
 header {
     background-color: white;
     padding: 1rem 2rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -38,49 +39,53 @@ header {
     font-weight: bold;
     color: var(--primary-color);
 }
+
 .logo h3 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow: hidden;
-    white-space: nowrap; /* Ensure text stays in one line */
-    width: ch; /* Start with no width */
-    animation: typing 2s steps(20, end) 100;  /* Repeat 100 times */
+    white-space: nowrap;
+    /* Ensure text stays in one line */
+    width: ch;
+    /* Start with no width */
+    animation: typing 2s steps(20, end) 100;
+    /* Repeat 100 times */
 }
 
 @keyframes typing {
     from {
         width: 0ch;
     }
+
     to {
         width: 9ch;
     }
 }
-.nav{
-    
-    position: fixed;
-    right:1%;
-    transform: translate(0%,50%);
-}
+
+
 nav a {
-    margin-left: 2rem;
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
     transition: color 0.3s;
 }
 
+
 nav a:hover {
     color: var(--primary-color);
 }
-.flex-container{
-    display: flex; 
+
+.flex-container {
+    display: flex;
 }
+
 .flex-item-left {
     background-color: transparent;
     margin-left: 10px;
     flex: 5%;
     position: relative;
-    left:-25px;
+    left: -25px;
 }
+
 .flex-item-right {
     background-color: transparent;
     padding: 0px;
@@ -90,7 +95,7 @@ nav a:hover {
     text-shadow: 1px 1.5px 2px rgb(14, 96, 220), 1px 1px 1px white;
     font-weight: 700;
     position: relative;
-    left:-25px; 
+    left: -25px;
 }
 
 /* Hero Section */
@@ -98,7 +103,7 @@ nav a:hover {
     min-height: 100vh;
     background-image: url("assets/bg.jpg");
     background-size: cover;
-  background-repeat: no-repeat, repeat;
+    background-repeat: no-repeat, repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +149,8 @@ nav a:hover {
 /* Section Styles */
 section {
     padding: 5rem 2rem;
-    scroll-margin-top: 80px; /* Add space for fixed header when scrolling to section */
+    scroll-margin-top: 80px;
+    /* Add space for fixed header when scrolling to section */
 }
 
 .section-title {
@@ -166,7 +172,7 @@ section {
     background: var(--card-background);
     border-radius: 10px;
     padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
@@ -235,367 +241,382 @@ footer {
 .footer-links a:hover {
     text-decoration: underline;
 }
-.footer-ul li a{
+
+.footer-ul li a {
     color: #1297b9;
 }
+
 footer {
-   background-color: #10496c;
-   font-weight: 900;
-   color: #fefefe;
-   padding: 20px 0;
-   width: 100%;
-   box-sizing: border-box;
+    background-color: #10496c;
+    font-weight: 900;
+    color: #fefefe;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   align-items: flex-start;
-   margin: 0 auto;
-   max-width: 1300px;
-   padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 20px;
 }
 
 .footer-ul li a {
-   text-decoration: none;
-   padding: 5px 0;
-   transition: color 0.3s ease-in-out;
-   position: relative;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+    position: relative;
 }
 
 .footer-ul li a::after {
-   content: "";
-   display: block;
-   width: 0;
-   height: 3px;
-   background: #2682d1; /* Color of the underline */
-   transition: width 0.3s ease-in-out;
-   position: absolute;
-   bottom: -2px;
-   left: 50%;
-   transform: translateX(-50%);
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #2682d1;
+    /* Color of the underline */
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .footer-ul li a:hover {
-   color: #e7e1e7; /* Color of the text on hover */
+    color: #e7e1e7;
+    /* Color of the text on hover */
 }
 
 .footer-ul li a:hover::after {
-   width: 100%; /* Fully expand the underline */
+    width: 100%;
+    /* Fully expand the underline */
 }
 
 .company-info {
-   font-weight: 600;
-   flex: 1 1 30%;
+    font-weight: 600;
+    flex: 1 1 30%;
 }
 
 .quick-links {
-   flex: 1 1 30%;
+    flex: 1 1 30%;
 }
 
 .send-message {
-   flex: 1 1 30%;
+    flex: 1 1 30%;
 }
 
 .company-name {
-   font-size: 24px;
-   margin-bottom: 10px;
-   align-items: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    align-items: center;
 }
 
 .company-name img {
-   width: 36px;
-   width: 36px;
-   vertical-align: middle;
-   margin-top: -5px;
+    width: 36px;
+    width: 36px;
+    vertical-align: middle;
+    margin-top: -5px;
 }
 
 .company-info p {
-   line-height: 1.8;
-   text-align: center;
+    line-height: 1.8;
+    text-align: center;
 }
 
 .quick-links h2,
 .send-message h2 {
-   font-size: 18px;
-   margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .quick-links ul,
 .send-message form {
-   list-style: none;
-   padding: 0;
-   margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .quick-links li,
 .send-message button {
-   margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .quick-links a,
 .send-message button {
-   text-decoration: none;
+    text-decoration: none;
 }
 
 .send-message input[type="email"] {
-   width: 100%;
-   padding: 10px;
-   border: 1px solid #cccccc;
-   border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
 }
 
 .copyright {
-   margin-top: 30px;
-   text-align: center;
-   padding: 0 20px;
-   color: #cccccc;
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 20px;
+    color: #cccccc;
 }
 
 .heading {
-   font-size: 24px;
-   margin-bottom: 20px;
-   background: #00F260;
-   background: -webkit-linear-gradient(to right, #085994, #CCCCCC);
-   background: linear-gradient(to right, #1571c2, #CCCCCC);
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
-   text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    background: #00F260;
+    background: -webkit-linear-gradient(to right, #085994, #CCCCCC);
+    background: linear-gradient(to right, #1571c2, #CCCCCC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 .form-group {
-   margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .group1 {
-   display: flex;
-   flex-direction: row;
-   gap: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .send-message input,
 .send-message textarea {
-   width: 100%;
-   padding: 10px;
-   border: 1px solid #cccccc;
-   border-radius: 4px;
-   box-sizing: border-box;
-   font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 .send-message textarea {
-   height: 50px;
-   color: black;
+    height: 50px;
+    color: black;
 }
 
 .send-message button {
-   height: 50px;
-   background: -webkit-linear-gradient(to right, #5504f7, #cccccc);
-   background: linear-gradient(to right, #1964db, #cccccc);
-   color: white;
-   padding: 10px 20px;
-   border: none;
-   border-radius: 4px;
-   cursor: pointer;
-   font-size: 20px;
-   font-weight: bold;
+    height: 50px;
+    background: -webkit-linear-gradient(to right, #5504f7, #cccccc);
+    background: linear-gradient(to right, #1964db, #cccccc);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .footer-ul {
-   justify-items: center;
-   align-items: center;
-   text-align: center;
-   
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
 }
 
 .social {
-   font-size: 2.5rem;
-   text-decoration: none;
-   margin: 0 1rem;
-   transition: 0.3s ease-in-out;
-   cursor: pointer;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 2rem;
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .social a i {
-   transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Pop up effect */
 
 .social a:hover i {
-   transform: translateY(-8px);
+    transform: translateY(-8px);
 }
 
 .social a {
-   color: var(--secondary);
+    color: var(--secondary);
 }
 
 .social a.user:hover {
-   color: #4af3b5;
+    color: #4af3b5;
 }
 
 .social a.message:hover {
-   color: #D44638;
+    color: #D44638;
 }
 
 .social a.linkedin:hover {
-   color: #0A66C2;
+    color: #0A66C2;
 }
 
 .social a.github:hover {
-   color: #181717;
+    color: #181717;
 }
 
 .social a.instagram:hover {
-   color: #E1306C;
+    color: #E1306C;
 }
 
 .social a.facebook:hover {
-   color: #1877F2;
+    color: #1877F2;
 }
 
 .social a.twitter:hover {
-   color: #1DA1F2;
+    color: #1DA1F2;
 }
 
 .social a.discord:hover {
-   color: #5865F2;
-} 
-@keyframes animate {
-   50% {
-       transform: translateY(-8px);
-   }
+    color: #5865F2;
 }
+
+@keyframes animate {
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
 /* Media queries for responsiveness */
 @media (min-width: 769px) and (max-width: 855px) {
-   button#dark-mode-toggle {
-       height: 32px;
-       width: 32px;
-       margin-top: 8px;
-   }
+    button#dark-mode-toggle {
+        height: 32px;
+        width: 32px;
+        margin-top: 8px;
+    }
 }
 
 @media (max-width: 786px) {
-   #mySearch {
-       height: 6rem;
-       width: 50rem;
-   }
+    #mySearch {
+        height: 6rem;
+        width: 50rem;
+    }
 
-   #error-img {
-       width: 90vw;
-       height: auto;
-       object-fit: cover;
-       border-radius: 25px;
-   }
+    #error-img {
+        width: 90vw;
+        height: auto;
+        object-fit: cover;
+        border-radius: 25px;
+    }
 }
 
 @media (max-width: 650px) {
-   #searchBar input {
-       width: 100%;
-       font-size: 1.5rem;
-   }
+    #searchBar input {
+        width: 100%;
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 500px) {
-   #mySearch {
-       height: 5rem;
-       width: 30rem;
-       font-size: 1.6rem;
-   }
+    #mySearch {
+        height: 5rem;
+        width: 30rem;
+        font-size: 1.6rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-   .navbar {
-       position: relative;
-   }
-   .social {
-       font-size: 2.5rem;
-       text-decoration: none;
-       transition: 0.3s ease-in-out;
-       cursor: pointer;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       gap: 1.5rem;
-   }
+    .navbar {
+        position: relative;
+    }
 
-   .footer-container {
-       margin: 2px 3px;
-   }
+    .social {
+        font-size: 2.5rem;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
 
-   .company-info,
-   .quick-links,
-   .send-message {
-       margin-top: 8px;
-       text-align: center;
-       flex-basis: 100%;
-   }
+    .footer-container {
+        margin: 2px 3px;
+    }
+
+    .company-info,
+    .quick-links,
+    .send-message {
+        margin-top: 8px;
+        text-align: center;
+        flex-basis: 100%;
+    }
 }
 
 @media (max-width: 500px) {
-   .company-info {
-       flex: 1 1 100%; /* Make company info take full width */
-       text-align: center;
-       margin-bottom: 20px;
-   }
+    .company-info {
+        flex: 1 1 100%;
+        /* Make company info take full width */
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-   /* Split the quick-links into two columns */
-   .footer-ul {
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       gap: 10px;
-   }
+    /* Split the quick-links into two columns */
+    .footer-ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
 
-   .send-message {
-       flex: 1 1 100%;
-       text-align: center;
-   }
+    .send-message {
+        flex: 1 1 100%;
+        text-align: center;
+    }
 
-   .group1 {
-       flex-direction: column;
-   }
+    .group1 {
+        flex-direction: column;
+    }
 
-   .group1 input {
-       margin-bottom: 5px;
-   }
+    .group1 input {
+        margin-bottom: 5px;
+    }
 
-   .send-message input,
-   .send-message textarea {
-       width: 100%;
-       resize: vertical;
-   }
+    .send-message input,
+    .send-message textarea {
+        width: 100%;
+        resize: vertical;
+    }
 
-   .social {
-       flex-wrap: wrap;
-       justify-content: center;
-       gap: 8px;
-   }
+    .social {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
 
-   .social a {
-       font-size: 2.5rem;
-   }
+    .social a {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 400px) {
-   .paragraph {
-       width: 100%;
-       padding: 2px;
-   }
+    .paragraph {
+        width: 100%;
+        padding: 2px;
+    }
 
-   .box {
-       width: 280px !important;
-       margin: 15px !important;
-   }
+    .box {
+        width: 280px !important;
+        margin: 15px !important;
+    }
 }
+
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInDown {
@@ -603,6 +624,7 @@ footer {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -614,6 +636,7 @@ footer {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -622,9 +645,7 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav {
-        display: none;
-    }
+
 
     .hero h1 {
         font-size: 2rem;
