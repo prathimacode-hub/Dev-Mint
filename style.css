@@ -74,6 +74,21 @@ nav a:hover {
     color: var(--primary-color);
 }
 
+nav a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s linear;
+}
+
+nav a:hover::after {
+    width: 100%;
+    background-color: var(--primary-color);
+
+}
+
 #search-bar {
     width: 348px;
     display: flex;
@@ -168,7 +183,7 @@ nav a:hover {
     text-shadow: 1px 1.5px 2px rgb(14, 96, 220), 1px 1px 1px white;
     font-weight: 700;
     position: relative;
-    left: -25px;
+
 }
 
 /* Hero Section */
@@ -299,25 +314,6 @@ footer {
     text-align: center;
 }
 
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.footer-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.footer-ul li a {
-    color: #1297b9;
-}
 
 footer {
     background-color: #10496c;
@@ -338,35 +334,38 @@ footer {
     padding: 0 20px;
 }
 
-.footer-ul li a {
-    text-decoration: none;
-    padding: 5px 0;
-    transition: color 0.3s ease-in-out;
-    position: relative;
+#footer-links li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
 }
 
-.footer-ul li a::after {
+#footer-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+
+#footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer-links a::after {
     content: "";
     display: block;
-    width: 0;
-    height: 3px;
-    background: #2682d1;
-    /* Color of the underline */
-    transition: width 0.3s ease-in-out;
-    position: absolute;
-    bottom: -2px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: #1297b9;
+    transition: width 0.5s linear;
 }
 
-.footer-ul li a:hover {
-    color: #e7e1e7;
-    /* Color of the text on hover */
-}
-
-.footer-ul li a:hover::after {
+#footer-links a:hover::after {
     width: 100%;
-    /* Fully expand the underline */
 }
 
 .company-info {
@@ -490,7 +489,6 @@ footer {
     justify-items: center;
     align-items: center;
     text-align: center;
-
 }
 
 .social {
