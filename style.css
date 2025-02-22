@@ -74,6 +74,79 @@ nav a:hover {
     color: var(--primary-color);
 }
 
+#search-bar {
+    width: 348px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 14px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+#search-bar:hover {
+    background-color: white;
+    border: 2px solid #ffdbf9;
+}
+
+#search-bar input {
+    width: 65%;
+    outline: none;
+    background-color: #f1f1f1;
+    border-color: transparent;
+    font-weight: normal;
+}
+
+#search-bar input::placeholder {
+    color: black;
+}
+
+#search-bar:hover input {
+    background-color: white;
+}
+
+#search-bar i {
+    font-size: 20px;
+    padding: 6px;
+    background-color: #EA4C89;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    #search-bar {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 10px;
+        border: 2px solid transparent;
+        border-radius: 50px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+
+    #search-bar input {
+        width: 85%;
+        outline: none;
+        background-color: #f1f1f1;
+        border-color: transparent;
+        font-weight: normal;
+    }
+
+    #search-bar i {
+        font-size: 17px;
+        padding: 6px;
+        background-color: #EA4C89;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
 .flex-container {
     display: flex;
 }

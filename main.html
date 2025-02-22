@@ -16,10 +16,17 @@
 <body>
     <header>
         <div class="flex justify-between items-center w-full">
-            <div class="flex justify-center items-center gap-10">
-                <div class="flex-item-left"><img src="./assets/logo.png" width="50px" height="50px"></div>
-                <div class="flex-item-right logo">
+            <div class="flex justify-center items-center gap-10  lg:w-[225px] ">
+                <div class="flex-item-left "><img src="./assets/logo.png" width="50px" height="50px"></div>
+                <div class="flex-item-right logo hidden lg:block ">
                     <h3>Dev-Mint</h3>
+                </div>
+            </div>
+            <!-- Search bar -->
+            <div id="search-bar">
+                <input type="text" placeholder="What are you looking for?">
+                <div>
+                    <i class="ri-search-line "></i>
                 </div>
             </div>
             <!-- Desktop navbar -->
@@ -34,7 +41,7 @@
             <!-- Mobile navbar -->
             <i class="ri-menu-line menu-icon text-3xl lg:hidden" onclick="showMobileNav()"></i>
             <nav id="mobile-nav"
-                class="lg:hidden absolute top-[98%] left-0 bg-white w-full h-[196px] flex justify-center items-center">
+                class="lg:hidden hidden absolute top-[98%] left-0 bg-white w-full h-[196px] flex justify-center items-center">
                 <div class="w-1/2 mx-auto flex justify-center items-center flex-col gap-3">
                     <a href="#home">Home</a>
                     <a href="#games">Games</a>
