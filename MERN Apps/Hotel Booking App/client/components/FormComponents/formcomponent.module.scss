@@ -1,0 +1,45 @@
+.exact_form {
+  .exact_form_inp {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    font-size: 15px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #2650b1;
+  }
+
+  p {
+    color: red;
+    font-size: 13px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    display: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  input:invalid[focused="true"] ~ p {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .exact_form {
+    .exact_form_inp {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    p {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

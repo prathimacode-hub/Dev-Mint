@@ -1,0 +1,287 @@
+.header {
+  background-color: #2155cd;
+  // margin-top: 0px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 150px;
+
+  .header_main {
+    width: 100%;
+    max-width: 1224px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    // padding-top: 50px;
+    // padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+      padding-top: 150px;
+      margin-top: 0px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+
+    .username {
+      font-size: 18px;
+      padding: 8px 12px;
+      // background-color: #c1efff;
+      width: 180px;
+      border-radius: 3px;
+      text-align: center;
+      margin-top: 80px;
+      padding-bottom: 80px;
+      color: #ffffff;
+    }
+
+    .reg_btn {
+      padding: 15px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      background: none;
+      border: none;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      font-weight: bold;
+      background-color: white;
+      transition: all 0.3s ease;
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
+    .reg_btn:hover {
+      background-color: #92b4ec;
+    }
+
+    .header_search {
+      width: 97%;
+      max-width: 1224px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px 10px;
+      border-radius: 8px;
+      position: absolute;
+      bottom: -40px;
+      display: grid;
+      grid-template-columns: 27% 27% 27% 10%;
+      align-items: center;
+      justify-content: space-around;
+      grid-gap: 15px;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+      .header_search_item {
+        color: rgb(165, 163, 163);
+        display: flex;
+        align-items: center;
+        .header_search_icon {
+          color: rgb(165, 163, 163);
+          margin-right: 8px;
+          font-size: 20px;
+        }
+
+        .header_search_icon_first {
+          color: rgb(165, 163, 163);
+          margin-right: 5px;
+          font-size: 25px;
+        }
+
+        .header_search_date {
+          cursor: pointer;
+        }
+
+        .header_search_calender {
+          position: absolute;
+          top: 80px;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+        }
+
+        .searc_inp {
+          padding: 5px;
+          font-size: 16px;
+          border: none;
+          outline: none;
+        }
+
+        .header_search_btn {
+          padding: 15px 20px;
+          cursor: pointer;
+          border-radius: 5px;
+          background: none;
+          border: none;
+          text-transform: capitalize;
+          letter-spacing: 1px;
+          font-weight: bold;
+          background-color: #2155cd;
+          color: white;
+          transition: all 0.3s ease;
+        }
+
+        .search_options {
+          background-color: white;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+          position: absolute;
+          top: 80px;
+          padding: 5px 15px;
+          color: rgb(165, 163, 163);
+          transition: all 0.4s ease;
+          border-radius: 4px;
+
+          .search_option_item {
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0px;
+            font-size: 18px;
+
+            .search_option_btnss {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              color: rgb(31, 30, 30);
+
+              .option_btn {
+                background-color: white;
+                border: 1px solid lightgray;
+                border-radius: 3px;
+                padding: 4px 8px;
+                cursor: pointer;
+                font-size: 17px;
+              }
+
+              .option_btn:disabled {
+                cursor: not-allowed;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    .header_main {
+      .header_search {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        align-items: center;
+        justify-content: space-around;
+        grid-gap: 15px;
+        position: absolute;
+        bottom: -80px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    .header_main {
+      .header_search {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        align-items: center;
+        justify-content: space-around;
+        grid-gap: 25px;
+        .header_search_item {
+          .search_options {
+            position: absolute;
+            top: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    .header_main {
+      .header_menus {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: -50px;
+
+        .header_menu_item {
+          height: 40px;
+          width: 170px;
+          display: flex;
+          justify-content: start;
+
+          h3 {
+            font-size: 20px;
+            gap: 10px;
+          }
+        }
+
+        .header_menu_item_active {
+          border-radius: 80px;
+          height: 50px;
+          width: 170px;
+          display: flex;
+          justify-content: start;
+
+          h3 {
+            font-size: 20px;
+            gap: 10px;
+          }
+        }
+      }
+
+      h1 {
+        font-size: 45px;
+        padding-top: 80px;
+      }
+
+      p {
+        font-size: 22px;
+      }
+
+      .reg_btn {
+        padding: 11px 10px;
+        margin-top: 10px;
+      }
+
+      .header_search {
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 95%;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 35px;
+        position: absolute;
+        bottom: -200px;
+
+        .header_search_item {
+          .header_search_calender {
+            position: absolute;
+            top: 120px;
+          }
+
+          .search_options {
+            position: absolute;
+            top: 170px;
+          }
+
+          .header_search_btn {
+            padding: 13px 20px;
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}

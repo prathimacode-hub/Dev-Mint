@@ -1,0 +1,86 @@
+.SpecialServices {
+  background-color: #fefbf6;
+  .SpecialServices_main {
+    width: 100%;
+    max-width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+    // text-align: center;
+
+    .SpecialServices_header {
+      padding-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .service_slider {
+      text-align: center;
+      padding-bottom: 90px;
+
+      .service_card {
+        background-color: white;
+
+        .service_card_img {
+          border-radius: 4px;
+        }
+
+        .service_card_body {
+          padding: 20px 40px;
+
+          h2 {
+            color: rgb(31, 30, 30);
+            font-size: 28px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+          }
+
+          h2:hover {
+            color: #223c7e;
+          }
+
+          .service_button {
+            padding: 10px 14px;
+            background: none;
+            border: none;
+            border: 1px solid #223c7e;
+            font-weight: bold;
+            color: #223c7e;
+            border-radius: 3px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+          }
+
+          .service_button:hover {
+            background-color: #223c7e;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .SpecialServices {
+    .SpecialServices_main {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+
+      .SpecialServices_header {
+        padding-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      .service_slider {
+        padding-bottom: 80px;
+
+        .service_card {
+          .service_card_body {
+            padding: 10px 20px 30px;
+          }
+        }
+      }
+    }
+  }
+}

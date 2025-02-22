@@ -1,0 +1,126 @@
+.blog_page {
+  background-color: #fefbf6;
+  .blog_page_main {
+    width: 98%;
+    max-width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -120px;
+
+    display: grid;
+    grid-template-columns: 65% 30%;
+    grid-gap: 25px;
+    justify-content: space-between;
+    // align-items: center;
+
+    .blog_list {
+      position: relative;
+      .blog_search {
+        position: absolute;
+        top: -10px;
+        right: 20px;
+
+        input[type="text"] {
+          padding: 8px 10px;
+          border-radius: 3px;
+          font-size: 15px;
+          border: none;
+          outline: 1px solid #2155cd;
+        }
+
+        input[type="submit"] {
+          padding: 9px 10px;
+          border-radius: 3px;
+          font-size: 15px;
+          background-color: #2155cd;
+          color: white;
+          border: none;
+          cursor: pointer;
+          margin-left: 5px;
+        }
+      }
+
+      p {
+        color: rgb(117, 116, 116);
+        margin-top: 40px;
+      }
+    }
+
+    .blog_search_tag {
+      margin-top: 75px;
+      height: max-content;
+      background-color: #e9fbff;
+      padding: 20px;
+      box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+      border-radius: 2px;
+
+      .tags_main {
+        display: flex;
+        flex-wrap: wrap;
+
+        span {
+          padding: 5px 10px;
+          font-size: 15px;
+          font-weight: bold;
+          //   background-color: white;
+          margin: 5px 5px;
+          cursor: pointer;
+          border: 1px solid #2155cd;
+          border-radius: 4px;
+          color: #284894;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: #2155cd;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .blog_page {
+    .blog_page_main {
+      display: grid;
+      grid-template-columns: 90%;
+      grid-gap: 25px;
+      justify-content: center;
+      align-items: center;
+
+      .blog_search_tag {
+        margin-top: 0px;
+        margin-bottom: 40px;
+        height: max-content;
+        background-color: #e9fbff;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .blog_page {
+    .blog_page_main {
+      .blog_list {
+        position: relative;
+        .blog_search {
+          position: absolute;
+          right: 0px;
+
+          input[type="text"] {
+            padding: 8px 9px;
+            font-size: 14px;
+          }
+
+          input[type="submit"] {
+            padding: 9px 9px;
+            font-size: 14px;
+            margin-left: 3px;
+          }
+        }
+      }
+    }
+  }
+}
