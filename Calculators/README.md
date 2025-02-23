@@ -12,4 +12,8 @@
 - [Body Surface Area Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Body%20Surface%20Area%20Calculator)
 - [Calorie Intake Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Calorie%20Intake%20Calculator)
 - [Currency Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Currency%20Calculator)
+- [Factorial Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Factorial%20Calculator)
 - [GCD Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/GCD%20Calculator)
+- [Percentage Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Percentage%20Calculator)
+- [Pomodoro Timer](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Pomodoro%20Timer)
+- [Time Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Time%20Calculator)
