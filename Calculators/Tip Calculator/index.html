@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Tip Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="tip-card">
+      <div class="card-header">
+        <h1>Tip Calculator</h1>
+      </div>
+
+      <div class="input-group">
+        <label for="billAmount">Bill Amount ($)</label>
+        <input type="number" id="billAmount" placeholder="Enter bill amount">
+      </div>
+
+      <div class="input-group">
+        <label for="tipPercent">Tip Percentage (%)</label>
+        <input type="number" id="tipPercent" placeholder="Enter tip % (e.g., 10)">
+      </div>
+
+      <div class="input-group">
+        <label for="people">Number of People</label>
+        <input type="number" id="people" placeholder="Enter number of people">
+      </div>
+
+      <div class="button-group">
+        <button class="btn calculate-btn" onclick="calculateTip()">Calculate</button>
+        <button class="btn reset-btn" onclick="resetCalculator()">Reset</button>
+      </div>
+
+      <div class="results">
+        <div class="result-item">
+          <span>Tip per Person:</span>
+          <span id="tipAmount">$0.00</span>
+        </div>
+        <div class="result-item">
+          <span>Total per Person:</span>
+          <span id="totalAmount">$0.00</span>
+        </div>
+        <div class="result-item">
+          <span>Total Bill:</span>
+          <span id="totalBill">$0.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
