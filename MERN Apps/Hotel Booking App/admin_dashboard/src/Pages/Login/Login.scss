@@ -1,0 +1,47 @@
+.login_page {
+  .login_page_main {
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 150px;
+    margin-top: 100px;
+    text-align: center;
+
+    .signup_page_form {
+      padding: 20px;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #e7f6f2;
+      border-radius: 3px;
+
+      .form {
+        margin-top: 20px;
+        input {
+          padding: 8px 13px;
+          border: none;
+          outline: none;
+          border-radius: 4px;
+          border: 1px solid gray;
+          display: block;
+          margin-bottom: 5px;
+          width: 100%;
+        }
+
+        .submit_btn {
+          margin-top: 20px;
+          padding: 8px 17px;
+          border-radius: 4px;
+          border: none;
+          background-color: #2650b1;
+          color: white;
+          font-size: 17px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

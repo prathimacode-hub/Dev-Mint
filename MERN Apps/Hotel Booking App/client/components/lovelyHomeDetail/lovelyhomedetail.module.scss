@@ -1,0 +1,42 @@
+.LovelyHome_detail {
+  width: 100%;
+  max-width: 1224px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 70px;
+
+  .LovelyHome_detail_main {
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .LovelyHome_detail {
+    .LovelyHome_detail_main {
+      display: grid;
+      grid-template-columns: 45% 45%;
+      grid-gap: 25px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .LovelyHome_detail {
+    .LovelyHome_detail_main {
+      display: grid;
+      grid-template-columns: 90%;
+      grid-gap: 25px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

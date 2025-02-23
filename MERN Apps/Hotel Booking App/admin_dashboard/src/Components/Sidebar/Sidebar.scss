@@ -1,0 +1,78 @@
+$icon_color: #4665fdce;
+$text_color: #3d3c42;
+
+.sidebar {
+  border-right: 1px solid #eee;
+  height: 100vh;
+  margin-left: 10px;
+
+  .logo {
+    cursor: pointer;
+    color: $icon_color;
+    padding: 19px 20px;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    text-align: center;
+
+    .text_none {
+      text-decoration: none;
+      color: $icon_color;
+    }
+  }
+
+  .links {
+    margin: 15px 10px;
+    // margin: 10px;
+    ul {
+      .spann {
+        text-transform: uppercase;
+        color: gray;
+        margin: 10px 0px 5px;
+        font-size: 14px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        color: $text_color;
+        padding: 5px 10px;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+
+        &:hover {
+          background-color: #ffd6ec;
+          // color: white;
+        }
+        .icon {
+          color: $icon_color;
+          margin-right: 10px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .colorss {
+    display: flex;
+    margin: 20px 10px;
+    .color_option {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: 1px solid #333;
+      margin: 5px;
+      cursor: pointer;
+
+      &:nth-child(1) {
+        background-color: whitesmoke;
+      }
+      &:nth-child(2) {
+        background-color: #333;
+      }
+    }
+  }
+}

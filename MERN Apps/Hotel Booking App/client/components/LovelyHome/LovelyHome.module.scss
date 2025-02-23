@@ -1,0 +1,43 @@
+.lovely_home {
+  .lovely_home_img {
+    object-fit: cover;
+    filter: brightness(90%);
+  }
+
+  h3 {
+    cursor: pointer;
+    margin-bottom: -10px;
+    transition: all 0.3s ease;
+  }
+
+  h3:hover {
+    color: #223c7e;
+  }
+
+  p {
+    color: rgb(121, 119, 119);
+  }
+
+  .lovely_home_price {
+    color: rgb(65, 64, 64);
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .lovely_home_btm {
+    margin-top: -15px;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 5px;
+      padding: 5px;
+      background-color: #223c7e;
+      color: white;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      overflow: hidden;
+    }
+  }
+}

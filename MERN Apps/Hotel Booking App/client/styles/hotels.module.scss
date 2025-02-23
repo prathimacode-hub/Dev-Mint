@@ -1,0 +1,107 @@
+.hotels_page {
+  .hotels_page_main {
+    width: 100%;
+    max-width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: -120px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 30% 68%;
+    grid-gap: 25px;
+    justify-content: center;
+
+    .hotels_page_search {
+      background-color: #c6dce4;
+      padding-bottom: 15px;
+      padding-left: 5%;
+      padding-right: 5%;
+      border-radius: 3px;
+      height: max-content;
+
+      .search_item {
+        label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 8px;
+        }
+
+        input {
+          width: 100%;
+          padding: 10px 15px;
+          font-size: 16px;
+          border: none;
+          outline: none;
+          background-color: white;
+          border-radius: 4px;
+          margin-bottom: 15px;
+        }
+
+        .search_item_date {
+          cursor: pointer;
+          padding: 10px 15px;
+          font-size: 16px;
+          background-color: white;
+          border-radius: 4px;
+          display: flex;
+          margin-bottom: 15px;
+        }
+
+        .search_item_option {
+          display: grid;
+          grid-template-columns: 63% 30%;
+          grid-gap: 20px;
+          justify-content: space-between;
+
+          .night_batch {
+            background-color: #223c7e;
+            color: white;
+            padding: 1px 3px 3px;
+            border-radius: 2px;
+          }
+        }
+      }
+
+      .header_search_btn {
+        margin-top: 20px;
+        padding: 15px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        background: none;
+        border: none;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        font-weight: bold;
+        background-color: #2155cd;
+        color: white;
+        transition: all 0.3s ease;
+        width: 100%;
+      }
+
+      .header_search_btn:hover {
+        background-color: #001d6e;
+      }
+    }
+
+    .hotels_page_result {
+      .page_result {
+        color: rgb(117, 116, 116);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hotels_page {
+    .hotels_page_main {
+      margin-top: -120px;
+      margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: 95%;
+      grid-gap: 25px;
+      justify-content: center;
+    }
+  }
+}

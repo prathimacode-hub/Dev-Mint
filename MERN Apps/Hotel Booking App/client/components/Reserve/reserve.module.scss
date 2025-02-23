@@ -1,0 +1,122 @@
+.reserve_component {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.726);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  z-index: 20;
+
+  .reserve_modal {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 3px;
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+      both;
+    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+    span {
+      font-size: 17px;
+    }
+
+    .reserve_modal_close {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+      padding: 5px;
+      font-size: 30px;
+    }
+
+    .room_item {
+      display: flex;
+      align-items: center;
+      gap: 120px;
+      padding: 20px;
+      .room_item_info {
+        .room_item_title {
+          margin-bottom: 10px;
+          color: black;
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        p {
+          color: rgb(80, 79, 79);
+          margin: 3px;
+        }
+
+        span {
+          font-size: 17px;
+          font-weight: 500;
+          margin-top: 15px !important;
+        }
+      }
+
+      .room_item_room {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .room {
+          display: flex;
+          flex-direction: column;
+          color: rgb(80, 79, 79);
+
+          input[type="checkbox"] {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    button {
+      // margin-top: 20px;
+      padding: 13px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      background: none;
+      border: none;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      font-weight: bold;
+      color: white;
+      transition: all 0.3s ease;
+      width: 95%;
+      background-color: #2155cd;
+      //   text-align: center !important;
+      margin-left: 3%;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background-color: #223c7e;
+    }
+  }
+}
+
+// animasta animation
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

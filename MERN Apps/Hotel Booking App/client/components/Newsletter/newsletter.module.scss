@@ -1,0 +1,86 @@
+@mixin inpStyle {
+  font-size: 17px;
+  padding: 20px 15px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+@mixin inpStyleRes {
+  font-size: 17px;
+  padding: 15px 15px;
+}
+
+.newsletter {
+  background-color: #2155cd;
+  height: 350px;
+
+  .newsletter_main {
+    width: 100%;
+    max-width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+
+    h1 {
+      font-weight: 900;
+      font-size: 40px;
+      margin-bottom: -5px;
+    }
+
+    .right {
+      margin-top: 50px;
+      .right_form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input[type="email"] {
+          @include inpStyle();
+          color: black;
+          width: 50%;
+        }
+
+        input[type="submit"] {
+          @include inpStyle();
+          color: white;
+          background-color: #646fd4;
+          cursor: pointer;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .newsletter {
+    .newsletter_main {
+      padding-top: 30px;
+
+      h1 {
+        font-weight: 800;
+        font-size: 35px;
+      }
+
+      .right {
+        margin-top: 40px;
+        .right_form {
+          input[type="email"] {
+            @include inpStyleRes();
+            width: 60%;
+          }
+
+          input[type="submit"] {
+            @include inpStyleRes();
+            padding: 15px 10px;
+          }
+        }
+      }
+    }
+  }
+}

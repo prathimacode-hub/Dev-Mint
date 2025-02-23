@@ -1,0 +1,19 @@
+.facility {
+  display: flex;
+  justify-content: space-between;
+
+  .icon {
+    flex: 2;
+    font-size: 35px;
+    color: gray;
+  }
+
+  .facility_txt {
+    flex: 10;
+
+    p {
+      margin-top: -10px;
+      line-height: 25px;
+    }
+  }
+}
