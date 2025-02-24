@@ -1,0 +1,56 @@
+filters:
+  # For Features
+  - label: "enhancement"
+    regexs:
+      - /feat/i
+    events: [pull_request]
+    targets: [title]
+    
+  - label: "feature"
+    regexs:
+      - /feat/i
+    events: [pull_request]
+    targets: [title]
+
+  # For Docs
+  - label: "documentation"
+    regexs:
+      - /docs/i
+    events: [pull_request]
+    targets: [title]
+
+  - label: "📄 aspect: text"
+    regexs:
+      - /docs/i
+    events: [pull_request]
+    targets: [title]
+
+  # For Bugs/Fixes
+  - label: "🛠 goal: fix"
+    regexs:
+      - /^fix*/i
+      - /bug/i
+    events: [pull_request]
+    targets: [title]
+
+  - label: "🐞 bug"
+    regexs:
+      - /^fix*/i
+      - /bug/i
+    events: [pull_request]
+    targets: [title]
+
+    # For Dependabots
+  - label: "github_actions"
+    regexs:
+      - /^chore*/
+      - /^build(deps-dev)*/
+    events: [pull_request]
+    targets: [title]
+
+    # For Hacktoberfest only
+    # - label: 'hacktoberfest'
+    #   regexs:
+    #       - /.*/
+    #   events: [pull_request]
+    #   targets: [title]
