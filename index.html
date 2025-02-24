@@ -1,165 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev-Mint</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
-    <link rel="icon" href="./assets/logo.png" type="image/x-icon">    
-</head>
-<body>
-    <header>
-        <div class="flex-container">
-            <div class="flex-item-left"><img src="./assets/logo.png" width="50px" height="50px"></div>
-            <div class="flex-item-right logo"><h3>Dev-Mint</h3></div>
-        <nav class="nav">
-            <a href="#home">Home</a>
-            <a href="#games">Games</a>
-            <a href="#tools">Tools</a>
-            <a href="#about">About</a>
-            <a href="https://github.com/prathimacode-hub/Dev-Mint">GitHub</a>
-        </nav>
-    </header>
-
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Welcome to Dev-Mint</h1>
-            <p>Your One-Stop Hub for Fun & Utility!</p>
-            <button class="cta-button" onclick="scrollToGames()">Explore Now</button>
-        </div>
-    </section>
-
-    <section id="games">
-        <h2 class="section-title">🎮 Fun & Engaging Games</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="assets/numberguess.jpg" alt="Number Guessing Game">
-                <h3>Number Guessing Game</h3>
-                <p>Try your luck and guess the number!</p>
-                <a href="HTML+CSS+JS Apps/Number Guessing Game/Index.html" class="card-button">Play Now</a>
-            </div>
-            <div class="card">
-                <img src="assets/snakegamebg.jpg" alt="Snake Game">
-                <h3>Snake Game</h3>
-                <p>Classic snake, modern twist.</p>
-                <a href="HTML+CSS+JS Apps/Snake Game/index.html" class="card-button">Play Now</a>
-            </div>
-            <div class="card">
-                <img src="assets/comsoon.jpg" alt="Future Games">
-                <h3>More Games Coming Soon</h3>
-                <p>Stay tuned for exciting new additions!</p>
-                <a href="#" class="card-button">Coming Soon</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="tools">
-        <h2 class="section-title">🛠 Powerful Tools for Everyone</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="assets/background_remover.jpg" alt="AI Image Generator">
-                <h3>AI Image Generator</h3>
-                <p>Generate Image Easily.</p>
-                <a href="HTML+CSS+JS Apps/AI Image Generator/index.html" class="card-button">Try Now</a>
-            </div>
-            <div class="card">
-                <img src="assets/dicbg.jpg" alt="Word Meaning App">
-                <h3>Word Meaning App</h3>
-                <p>Get instant meanings of words.</p>
-                <a href="HTML+CSS+JS Apps/Word Meaning App/index.html" class="card-button">Try Now</a>
-            </div>
-            <div class="card">
-                <img src="assets/BMI_Calcu.png" alt="Calculator">
-                <h3>BMI Calculator</h3>
-                <p>Tool for quick calculations.</p>
-                <a href="#" class="card-button">Try Now</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2 class="section-title">Why Choose Dev-Mint?</h2>
-        <div class="grid">
-            <div class="feature">
-                <h3>Fast & Lightweight</h3>
-                <p>Runs smoothly on any device</p>
-            </div>
-            <div class="feature">
-                <h3>Completely Open Source</h3>
-                <p>Contribute and improve!</p>
-            </div>
-            <div class="feature">
-                <h3>More Features Coming Soon</h3>
-                <p>Community-driven improvements</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-container">
-            <div class="company-info">
-                <h1 class="company-name heading"><img src="./assets/logo.png">Dev-Mint</h1>
-                <p>
-                    Dev Mint has an exclusive collection of layouts, animations, effects, code snippets, extensions, projects, resources etc. to fulfill and satiate your developer needs.
-                </p>
-            </div>
-            <div class="quick-links">
-                <h1 class="heading">Quick Links</h1>
-                <ul class="footer-ul">
-                    <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
-                    <li><a href="#games"><i class="fa-solid fa-gamepad"></i>Games</a></li>
-                    <li><a href="#tools"><i class="fa-solid fa-icons"></i> Tools</a></li>
-                </ul>
-            </div>
-            <div class="send-message">
-                <h1 class="heading">Keep In Touch</h1>
-                <form id="contact-form" name="Beautiify Contact" autocomplete="off" netlify>
-                    <div class="form-group group1">
-                        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required oninput="validateName('name')">
-                        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required oninput="validateEmail('email')">
-                    </div>
-                    <div class="form-group group1">
-                        <textarea id="message" name="message" placeholder="Leave your message" required></textarea>
-                        <button type="submit">SEND</button>
-                    </div>
-                </form>
-                <div class="social">
-                    <a class="message" href="https://mail.google.com/" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                    <a class="linkedin" href=" https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a class="github" href="https://github.com/prathimacode-hub/Dev-Mint " target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                    <a class="instagram" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    <a class="discord" href="https://discord.com/" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <p class="copyright">Built with ❤️ by Dev-Mint Team | ©
-            <script>
-                document.write(new Date().getFullYear());
-            </script>: All Rights Reserved
-        </p>
-    </footer>
-
-    <script>
-        // Function to scroll to games section
-        function scrollToGames() {
-            document.getElementById('games').scrollIntoView({ behavior: 'smooth' });
+    <title>Loading...</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            flex-direction: column;
+            gap: 10;
         }
 
-        // Add smooth scrolling to all navigation links
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                if (this.getAttribute('href').startsWith('#')) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+
+        .loader-container {
+            text-align: center;
+        }
+
+        .loader {
+            border: 10px solid #e0e0e0;
+            border-top: 10px solid #3498db;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            animation: spin 1s linear infinite;
+            margin: 10px auto;
+        }
+
+
+        #percentage {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+        <p id="percentage">0%</p>
+    </div>
+    <div class="logo-container">
+        <div class="flex-item-left"><img src="./assets/logo.png" width="50px" height="50px"></div>
+        <div class="flex-item-right logo">
+            <h3>Dev-Mint</h3>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let percentage = 0;
+            let percentageDisplay = document.getElementById("percentage");
+
+            // Update percentage every 30ms until it reaches 100%
+            let interval = setInterval(() => {
+                if (percentage < 100) {
+                    percentage += 1;
+                    percentageDisplay.textContent = percentage + "%";
+                } else {
+                    clearInterval(interval); // Stop when 100% is reached
+                    sessionStorage.setItem("pageLoaded", "true"); // Set loading flag
+                    window.location.href = "main.html"; // Redirect to main page
                 }
-            });
+            }, 30);
         });
+
     </script>
 </body>
+
 </html>
