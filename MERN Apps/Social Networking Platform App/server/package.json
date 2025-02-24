@@ -1,0 +1,46 @@
+{
+  "name": "socialecho",
+  "version": "1.0.0",
+  "description": "A social networking platform",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "production": "node app.js"
+  },
+  "author": "Neaz",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.0.3",
+    "enquirer": "^2.3.6",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "express-useragent": "^1.0.15",
+    "express-validator": "^6.14.3",
+    "geoip-lite": "^1.4.7",
+    "googleapis": "^118.0.0",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "kleur": "^4.1.5",
+    "mongodb": "^5.4.0",
+    "mongoose": "^6.9.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "request-ip": "^3.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.5",
+    "nodemon": "^2.0.20",
+    "prettier": "2.8.7"
+  }
+}
