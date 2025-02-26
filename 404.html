@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Dev Mint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+        :root {
+            --header-height: 3.5rem;
+            --first-color: hsl(196, 80%, 46%);
+            --text-color: hsl(38, 8%, 8%);
+            --hover-color: hsl(196, 80%, 70%);
+            --body-font: 'Space Grotesk', sans-serif;
+            --biggest-font-size: 2.375rem;
+            --normal-font-size: .938rem;
+            --smaller-font-size: .75rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+            :root {
+                --biggest-font-size: 5rem;
+                --normal-font-size: 1rem;
+                --smaller-font-size: .813rem;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: var(--body-font);
+            font-size: var(--normal-font-size);
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
+        .main {
+            overflow: hidden;
+        }
+
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            background-color:  #10496c;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .nav {
+            height: var(--header-height);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        .nav__logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav__logo img {
+            transition: transform 0.3s ease;
+        }
+
+        .nav__logo:hover img {
+            transform: scale(1.1);
+        }
+
+        .nav__toggle, .nav__close {
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+        }
+
+        .nav__menu {
+            transition: all 0.4s ease;
+        }
+
+        .nav__list {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 2rem;
+        }
+
+        .nav__link {
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav__link:hover {
+            color: var(--hover-color);
+            transform: translateY(-2px);
+        }
+
+        @media screen and (max-width: 767px) {
+            .nav__toggle {
+                display: block;
+            }
+
+            .nav__menu {
+                position: fixed;
+                top: -100%;
+                left: 0;
+                width: 100%;
+                height: auto;
+                background-color: var(--first-color);
+                padding: 5rem 1rem 2rem;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .nav__list {
+                flex-direction: column;
+                row-gap: 2rem;
+                text-align: center;
+            }
+
+            .nav__link {
+                color: #fff;
+                font-size: 1.1rem;
+            }
+
+            .nav__close {
+                display: block;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+
+            .show-menu {
+                top: 0;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .nav {
+                height: calc(var(--header-height) + 1rem);
+            }
+
+            .nav__list {
+                column-gap: 3rem;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .container {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .nav {
+                height: calc(var(--header-height) + 1.5rem);
+            }
+        }
+
+        /* Hero Section Styling */
+        .home {
+            background-color: var(--first-color);
+            padding: 9rem 0 2rem;
+            height: 100vh;
+            display: grid;
+        }
+
+        .home__container {
+            display: grid;
+            align-content: center;
+            row-gap: 2.5rem;
+        }
+
+        .home__data {
+            text-align: center;
+        }
+
+        .home__subtitle {
+            display: block;
+            color: white;
+        }
+
+        .home__title {
+            font-size: var(--biggest-font-size);
+            margin: .75rem 0;
+            color: white;
+        }
+
+        .home__button {
+            margin-top: 2rem;
+            display: inline-block;
+            background-color: var(--text-color);
+            color: #fff;
+            padding: .80rem 1.5rem;
+            border-radius: 3rem;
+            transition: .4s;
+        }
+
+        .home__button:hover {
+            box-shadow: 0 4px 12px hsla(38, 69%, 8%, .2);
+        }
+
+        .home__img img {
+            width: 230px;
+            animation: floaty 1.8s infinite alternate;
+        }
+
+        .home__img {
+            justify-self: center;
+        }
+
+        .home__shadow {
+            width: 130px;
+            height: 24px;
+            background-color: hsla(38, 21%, 19%, .16);
+            margin: 0 auto;
+            border-radius: 50%;
+            filter: blur(7px);
+            animation: shadow 1.8s infinite alternate;
+        }
+
+        .home__description {
+            color: white;
+        }
+
+        @keyframes floaty {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(15px); }
+        }
+
+        @keyframes shadow {
+            0% { transform: scale(1, 1); }
+            100% { transform: scale(.85, .85); }
+        }
+
+        @media screen and (max-width: 320px) {
+            .home { padding-top: 7rem; }
+        }
+
+        @media screen and (min-width: 767px) {
+            .nav {
+                height: calc(var(--header-height) + 1.5rem);
+            }
+            .nav__toggle,
+            .nav__close {
+                display: none;
+            }
+            .nav__list {
+                flex-direction: row;
+                column-gap: 3.5rem;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .home__container {
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                column-gap: 2rem;
+            }
+            .home__data {
+                text-align: initial;
+            }
+            .home__img img {
+                width: 400px;
+            }
+            .home__shadow {
+                width: 250px;
+                height: 40px;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #10496c;
+            font-weight: 900;
+            color: #fefefe;
+            padding: 20px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0 auto;
+            max-width: 1300px;
+            padding: 0 20px;
+        }
+
+        #footer-links li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #footer-links {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 2rem;
+        }
+
+        #footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #footer-links a::after {
+            content: "";
+            display: block;
+            width: 0%;
+            height: 2px;
+            background-color: #1297b9;
+            transition: width 0.5s linear;
+        }
+
+        #footer-links a:hover::after {
+            width: 100%;
+        }
+
+        .company-info {
+            font-weight: 600;
+            flex: 1 1 30%;
+        }
+
+        .quick-links {
+            flex: 1 1 30%;
+        }
+
+        .send-message {
+            flex: 1 1 30%;
+        }
+
+        .company-name {
+            font-size: 24px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .company-name img {
+            width: 36px;
+            vertical-align: middle;
+            margin-top: -5px;
+        }
+
+        .company-info p {
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        .quick-links h2,
+        .send-message h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .quick-links ul,
+        .send-message form {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .quick-links li,
+        .send-message button {
+            margin-bottom: 10px;
+        }
+
+        .quick-links a,
+        .send-message button {
+            text-decoration: none;
+        }
+
+        .send-message input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .group1 {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .send-message input,
+        .send-message textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .send-message textarea {
+            height: 50px;
+            color: black;
+        }
+
+        .send-message button {
+            height: 50px;
+            background: linear-gradient(to right, #1964db, #cccccc);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .footer-ul {
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .social {
+            font-size: 2.5rem;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .social a i {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social a:hover i {
+            transform: translateY(-8px);
+        }
+
+        .social a {
+            color: var(--secondary);
+        }
+
+        .social a.user:hover { color: #4af3b5; }
+        .social a.message:hover { color: #D44638; }
+        .social a.linkedin:hover { color: #0A66C2; }
+        .social a.github:hover { color: #181717; }
+        .social a.instagram:hover { color: #E1306C; }
+        .social a.facebook:hover { color: #1877F2; }
+        .social a.twitter:hover { color: #1DA1F2; }
+        .social a.discord:hover { color: #5865F2; }
+
+        @media screen and (min-width: 2048px) {
+            body { zoom: 1.7; }
+            .home { height: initial; row-gap: 4rem; }
+        }
+
+        @media screen and (min-width: 3840px) {
+            body { zoom: 3.1; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/logo.png" alt="Dev Mint Logo" height="50px" width="40px">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#games" class="nav__link">Games</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#tools" class="nav__link">Tools</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="main.html#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://github.com/prathimacode-hub/Dev-Mint" class="nav__link">Github</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home">
+            <div class="home__container container">
+                <div class="home__data">
+                    <span class="home__subtitle">Error 404</span>
+                    <h1 class="home__title">Page Not Found</h1>
+                    <p class="home__description">
+                        This page seems to have taken a wrong turn on the internet highway. Let's guide you back home!
+                        <br />
+                        you are looking for.
+                    </p>
+                    <a href="index.html" class="home__button">Go Home</a>
+                </div>
+                <div class="home__img">
+                    <img src="assets/404.png" alt="">
+                    <div class="home__shadow"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="company-info">
+                <h1 class="company-name heading flex justify-center items-center gap-4"><img src="./assets/logo.png">Dev-Mint</h1>
+                <p>
+                    Dev Mint has an exclusive collection of layouts, animations, effects, code snippets, extensions,
+                    projects, resources etc. to fulfill and satiate your developer needs.
+                </p>
+            </div>
+            <div class="quick-links">
+                <h1 class="heading">Quick Links</h1>
+                <ul class="footer-ul" id="footer-links">
+                    <li><i class="fa-solid fa-house"></i><a href="main.html"> Home</a></li>
+                    <li><i class="fa-solid fa-circle-info"></i><a href="main.html#about"> About</a></li>
+                    <li><i class="fa-solid fa-gamepad"></i><a href="main.html#games">Games</a></li>
+                    <li><i class="fa-solid fa-icons"></i><a href="main.html#tools"> Tools</a></li>
+                </ul>
+            </div>
+            <div class="send-message">
+                <h1 class="heading">Keep In Touch</h1>
+                <form id="contact-form" name="Beautiify Contact" autocomplete="off" netlify>
+                    <div class="form-group group1">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+                    </div>
+                    <div class="form-group group1">
+                        <textarea id="message" name="message" placeholder="Leave your message" required></textarea>
+                        <button type="submit">SEND</button>
+                    </div>
+                </form>
+                <div class="social">
+                    <a class="message" href="https://mail.google.com/" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="github" href="https://github.com/prathimacode-hub/Dev-Mint" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a class="instagram" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a class="discord" href="https://discord.com/" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <p style="display: flex;  justify-content: center;">© <span id="copyright-year"></span> All Rights Reserved || Built with ❤️ by Dev-Mint Team</p>
+      
+    </footer>
+
+    <script>
+        const navMenu = document.getElementById('nav-menu'),
+              navToggle = document.getElementById('nav-toggle'),
+              navClose = document.getElementById('nav-close');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.add('show-menu');
+            });
+        }
+
+        if (navClose) {
+            navClose.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            });
+        }
+
+        const navLink = document.querySelectorAll('.nav__link');
+
+        function linkAction() {
+            navMenu.classList.remove('show-menu');
+        }
+        navLink.forEach(n => n.addEventListener('click', linkAction));
+    </script>
+</body>
+</html>
