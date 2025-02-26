@@ -1,0 +1,98 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start; 
+    height: 100vh;
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+#game-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0; 
+    color: #333;
+    text-align: center;
+}
+
+#game-container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+
+#game-container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#basket {
+    position: absolute;
+    bottom: 10px;
+    width: 60px;
+    height: 30px;
+    background-color: brown;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.falling-object {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.fruit {
+    color: green;
+}
+
+.bomb {
+    color: red;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#reset-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#reset-btn:hover {
+    background-color: darkred;
+}
