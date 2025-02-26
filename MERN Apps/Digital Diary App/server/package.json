@@ -1,0 +1,60 @@
+{
+    "$schema": "https://json.schemastore.org/package",
+    "name": "memories-server",
+    "homepage": "https://memories-7ryn.onrender.com",
+    "version": "1.0.0",
+    "module": "src/index.ts",
+    "author": {
+        "name": "Pritam Kundu",
+        "email": "pritamkundu771@gmail.com",
+        "url": "https://github.com/warmachine028"
+    },
+    "description": "A simple server to keep track of memories",
+    "bugs": {
+        "url": "https://github.com/warmachine028/memories/issues"
+    },
+    "license": "MIT",
+    "scripts": {
+        "test": "bun --watch test",
+        "dev": "bun --watch src/index.ts",
+        "start": "bun run src/index.ts",
+        "postinstall": "prisma generate",
+        "prisma:generate": "prisma generate",
+        "prisma:push": "prisma db push",
+        "prisma:studio": "prisma studio",
+        "prisma:migrate": "prisma migrate dev --name init",
+        "prisma:deploy": "prisma migrate deploy"
+    },
+    "dependencies": {
+        "@clerk/backend": "^1.21.4",
+        "@elysiajs/cors": "^1.2.0",
+        "@elysiajs/cron": "^1.2.0",
+        "@elysiajs/swagger": "^1.2.0",
+        "@neondatabase/serverless": "^0.10.4",
+        "@prisma/adapter-neon": "^6.1.0",
+        "@prisma/client": "^6.1.0",
+        "cloudinary": "^2.5.1",
+        "elysia": "latest",
+        "svix": "^1.45.1"
+    },
+    "peerDependencies": {
+        "typescript": "^5.6.3"
+    },
+    "devDependencies": {
+        "bun-types": "latest",
+        "prisma": "^6.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/warmachine028/memories.git"
+    },
+    "keywords": [
+        "memories",
+        "server",
+        "bun",
+        "typescript",
+        "elysia",
+        "cron",
+        "render"
+    ]
+}
