@@ -17,3 +17,4 @@
 - [Percentage Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Percentage%20Calculator)
 - [Pomodoro Timer](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Pomodoro%20Timer)
 - [Time Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Time%20Calculator)
+- [Tip Calculator](https://github.com/prathimacode-hub/Dev-Mint/tree/main/Calculators/Tip%20Calculator)
