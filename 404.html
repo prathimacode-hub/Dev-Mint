@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Dev Mint</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            position: relative;
+        }
+
+       
+
+        .error-page {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 900px;
+            width: 100%;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .error-img {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .error-img img {
+            width: 80%;
+            max-width: 400px;
+            filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.2));
+            animation: glow 2s infinite alternate;
+        }
+
+        .content {
+            width: 50%;
+            text-align: left;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        h2 span {
+            color: #4d69e2;
+            text-shadow: 0px 0px 10px rgba(77, 105, 226, 0.8);
+        }
+
+        p {
+            color: #aaaaac;
+            margin: 15px 0;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #4d69e2, #7a54e2);
+            border: none;
+            border-radius: 50px;
+            padding: 12px 25px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0px 0px 10px rgba(77, 105, 226, 0.5);
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(77, 105, 226, 0.8);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+            from {
+                filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3));
+            }
+            to {
+                filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.7));
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .error-page {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .error-img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .error-img img {
+                width: 60%;
+            }
+
+            .content {
+                width: 100%;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .btn {
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .error-img img {
+                width: 50%;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .btn {
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <div class="error-page">
+        <div class="error-img">
+            <img src="assets/404.jpg" alt="404 Error">
+        </div>
+        <div class="content">
+            <h2>Error 404! <br><span>Page Not Found</span></h2>
+            <p>This page seems to have taken a wrong turn on the internet highway. Let's guide you back home!</p>
+            
+            <button class="btn" onclick="window.location.href='index.html'">Go Back</button>
+
+        </div>
+    </div>
+
+</body>
+</html>
