@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Temperature Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="temp-conv">
+            <label class="labelId">Convert From:</label><br />
+            <hr />
+            <input type="radio" value="celsius" name="fromUnit" />
+            <label>Celsius</label><br />
+            <input type="radio" value="fahrenheit" name="fromUnit" />
+            <label>Fahrenheit</label><br />
+            <input type="radio" value="kelvin" name="fromUnit" />
+            <label>Kelvin</label><br />
+            <input type="radio" value="rankine" name="fromUnit" />
+            <label>Rankine</label><br />
+            <input type="radio" value="romer" name="fromUnit" />
+            <label>Rømer</label><br />
+            <input type="radio" value="reaumur" name="fromUnit" />
+            <label>Réaumur</label><br />
+            <input type="radio" value="newton" name="fromUnit" />
+            <label>Newton</label><br />
+            <input type="radio" value="delisle" name="fromUnit" />
+            <label>Delisle</label><br /><br />
+        </div>
+        <div class="temp-conv">
+            <label class="labelId">Convert To:</label><br />
+            <hr />
+            <input type="radio" value="celsius" name="toUnit" />
+            <label>Celsius</label><br />
+            <input type="radio" value="fahrenheit" name="toUnit" />
+            <label>Fahrenheit</label><br />
+            <input type="radio" value="kelvin" name="toUnit" />
+            <label>Kelvin</label><br />
+            <input type="radio" value="rankine" name="toUnit" />
+            <label>Rankine</label><br />
+            <input type="radio" value="romer" name="toUnit" />
+            <label>Rømer</label><br />
+            <input type="radio" value="reaumur" name="toUnit" />
+            <label>Réaumur</label><br />
+            <input type="radio" value="newton" name="toUnit" />
+            <label>Newton</label><br />
+            <input type="radio" value="delisle" name="toUnit" />
+            <label>Delisle</label><br /><br />
+        </div>
+    </div>
+    <div id="resultId">
+        <label>Enter a Temperature</label>
+        <input type="text" id="textBox" />
+
+        <div id="result"></div>
+        <button id="submitButton" type="submit">Submit</button><br />
+    </div>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
