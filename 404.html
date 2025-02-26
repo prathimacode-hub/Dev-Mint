@@ -3,186 +3,382 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 | Dev Mint</title>
+    <title>404 | Dev Mint </title>
 
-    <!-- Google Font -->
+    <!-- Google Font (Poppins) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
 
-        body {
-            background-color: #0f172a;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            padding: 20px;
-            position: relative;
-        }
+:root {
+  --header-height: 3.5rem;
 
-       
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(196, 80%, 46%);
+  --text-color: hsl(38, 8%, 8%);
 
-        .error-page {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 900px;
-            width: 100%;
-            animation: fadeIn 1.2s ease-in-out;
-        }
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Space Grotesk', sans-serif;
+  --biggest-font-size: 2.375rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+}
 
-        .error-img {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 5rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: .813rem;
+  }
+}
 
-        .error-img img {
-            width: 80%;
-            max-width: 400px;
-            filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.2));
-            animation: glow 2s infinite alternate;
-        }
 
-        .content {
-            width: 50%;
-            text-align: left;
-            padding: 20px;
-        }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-        h2 {
-            font-size: 3rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin: 20px 0;
-        }
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  color: var(--text-color);
+}
 
-        h2 span {
-            color: #4d69e2;
-            text-shadow: 0px 0px 10px rgba(77, 105, 226, 0.8);
-        }
+ul {
+  list-style: none;
+}
 
-        p {
-            color: #aaaaac;
-            margin: 15px 0;
-            font-size: 1.1rem;
-        }
+a {
+  text-decoration: none;
+}
 
-        .btn {
-            background: linear-gradient(45deg, #4d69e2, #7a54e2);
-            border: none;
-            border-radius: 50px;
-            padding: 12px 25px;
-            color: white;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s ease-in-out;
-            box-shadow: 0px 0px 10px rgba(77, 105, 226, 0.5);
-        }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-        .btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0px 0px 20px rgba(77, 105, 226, 0.8);
-        }
+.container {
+  max-width: 1024px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+.main {
+  overflow: hidden; 
+}
 
-        @keyframes glow {
-            from {
-                filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3));
-            }
-            to {
-                filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.7));
-            }
-        }
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .error-page {
-                flex-direction: column;
-                text-align: center;
-            }
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-            .error-img {
-                width: 100%;
-                margin-bottom: 20px;
-            }
+.nav__logo,
+.nav__toggle {
+  color: var(--text-color);
+  display: inline-flex;
+}
 
-            .error-img img {
-                width: 60%;
-            }
+.nav__logo {
+  font-weight: 700;
+}
 
-            .content {
-                width: 100%;
-                text-align: center;
-            }
+.nav__toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
 
-            h2 {
-                font-size: 2.5rem;
-            }
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--first-color);
+    left: 0;
+    top: -100%;
+    width: 100%;
+    padding: 5rem 0 4rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    box-shadow: 0 2px 4px hsla(38, 4%, 15%, .15);
+    transition: .4s;
+  }
+}
 
-            p {
-                font-size: 1rem;
-            }
+.nav__list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
 
-            .btn {
-                padding: 10px 20px;
-            }
-        }
+.nav__link {
+  color: var(--text-color);
+}
 
-        @media (max-width: 480px) {
-            h2 {
-                font-size: 2rem;
-            }
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
 
-            .error-img img {
-                width: 50%;
-            }
+.show-menu {
+  top: 0;
+}
 
-            p {
-                font-size: 0.9rem;
-            }
+.home {
+  background-color: var(--first-color);
+  padding: 9rem 0 2rem;
+  height: 100vh;
+  display: grid;
+}
 
-            .btn {
-                padding: 8px 16px;
-            }
-        }
-    </style>
+.home__container {
+  display: grid;
+  align-content: center;
+  row-gap: 2.5rem;
+}
+
+.home__data {
+  text-align: center;
+}
+
+.home__subtitle {
+  display: block;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  margin: .75rem 0;
+}
+
+.home__button {
+  margin-top: 2rem;
+  display: inline-block;
+  background-color: var(--text-color);
+  color: #fff;
+  padding: .80rem 1.5rem;
+  border-radius: 3rem;
+  transition: .4s;
+}
+
+.home__button:hover {
+  box-shadow: 0 4px 12px hsla(38, 69%, 8%, .2);
+}
+
+.home__img img {
+  width: 230px;
+  animation: floaty 1.8s infinite alternate;
+}
+
+.home__img {
+  justify-self: center;
+}
+
+.home__shadow {
+  width: 130px;
+  height: 24px;
+  background-color: hsla(38, 21%, 19%, .16);
+  margin: 0 auto;
+  border-radius: 50%;
+  filter: blur(7px);
+  animation: shadow 1.8s infinite alternate;
+}
+
+
+@keyframes floaty {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(.85, .85);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home {
+    padding-top: 7rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+  }
+  .home__data {
+    text-align: initial;
+  }
+  .home__img img {
+    width: 400px;
+  }
+  .home__shadow {
+    width: 250px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 1048px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 2048px) {
+  body {
+    zoom: 1.7;
+  }
+
+  .home {
+    height: initial;
+    row-gap: 4rem;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  body {
+    zoom: 3.1;
+  }
+}
+   </style>
 </head>
 <body>
+    
+        <header class="header">
+          <nav class="nav container">
+            <a href="#" class="nav__logo">
+              <img src="assets/logo.png" alt="" height="50px" width="40px">
+
+            </a>
+    
+            <div class="nav__menu" id="nav__menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="index.html" class="nav__link">Home</a>
+                </li>
+    
+                <li class="nav__item">
+                  <a href="main.html#about" class="nav__link">About</a>
+                </li>
+    
+                <li class="nav__item">
+                  <a href="https://github.com/prathimacode-hub/Dev-Mint" class="nav__link">Github</a>
+                </li>
+              </ul>
+    
+              <div class="nav__close" id="nav-close">
+                <i class="bx bx-x"></i>
+              </div>
+            </div>
+    
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="bx bx-grid-alt"></i>
+            </div>
+          </nav>
+        </header>
+    
+        <main class="main">
+          <section class="home">
+            <div class="home__container container">
+              <div class="home__data">
+                <span class="home__subtitle">Error 404</span>
+                <h1 class="home__title">Page Not Found </h1>
+                <p class="home__description">
+                    This page seems to have taken a wrong turn on the internet highway. Let's guide you back home!
+                  <br />
+                  you are looking for.
+                </p>
+                <a href="index.html" class="home__button">
+                    Go Home
+                </a>
+              </div>
+              <div class="home__img">
+                <img src="assets/404.png" alt="">
+                <div class="home__shadow"></div>
+              </div>
+            </div>
+    
+       
+          </section>
+        </main>
+    
+      
+
+    <script>
+        const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+if(navToggle){
+    navToggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
+    })
+}
+
+if(navClose){
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+   
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+const sr = ScrollReveal({
+    distance: '90px',
+    duration: 3000,
+})
+
+sr.reveal(`.home__data`, {origin: 'top', delay: 400})
+sr.reveal(`.home__img`, {origin: 'bottom', delay: 600})
+sr.reveal(`.home__footer`, {origin: 'bottom', delay: 800})
+    </script>
 
     
-
-    <div class="error-page">
-        <div class="error-img">
-            <img src="assets/404.jpg" alt="404 Error">
-        </div>
-        <div class="content">
-            <h2>Error 404! <br><span>Page Not Found</span></h2>
-            <p>This page seems to have taken a wrong turn on the internet highway. Let's guide you back home!</p>
-            
-            <button class="btn" onclick="window.location.href='index.html'">Go Back</button>
-
-        </div>
-    </div>
 
 </body>
 </html>
