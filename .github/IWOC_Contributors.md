@@ -61,7 +61,7 @@ Calculator | Temperature Calculator <br>
 
 LinkedIn Profile: https://www.linkedin.com/in/seetha-pragna-659015312  <br>
 
-9. Shubham Patel | spbyname | | spbyname  <br>
+9. Shubham Patel | spbyname | spbyname@gmail.com | spbyname  <br>
 
 Completed PR's (1) - Cooking Website Frontend Layout <br>
 
