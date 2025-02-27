@@ -103,7 +103,7 @@ LinkedIn Profile: https://www.linkedin.com/in/shivam-tripathi-9bbb2b223 <br>
 
 5. Saksham Jain | Sakshamjain98 | sakshambro730@gmail.com | sakshamjain007 <br>
 
-Open Issues () - To Do List App | Phone Pay Clone | Trading Compass App | Tech Book App | Notes Frontend App | <br>
+Open Issues (12) - To Do List App | Phone Pay Clone | Trading Compass App | Tech Book App | Notes Frontend App | <br>
 Budget Tracker App | Open UI App | Miro Talk App | MacOS Preact App | Portfolio Website | Birthday Card App | <br>
 Bike Place App   <br>
 
