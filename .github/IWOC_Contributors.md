@@ -72,39 +72,3 @@ LinkedIn Profile: https://www.linkedin.com/in/spbyname
 Completed PR's (1) - Custom Error404 Page <br>
 
 LinkedIn Profile : https://www.linkedin.com/in/dinesh-bhardwaj2047  <br>
-
-
-# PENDING PR's
-
-1. Akhilesh Sarnami Yadav | yakhilgithub | ayadavvisionary@gmail.com |   <br>
-
-Open Issue (1) - City Chase Game  <br> 
-
-LinkedIn Profile : https://www.linkedin.com/in/yakhilesh  <br>
-
-2. Ankit Kumar | meAnkit18 | ankit1842kumar@gmail.com | ankit2023_  <br>
-
-Open PR's (1) - Catch The Falling Objects | Flappy Block Game | Minesweeper Game App  <br>
-
-LinkedIn Profile: https://www.linkedin.com/in/meankit18  <br>
-
-3. Seetha Pragna | pragna7 | seethapragna2005@gmail.com | s_pragna  <br>
-
-Open PR's (1) - Website : SignUp and Login Page <br>
-Open Issue (1) - Cube Root Calculator <br>
-
-LinkedIn Profile: https://www.linkedin.com/in/seetha-pragna-659015312  <br>
-
-4. Shivam Tripathi | Shiv10122003 | sivam22102002@gmail.com | shiv10122003 <br>
-
-Completed PR's (2) - Color Picker Chrome Extension | 2D Brick Breaker Game App  <br>
-
-LinkedIn Profile: https://www.linkedin.com/in/shivam-tripathi-9bbb2b223 <br>
-
-5. Saksham Jain | Sakshamjain98 | sakshambro730@gmail.com | sakshamjain007 <br>
-
-Open Issues (12) - To Do List App | Phone Pay Clone | Trading Compass App | Tech Book App | Notes Frontend App | <br>
-Budget Tracker App | Open UI App | Miro Talk App | MacOS Preact App | Portfolio Website | Birthday Card App | <br>
-Bike Place App   <br>
-
-LinkedIn Profile: https://www.linkedin.com/in/sakshamjain007 <br>
